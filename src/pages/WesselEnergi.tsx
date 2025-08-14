@@ -278,10 +278,10 @@ export default function WesselEnergi() {
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
                 <div className="grid grid-cols-4 gap-4 mb-8">
                   {[
-                    { time: "00-06", produced: 380, delivered: 250, profit: -5 660 },
-                    { time: "06-12", produced: 350, delivered: 250, profit: -16 990 },
-                    { time: "12-18", produced: 80, delivered: 320, profit: 33 060 },
-                    { time: "18-00", produced: 260, delivered: 340, profit: 6 250 }
+                    { time: "00-06", produced: 380, delivered: 250, profit: -5660 },
+                    { time: "06-12", produced: 350, delivered: 250, profit: -16990 },
+                    { time: "12-18", produced: 80, delivered: 320, profit: 33060 },
+                    { time: "18-00", produced: 260, delivered: 340, profit: 6250 }
                   ].map((period, index) => (
                     <div key={period.time} className="text-center">
                       <div className="mb-4">
