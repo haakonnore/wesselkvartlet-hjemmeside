@@ -440,6 +440,134 @@ export default function WesselEnergi() {
           </div>
         </section>
 
+        {/* Comprehensive Benefits */}
+        <section className="py-20 bg-muted/30">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">Systemets fordeler</h2>
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                En komplett oversikt over fordelene ved vårt innovative energisystem
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {/* Environmental Benefits */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-green-700">🌱 Miljøfordeler</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Garantert fornybar energi:</strong> 100% fornybar oppvarming og kjøling</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>CO2 som kuldemedium:</strong> Bruker miljøvennlig CO2 i stedet for vanlige klimagasser</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Redusert utslipp:</strong> Arbitrasje muliggjør produksjon når strømmen er fornybar</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Economic Benefits */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-blue-700">💰 Økonomiske fordeler</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Stabil økonomi:</strong> Lavere strømetterspørsel reduserer eksponering for prissvingninger</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Finansieringsfordeler:</strong> Goodwill fra banker ved finansiering av energieffektive prosjekter</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Sikker drift:</strong> Temperaturreservoar fungerer uavhengig av eksterne forstyrrelser</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Technical Benefits */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-purple-700">⚙️ Tekniske fordeler</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Høy effektivitet:</strong> COP varierer mellom 3 og 6</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Optimal drift:</strong> Mindre varmepumpe som kjører på 100% eller er avslått</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Redusert infrastruktur:</strong> Mindre overføringskapasitet nødvendig enn andre systemer</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Building Classification */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-orange-700">🏆 Bygningsklassifisering</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>EU-standard:</strong> Nye prosjekter klassifiseres som Klasse A i henhold til EU Energy Performance of Buildings Directive</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>BREEAM-excellent:</strong> Systemet bidrar til å oppnå BREEAM-excellent klassifisering</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* System Efficiency */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-red-700">🎯 Systemeffektivitet</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Optimal kapasitetsutnyttelse:</strong> Varmepumper kjører på maksimal effektivitet i stedet for 30-40% delkapasitet</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Direkte varmeuttrekk:</strong> Varme hentes fra temperaturreservoar, ikke direkte fra varmepumpe</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Grid Benefits */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-teal-700">⚡ Nettfordeler</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Forutsigbar profitt:</strong> Mer forutsigbare inntekter gjennom redusert priseksponering</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Nettavlastning:</strong> Reduserer behov for nettutbygging og stabiliserer strømnettet</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Environmental Impact */}
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-6">
