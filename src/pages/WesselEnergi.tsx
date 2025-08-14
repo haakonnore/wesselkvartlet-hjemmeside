@@ -85,7 +85,7 @@ export default function WesselEnergi() {
       ]
     },
     {
-      category: "Varmepumpesystem",
+      category: "Varmepumpe 1",
       specs: [
         "Kuldemedium: CO2 (R744)",
         "Antall kompressorer: 8 stk",
@@ -95,7 +95,7 @@ export default function WesselEnergi() {
       ]
     },
     {
-      category: "Varmepumpesystem 2",
+      category: "Varmepumpe 2",
       specs: [
         "Kuldemedium: NH3",
         "Antall kompressorer: 1 stk",
