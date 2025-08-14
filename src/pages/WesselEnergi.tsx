@@ -338,6 +338,108 @@ export default function WesselEnergi() {
           </div>
         </section>
 
+        {/* Arbitrage Strategies */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">Energiarbitrasje på tre nivåer</h2>
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                Strategisk energioptimalisering gjennom sesong-, måneds- og døgnarbitrasje
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              {/* Seasonal Arbitrage */}
+              <Card className="shadow-sm border-l-4 border-l-blue-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-blue-700">🗓️ Sesonglagring</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Lagre overskudd fra sommer:</strong> Fange opp varme og kjøling når det naturlig oppstår gjennom årstidene</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Produsere ved lave strømpriser:</strong> Bygge opp sesonglagre når elektrisitetsprisene er gunstige</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Langtidsplanlegging:</strong> Optimalisere energibruk over måneder fremover</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Monthly Arbitrage */}
+              <Card className="shadow-sm border-l-4 border-l-green-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-green-700">📅 Månedlig balansering</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Værmønster-tilpasning:</strong> Justere kapasitet basert på værprognoser og sesongvariasjoner</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Ekstra kalde/varme dager:</strong> Balansere effektbehov for dager med ekstreme temperaturer</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Kapasitetsplanlegging:</strong> Sikre tilstrekkelig energireserver for uventede behov</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Daily Arbitrage */}
+              <Card className="shadow-sm border-l-4 border-l-orange-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-orange-700">⏰ Døgnarbitrasje</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Strømpris-optimalisering:</strong> Tilpasse varmepumpedrift til de laveste strømprisene døgnet rundt</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Forbruksmønster-analyse:</strong> Arbeide rundt elektrisk forbruksmønster for optimal timing</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Automatisk styring:</strong> Intelligente systemer som maksimerer effektivitet time for time</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Combined Strategy Benefits */}
+            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold text-center mb-6">
+                  Kombinert strategisk fordel
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-semibold mb-3 text-primary">🎯 Økonomisk optimalisering</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Ved å kombinere alle tre arbitrasjenivåer oppnår systemet maksimal økonomisk effektivitet. 
+                      Energiproduksjon og -forbruk optimaliseres kontinuerlig basert på markedspriser, værforhold og forbruksbehov.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold mb-3 text-primary">⚡ Nettbalansering</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Systemet bidrar til stabilisering av det elektriske nettet ved å redusere belastning i høylastperioder 
+                      og øke forbruk når det er overskudd av fornybar energi.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Environmental Impact */}
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-6">
