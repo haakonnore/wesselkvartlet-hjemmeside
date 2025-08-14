@@ -22,21 +22,6 @@ export function Hero() {
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
           Askers nye hjerte - hvor moderne arkitektur møter bærekraftig innovasjon
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg"
-          >
-            Oppdag kvartalet
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 text-lg"
-          >
-            Se ledige lokaler
-          </Button>
-        </div>
       </div>
 
       {/* Scroll indicator */}

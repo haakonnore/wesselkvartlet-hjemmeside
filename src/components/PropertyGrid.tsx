@@ -9,7 +9,7 @@ export function PropertyGrid() {
       icon: "📦",
       title: "Lager/Bod",
       location: "Wessel P-hus",
-      description: "Lager til leie i ulike størrelser fra 2.5 m² til 240 m². Sikker oppbevaring i moderne p-hus.",
+      description: "Lager til leie i ulike størrelser fra 2.5 m² til 240 m². Sikker oppbevaring i moderne videoovervåket p-hus.",
       price: "1100–1500 kr/m²/år",
       size: "2.5 m² - 240 m²",
       features: ["Videoovervåkning", "Sikker adgang", "Fleksible størrelser"],
