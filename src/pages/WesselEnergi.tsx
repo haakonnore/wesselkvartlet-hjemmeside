@@ -59,13 +59,13 @@ export default function WesselEnergi() {
       title: "Snøsmelting",
       stat: "8 MW",
       description: "Varmelageret leverer opptil 8 MW til snøsmelting i sentrum, reduserer kommunens behov for elkjel betydelig."
-    }
+    },
     {
       icon: "🥶",
       title: "Leveranse av varme og kjøling",
       stat: "7 MW",
       description: "Vi leverer kjøling om sommer og varme om vinter med samme anlegg"
-    },
+    }
   ];
 
   const innovations = [
@@ -139,7 +139,7 @@ export default function WesselEnergi() {
         "Funksjon: Backup system",
         "Type: Elektrisk kjele"
       ]
-         },
+    },
     {
       category: "Elkjele 2",
       specs: [
@@ -147,7 +147,6 @@ export default function WesselEnergi() {
         "Funksjon: Produksjon ved lav strømpris",
         "Type: Elektrisk kjele"
       ]
-      
     }
   ];
 
@@ -312,7 +311,8 @@ export default function WesselEnergi() {
                     <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
                     <span>Gevinst</span>
                   </div>
-                  <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
                     <span>Tap</span>
                   </div>
                   <div className="flex items-center">
