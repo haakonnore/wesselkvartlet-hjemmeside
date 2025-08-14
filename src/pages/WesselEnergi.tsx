@@ -250,7 +250,7 @@ export default function WesselEnergi() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-6">Økonomisk gevinst: ca 50% ved bruk av vårt varmesystem</h2>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                Timefordelte energiforbruk og produksjon om vinteren
+                Eksempel på timefordelte energiforbruk og produksjon om vinteren
               </p>
 
             </div>
@@ -262,7 +262,7 @@ export default function WesselEnergi() {
                   <p className="text-green-700">
                     Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
                   </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">-2265 kr besparelse</div>
+                  <div className="mt-4 text-2xl font-bold text-green-600">-22650 kr</div>
                 </Card>
                 
                 <Card className="bg-green-50 border-green-200 p-6">
@@ -270,7 +270,7 @@ export default function WesselEnergi() {
                   <p className="text-green-700">
                     Rundt middagstider, når strømprisen er høyest og etterspørselen etter varme er stor, selger vi <strong>mest varme</strong> men vår produksjon er minimal.
                   </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">+3306 kr fortjeneste</div>
+                  <div className="mt-4 text-2xl font-bold text-green-600">+39310 kr</div>
                 </Card>
               </div>
 
@@ -278,10 +278,10 @@ export default function WesselEnergi() {
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
                 <div className="grid grid-cols-4 gap-4 mb-8">
                   {[
-                    { time: "00-06", produced: 380, delivered: 250, profit: -566 },
-                    { time: "06-12", produced: 350, delivered: 250, profit: -1699 },
-                    { time: "12-18", produced: 80, delivered: 320, profit: 3306 },
-                    { time: "18-00", produced: 260, delivered: 340, profit: 625 }
+                    { time: "00-06", produced: 380, delivered: 250, profit: -5660 },
+                    { time: "06-12", produced: 350, delivered: 250, profit: -16990 },
+                    { time: "12-18", produced: 80, delivered: 320, profit: 33060 },
+                    { time: "18-00", produced: 260, delivered: 340, profit: 6250 }
                   ].map((period, index) => (
                     <div key={period.time} className="text-center">
                       <div className="mb-4">
@@ -328,7 +328,7 @@ export default function WesselEnergi() {
 
               <div className="mt-8 text-center">
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  Netto årsgevinst: +1,466 kr
+                  Netto døgngevinst: +14,660 kr
                 </div>
                 <p className="text-lg text-muted-foreground">
                   Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en 50 % besparelse sammenlignet med tradisjonelle oppvarmingsløsninger.
@@ -365,6 +365,10 @@ export default function WesselEnergi() {
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
                       <span>Miljøvennlig CO2 som kuldemedium</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
+                      <span>Beskytter strømnettet</span>
                     </li>
                   </ul>
                 </CardContent>
