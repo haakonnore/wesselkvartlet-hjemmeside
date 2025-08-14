@@ -52,7 +52,7 @@ export function ContactSection() {
                     rows={5}
                   />
                 </div>
-                <Button className="w-full primary-gradient border-0 text-lg py-6">
+                <Button className="w-full primary-gradient border-0 text-lg py-6 text-foreground hover:text-primary-foreground">
                   Send melding
                 </Button>
               </form>

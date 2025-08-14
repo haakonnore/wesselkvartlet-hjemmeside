@@ -46,7 +46,7 @@ export function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button variant="default" className="primary-gradient border-0">
+          <Button variant="default" className="primary-gradient border-0 text-foreground hover:text-primary-foreground">
             Kontakt oss
           </Button>
         </div>
@@ -86,7 +86,7 @@ export function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <Button variant="default" className="w-full primary-gradient border-0">
+                <Button variant="default" className="w-full primary-gradient border-0 text-foreground hover:text-primary-foreground">
                   Kontakt oss
                 </Button>
               </div>
