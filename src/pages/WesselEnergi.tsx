@@ -119,6 +119,14 @@ export default function WesselEnergi() {
         "Plassering: Under parkeringskjeller",
         "Kapasitet: Tilsvarende større lukket system"
       ]
+    },
+    {
+      category: "Elkjele",
+      specs: [
+        "Kapasitet: 1 MW",
+        "Funksjon: Backup system",
+        "Type: Elektrisk kjele"
+      ]
     }
   ];
 
