@@ -12,6 +12,7 @@ export function PropertyGrid() {
       description: "Lager til leie i ulike størrelser fra 2.5 m² til 240 m². Sikker oppbevaring i moderne videoovervåket p-hus.",
       price: "1100–1500 kr/m²/år",
       size: "2.5 m² - 240 m²",
+      image: "/lovable-uploads/3dd8daf6-3570-4b9e-98e0-3b9babf5262a.png",
       features: ["Videoovervåkning", "Sikker adgang", "Fleksible størrelser"],
       buttonText: "Les mer"
     },
