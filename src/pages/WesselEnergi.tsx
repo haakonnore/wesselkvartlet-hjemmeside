@@ -8,26 +8,20 @@ export default function WesselEnergi() {
   const energyStats = [
     {
       icon: "🏭",
-      title: "Total kapasitet",
+      title: "Spisslast",
       stat: "13.5 MW",
-      description: "Teoretisk spisslastkapasitet med 3 MW kontinuerlig leveranse. Leverer 7 GWh lavtemperert varme årlig til fire store sluttbrukere."
+      description: "Leverer 7 GWh lavtemperert varme årlig til fire store sluttbrukere."
     },
     {
       icon: "🌍🚂",
       title: "CO2 & NH3 -varmepumpe",
       stat: "4 MW",
-      description: "8 kompressorer med miljøvennlig CO2 (R744) som kuldemedium. Høy- og lavtemperatur rørsystemer optimaliserer effektiviteten."
-    },
-    {
-      icon: "⚡",
-      title: "Elkjeler",
-      stat: "8 MW",
-      description: "Dype brønner i fjell under parkeringskjelleren leverer like mye energi som et mye større tradisjonelt anlegg med lukkede brønner."
+      description: "2 varmepumper med miljøvennlig CO2 og NH3 som kuldemedium."
     },
     {
       icon: "⏚",
       title: "Åpne geobrønner",
-      stat: "20 × 300m",
+      stat: "25 × 250-400m",
       description: "Dype brønner i fjell under parkeringskjelleren leverer like mye energi som et mye større tradisjonelt anlegg med lukkede brønner."
     },
     {
@@ -49,12 +43,6 @@ export default function WesselEnergi() {
       description: "Leiligheter i 3 boligblokker + næringsarealer + kommunal gatevarme. Utvidelse planlagt til Føyka-Elvely."
     },
     {
-      icon: "⚙️",
-      title: "Driftseffektivitet",
-      stat: "COP 4.1",
-      description: "Gjennomsnittlig virkningsgrad gjennom hele fyringssesongen siden 2020. Elkjel på 1 MW kun som backup."
-    },
-    {
       icon: "🌨️",
       title: "Snøsmelting",
       stat: "8 MW",
@@ -63,8 +51,8 @@ export default function WesselEnergi() {
     {
       icon: "🥶",
       title: "Garantert fornybar varme og kjøling",
-      stat: "7 MW",
-      description: "Vi leverer kjøling om sommer og varme om vinter med samme anlegg"
+      stat: "5 MW",
+      description: "Vi leverer kjøling om sommer og varme om vinter med samme anlegg og kan levere 5 MW kontinuerlig."
     }
   ];
 
