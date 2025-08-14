@@ -249,13 +249,11 @@ export default function WesselEnergi() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">Økonomisk evinst: ca 50% ved bruk av vårt varmesystem</h2>
+              <h2 className="text-4xl font-bold mb-6">Økonomisk gevinst: ca 50% ved bruk av vårt varmesystem</h2>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                Timefordelte Energiforbruk og Produksjon Om Vinteren
+                Timefordelte energiforbruk og produksjon om vinteren
               </p>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-4">
-                Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en fortjeneste på 50 %.
-              </p>
+
             </div>
 
             <Card className="p-8 mb-12">
@@ -312,7 +310,10 @@ export default function WesselEnergi() {
                 <div className="flex justify-center space-x-8 text-sm">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                    <span>Gevinst og tap</span>
+                    <span>Gevinst</span>
+                  </div>
+                  <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
+                    <span>Tap</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-orange-400 rounded mr-2"></div>
@@ -330,7 +331,7 @@ export default function WesselEnergi() {
                   Netto årsgevinst: +1,466 kr
                 </div>
                 <p className="text-lg text-muted-foreground">
-                  50% besparelse sammenlignet med tradisjonelle oppvarmingsløsninger
+                  Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en 50 % besparelse sammenlignet med tradisjonelle oppvarmingsløsninger.
                 </p>
               </div>
             </Card>
