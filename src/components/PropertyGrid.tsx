@@ -1,6 +1,7 @@
 import { PropertyCard } from "./PropertyCard";
 import parkingImage from "@/assets/parking-facility.jpg";
-import rooftopImage from "@/assets/rooftop-garden.jpg";
+import rooftopImage from "/lovable-uploads/b906604e-7f45-4382-a192-40914b16e300.png";
+import buildingDetailImage from "/lovable-uploads/bdea4eb1-c66b-4b53-bcc7-04a9f17de761.png";
 
 export function PropertyGrid() {
   const properties = [
@@ -32,7 +33,7 @@ export function PropertyGrid() {
       price: "Avhengig av avtale",
       size: "45 m²",
       features: ["Redundant strøm", "Luftkjølt/vannkjølt", "Høy sikkerhet"],
-      buttonText: "Kontakt oss"
+      image: buildingDetailImage,
     },
     {
       icon: "🚗",

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/wesselkvartalet-hero.jpg";
+import heroImage from "/lovable-uploads/76eb514d-787b-4ebe-94a0-8561b43d914d.png";
 
 export function Hero() {
   return (
