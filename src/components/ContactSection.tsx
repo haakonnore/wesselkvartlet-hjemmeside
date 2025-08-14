@@ -4,10 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-
 export function ContactSection() {
-  return (
-    <section id="kontakt" className="py-20 bg-background">
+  return <section id="kontakt" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Kontakt oss</h2>
@@ -18,46 +16,7 @@ export function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="property-card">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6">Send oss en melding</h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstname">Fornavn</Label>
-                    <Input id="firstname" placeholder="Ditt fornavn" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastname">Etternavn</Label>
-                    <Input id="lastname" placeholder="Ditt etternavn" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-post</Label>
-                  <Input id="email" type="email" placeholder="din@epost.no" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Telefon</Label>
-                  <Input id="phone" type="tel" placeholder="+47 xxx xx xxx" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Emne</Label>
-                  <Input id="subject" placeholder="Hva gjelder henvendelsen?" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Melding</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Beskriv ditt behov eller still ditt spørsmål..."
-                    rows={5}
-                  />
-                </div>
-                <Button className="w-full primary-gradient border-0 text-lg py-6 text-foreground hover:text-primary-foreground">
-                  Send melding
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          
 
           {/* Contact Information */}
           <div className="space-y-8">
@@ -71,7 +30,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">E-post</h4>
-                      <p className="text-muted-foreground">perwesselnore@gmail.com</p>
+                      <p className="text-muted-foreground">kontakt@wesselkvartalet.no</p>
                     </div>
                   </div>
                   
@@ -131,7 +90,7 @@ export function ContactSection() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm">Takhage + Garderobe</span>
+                    <span className="text-sm">Lokaler + Takhage + Garderobe</span>
                   </div>
                 </div>
               </CardContent>
@@ -139,6 +98,5 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
