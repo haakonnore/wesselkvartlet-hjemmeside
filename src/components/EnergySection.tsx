@@ -96,7 +96,7 @@ export function EnergySection() {
           </p>
           <Button 
             variant="outline" 
-            className="border-white/20 text-white hover:bg-white/10"
+            className="border-white/20"
             onClick={() => window.location.href = '/wessel-energi'}
           >
             Les mer om Wessel Energi

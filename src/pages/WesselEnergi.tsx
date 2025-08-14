@@ -123,7 +123,7 @@ export default function WesselEnergi() {
             <div className="mb-8">
               <Button 
                 variant="outline" 
-                className="border-white/20 text-white hover:bg-white/10 mb-6"
+                className="border-white/20 mb-6"
                 onClick={() => window.history.back()}
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />

@@ -90,7 +90,6 @@ export function PropertyCard({
                 variant="outline"
                 size="sm"
                 onClick={buttonAction}
-                className="hover:bg-primary hover:text-primary-foreground"
               >
                 {buttonText}
               </Button>
