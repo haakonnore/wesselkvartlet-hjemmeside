@@ -62,7 +62,7 @@ export default function WesselEnergi() {
     },
     {
       icon: "🥶",
-      title: "Leveranse av varme og kjøling",
+      title: "Garantert fornybar varme og kjøling",
       stat: "7 MW",
       description: "Vi leverer kjøling om sommer og varme om vinter med samme anlegg"
     }
@@ -262,7 +262,7 @@ export default function WesselEnergi() {
                   <p className="text-green-700">
                     Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
                   </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">-22,650 kr</div>
+                  <div className="mt-4 text-2xl font-bold text-green-600">-22 650 kr</div>
                 </Card>
                 
                 <Card className="bg-green-50 border-green-200 p-6">
@@ -270,7 +270,7 @@ export default function WesselEnergi() {
                   <p className="text-green-700">
                     Rundt middagstider, når strømprisen er høyest og etterspørselen etter varme er stor, selger vi <strong>mest varme</strong> men vår produksjon er minimal.
                   </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">+39,310 kr</div>
+                  <div className="mt-4 text-2xl font-bold text-green-600">+39 310 kr</div>
                 </Card>
               </div>
 
@@ -278,10 +278,10 @@ export default function WesselEnergi() {
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
                 <div className="grid grid-cols-4 gap-4 mb-8">
                   {[
-                    { time: "00-06", produced: 380, delivered: 250, profit: -5,660 },
-                    { time: "06-12", produced: 350, delivered: 250, profit: -16,990 },
-                    { time: "12-18", produced: 80, delivered: 320, profit: 33,060 },
-                    { time: "18-00", produced: 260, delivered: 340, profit: 6,250 }
+                    { time: "00-06", produced: 380, delivered: 250, profit: -5 660 },
+                    { time: "06-12", produced: 350, delivered: 250, profit: -16 990 },
+                    { time: "12-18", produced: 80, delivered: 320, profit: 33 060 },
+                    { time: "18-00", produced: 260, delivered: 340, profit: 6 250 }
                   ].map((period, index) => (
                     <div key={period.time} className="text-center">
                       <div className="mb-4">
