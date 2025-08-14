@@ -35,17 +35,12 @@ export function Footer() {
               </li>
               <li>
                 <a href="#doga" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  DOGA & Næringsforening
+                  Utmerkelser
                 </a>
               </li>
               <li>
                 <a href="#om" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Om kvartalet
-                </a>
-              </li>
-              <li>
-                <a href="#naring" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Næring og kontorer
                 </a>
               </li>
             </ul>

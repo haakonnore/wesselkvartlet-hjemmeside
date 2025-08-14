@@ -6,9 +6,8 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Ledige lokaler", href: "#lokaler" },
   { name: "Energisentral", href: "#energi" },
-  { name: "DOGA & Næringsforening", href: "#doga" },
+  { name: "Utmerkelser", href: "#doga" },
   { name: "Om kvartalet", href: "#om" },
-  { name: "Næring og kontorer", href: "#naring" },
   { name: "Kontakt", href: "#kontakt" },
 ];
 

@@ -59,34 +59,44 @@ export function AboutSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="space-y-4">
             <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="text-2xl">🌱</span>
+              <span className="text-2xl">🏢</span>
             </div>
-            <h3 className="text-xl font-semibold">Bærekraftig</h3>
+            <h3 className="text-xl font-semibold">Middelhavsinspirert arkitektur</h3>
             <p className="text-muted-foreground">
-              Energieffektive løsninger og miljøvennlige materialer i alle deler av bygget
+              52 leiligheter av høy kvalitet i 2-7 etasjer med buede, unike former. Teglfasader med relieff.
             </p>
           </div>
           
           <div className="space-y-4">
             <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="text-2xl">🏗️</span>
+              <span className="text-2xl">🏪</span>
             </div>
-            <h3 className="text-xl font-semibold">Moderne arkitektur</h3>
+            <h3 className="text-xl font-semibold">Sympatisk fortetting</h3>
             <p className="text-muted-foreground">
-              Prisbelønt design som setter nye standarder for urban arkitektur
+              5 restauranter og 4 butikker på bakkeplan. 2000 m² kontorer i andre etasje.
             </p>
           </div>
           
           <div className="space-y-4">
             <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="text-2xl">📍</span>
+              <span className="text-2xl">🌳</span>
             </div>
-            <h3 className="text-xl font-semibold">Sentral beliggenhet</h3>
+            <h3 className="text-xl font-semibold">Apotekerhagen</h3>
             <p className="text-muted-foreground">
-              Midt i Asker sentrum med kort vei til transport og fasiliteter
+              Et grønt, intimt rom i kvartalets sentrum - oppkalt etter apoteket som lå her fra 1927.
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
+              <span className="text-2xl">🚗</span>
+            </div>
+            <h3 className="text-xl font-semibold">Bilfri tilværelse</h3>
+            <p className="text-muted-foreground">
+              250 parkeringsplasser med lading under bakken. Høy tetthet ved togstasjonen.
             </p>
           </div>
         </div>
