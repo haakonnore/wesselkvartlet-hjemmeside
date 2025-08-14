@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Ledige lokaler", href: "#lokaler" },
-  { name: "Energisentral", href: "#energi" },
+  { name: "Wessel Energi", href: "/wessel-energi" },
   { name: "Utmerkelser", href: "#doga" },
   { name: "Om kvartalet", href: "#om" },
   { name: "Kontakt", href: "#kontakt" },

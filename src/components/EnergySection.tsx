@@ -1,54 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function EnergySection() {
-  const energyStats = [
+  const energyHighlights = [
     {
       icon: "🏭",
       title: "Total kapasitet",
       stat: "13.5 MW",
-      description: "Teoretisk spisslastkapasitet med 3 MW kontinuerlig leveranse. Leverer 7 GWh lavtemperert varme årlig til fire store sluttbrukere."
+      description: "Norges mest innovative energisentral forsyner hele Asker sentrum"
     },
     {
       icon: "🌍",
       title: "CO2-varmepumpe",
       stat: "2 MW",
-      description: "8 kompressorer med miljøvennlig CO2 (R744) som kuldemedium. Høy- og lavtemperatur rørsystemer optimaliserer effektiviteten."
-    },
-    {
-      icon: "⚡",
-      title: "Åpne geobrønner",
-      stat: "20 × 300m",
-      description: "Dype brønner i fjell under parkeringskjelleren leverer like mye energi som et mye større tradisjonelt anlegg med lukkede brønner."
+      description: "Miljøvennlig CO2-teknologi med høy effektivitet"
     },
     {
       icon: "🔋",
       title: "Varmelager i fjell",
       stat: "70,000 m³",
-      description: "95 brønnhull på 20m dybde + oppsprukket fjell gir nesten 1 GWh lagringskapasitet - ett av Norges største geotermiske varmelagre."
-    },
-    {
-      icon: "❄️",
-      title: "Gatevarme som energikilde",
-      stat: "25,000 m²",
-      description: "Gatevarmesløyfer fungerer som bakkesolfanger - hentet over 1700 kW som lagres på 38°C for senere bruk."
-    },
-    {
-      icon: "🏢",
-      title: "Forsyningsområde",
-      stat: "140",
-      description: "Leiligheter i 3 boligblokker + næringsarealer + kommunal gatevarme. Utvidelse planlagt til Føyka-Elvely."
-    },
-    {
-      icon: "⚙️",
-      title: "Driftseffektivitet",
-      stat: "COP 4.1",
-      description: "Gjennomsnittlig virkningsgrad gjennom hele fyringssesongen siden 2020. Elkjel på 1 MW kun som backup."
+      description: "Ett av Norges største geotermiske varmelagre"
     },
     {
       icon: "🌨️",
       title: "Snøsmelting",
       stat: "8 MW",
-      description: "Varmelageret leverer opptil 8 MW til snøsmelting i sentrum, reduserer kommunens behov for elkjel betydelig."
+      description: "Snø- og isfri sentrum med fornybar energi"
     }
   ];
 
@@ -83,13 +61,13 @@ export function EnergySection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {energyStats.map((stat, index) => (
+          {energyHighlights.map((highlight, index) => (
             <Card key={index} className="bg-white/20 backdrop-blur-sm border-white/20 text-white hover:bg-white/25 transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <div className="text-3xl mb-4">{stat.icon}</div>
-                <h3 className="font-semibold mb-2">{stat.title}</h3>
-                <div className="text-2xl font-bold text-accent mb-3">{stat.stat}</div>
-                <p className="text-sm text-white/90 leading-relaxed">{stat.description}</p>
+                <div className="text-3xl mb-4">{highlight.icon}</div>
+                <h3 className="font-semibold mb-2">{highlight.title}</h3>
+                <div className="text-2xl font-bold text-accent mb-3">{highlight.stat}</div>
+                <p className="text-sm text-white/90 leading-relaxed">{highlight.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -113,9 +91,17 @@ export function EnergySection() {
         </Card>
 
         <div className="text-center text-white">
-          <p className="text-lg opacity-90 font-medium max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg opacity-90 font-medium max-w-4xl mx-auto leading-relaxed mb-8">
             Anlegget representerer et paradigmeskifte innen urban energiforsyning og er forberedt for fremtidig utvidelse til hele Asker-regionen.
           </p>
+          <Button 
+            variant="outline" 
+            className="border-white/20 text-white hover:bg-white/10"
+            onClick={() => window.location.href = '/wessel-energi'}
+          >
+            Les mer om Wessel Energi
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Button>
         </div>
       </div>
     </section>
