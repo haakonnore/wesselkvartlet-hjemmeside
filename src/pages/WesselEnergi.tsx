@@ -127,6 +127,15 @@ export default function WesselEnergi() {
         "Funksjon: Backup system",
         "Type: Elektrisk kjele"
       ]
+         },
+    {
+      category: "Elkjele 2",
+      specs: [
+        "Kapasitet: 7 MW",
+        "Funksjon: Produksjon ved lav strømpris",
+        "Type: Elektrisk kjele"
+      ]
+      
     }
   ];
 
@@ -228,12 +237,12 @@ export default function WesselEnergi() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">Økonomisk gevinst: ca 50% ved bruk av våre varmepumper</h2>
+              <h2 className="text-4xl font-bold mb-6">Økonomisk evinst: ca 50% ved bruk av vårt varmesystem</h2>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
                 Timefordelte Energiforbruk og Produksjon Om Vinteren
               </p>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-4">
-                Grafen viser inntjeningen ved bruk av våre varmepumper. For hver krone som genereres fra salg av strøm, oppnår man en fortjeneste på 50 øre.
+                Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en fortjeneste på 50 %.
               </p>
             </div>
 
@@ -242,7 +251,7 @@ export default function WesselEnergi() {
                 <Card className="bg-green-50 border-green-200 p-6">
                   <h3 className="text-lg font-semibold mb-3 text-green-800">Lavpris-periode (00-06 & 06-12)</h3>
                   <p className="text-green-700">
-                    Når strømprisen er lavest, øker vi forbruket for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
+                    Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
                   </p>
                   <div className="mt-4 text-2xl font-bold text-green-600">-2265 kr besparelse</div>
                 </Card>
@@ -291,7 +300,7 @@ export default function WesselEnergi() {
                 <div className="flex justify-center space-x-8 text-sm">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                    <span>Vinst og tap</span>
+                    <span>Gevinst og tap</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-orange-400 rounded mr-2"></div>
@@ -366,7 +375,7 @@ export default function WesselEnergi() {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Referanseprosjekt for andre byer</span>
+                      <span>Referanseprosjekt for nye anlegg i andre byer</span>
                     </li>
                   </ul>
                 </CardContent>
