@@ -13,13 +13,19 @@ export default function WesselEnergi() {
       description: "Teoretisk spisslastkapasitet med 3 MW kontinuerlig leveranse. Leverer 7 GWh lavtemperert varme årlig til fire store sluttbrukere."
     },
     {
-      icon: "🌍",
-      title: "CO2-varmepumpe",
-      stat: "2 MW",
+      icon: "🌍🚂",
+      title: "CO2 & NH3 -varmepumpe",
+      stat: "4 MW",
       description: "8 kompressorer med miljøvennlig CO2 (R744) som kuldemedium. Høy- og lavtemperatur rørsystemer optimaliserer effektiviteten."
     },
     {
       icon: "⚡",
+      title: "Elkjeler",
+      stat: "8 MW",
+      description: "Dype brønner i fjell under parkeringskjelleren leverer like mye energi som et mye større tradisjonelt anlegg med lukkede brønner."
+    },
+    {
+      icon: "⏚",
       title: "Åpne geobrønner",
       stat: "20 × 300m",
       description: "Dype brønner i fjell under parkeringskjelleren leverer like mye energi som et mye større tradisjonelt anlegg med lukkede brønner."
