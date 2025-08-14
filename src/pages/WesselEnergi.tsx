@@ -81,7 +81,7 @@ export default function WesselEnergi() {
         "Kontinuerlig leveranse: 5 MW",
         "Spisslastkapasitet: 13.5 MW", 
         "Årlig varmelevering: 7 GWh",
-        "Hovedenergikilder: Geotermi + gatevarme"
+        "Hovedenergikilder: Geotermi + solvarme (gatevarme)"
       ]
     },
     {
@@ -90,16 +90,18 @@ export default function WesselEnergi() {
         "Kuldemedium: CO2 (R744)",
         "Antall kompressorer: 8 stk",
         "Kapasitet: 2 MW",
-        "System: Høy- og lavtemperatur rørsystemer"
+        "COP: 3,5 - 5,5",
+        "System: Høy- og lavtemperatur"
       ]
     },
     {
       category: "Varmepumpesystem 2",
       specs: [
         "Kuldemedium: NH3",
-        "Antall kompressorer: 10 stk",
+        "Antall kompressorer: 1 stk",
         "Kapasitet: 2 MW",
-        "System: Høy- og lavtemperatur rørsystemer"
+        "COP: 3,5 - 5,5",
+        "System: Lavtemperatur"
       ]
     },
     {
@@ -125,14 +127,6 @@ export default function WesselEnergi() {
       specs: [
         "Kapasitet: 1 MW",
         "Funksjon: Backup system",
-        "Type: Elektrisk kjele"
-      ]
-    },
-    {
-      category: "Elkjele 2",
-      specs: [
-        "Kapasitet: 7 MW",
-        "Funksjon: Produksjon ved lav strømpris",
         "Type: Elektrisk kjele"
       ]
     }
@@ -450,7 +444,7 @@ export default function WesselEnergi() {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>CO2 som kuldemedium:</strong> Bruker miljøvennlig CO2 i stedet for vanlige klimagasser</span>
+                      <span><strong>CO2 og NH3 som kuldemedium:</strong> Bruker miljøvennlig CO2 og NH3 i stedet for vanlige klimagasser</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -460,26 +454,6 @@ export default function WesselEnergi() {
                 </CardContent>
               </Card>
 
-              {/* Economic Benefits */}
-              <Card className="shadow-sm">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-blue-700">💰 Økonomiske fordeler</h3>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Stabil økonomi:</strong> Lavere strømetterspørsel reduserer eksponering for prissvingninger</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Finansieringsfordeler:</strong> Goodwill fra banker ved finansiering av energieffektive prosjekter</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Sikker drift:</strong> Temperaturreservoar fungerer uavhengig av eksterne forstyrrelser</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
 
               {/* Technical Benefits */}
               <Card className="shadow-sm">
@@ -543,10 +517,6 @@ export default function WesselEnergi() {
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Forutsigbar profitt:</strong> Mer forutsigbare inntekter gjennom redusert priseksponering</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Nettavlastning:</strong> Reduserer behov for nettutbygging og stabiliserer strømnettet</span>
                     </li>
                   </ul>
@@ -560,13 +530,13 @@ export default function WesselEnergi() {
         <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">Miljøpåvirkning og fremtid</h2>
+              <h2 className="text-4xl font-bold mb-6">Kundecaser og fremtid</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <Card className="shadow-sm">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-primary">🌱 Miljøeffekt</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-primary">🌱 Kundecaser</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
@@ -574,19 +544,19 @@ export default function WesselEnergi() {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Redusert CO2-utslipp med tusenvis av tonn årlig</span>
+                      <span>Wesselkvartalet er A klassifisert</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>100% fornybar energi til oppvarming</span>
+                      <span>Naturlig kjøling med grunnvann til alle påkoblede kunder</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Miljøvennlig CO2 som kuldemedium</span>
+                    <span>Elvelykvartalet sparte utbygging av egen sentral og ny trafo</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Beskytter strømnettet</span>
+                      <span>Miljøvennlig varme og kjøling til alle påkoblede kunder</span>
                     </li>
                   </ul>
                 </CardContent>
