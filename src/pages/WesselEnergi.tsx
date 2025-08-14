@@ -614,6 +614,10 @@ export default function WesselEnergi() {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
+                      <span>Utvidelse til Asker-stasjon og perronger</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
                       <span>Potensial for hele Asker-regionen</span>
                     </li>
                     <li className="flex items-start">
