@@ -71,7 +71,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">E-post</h4>
-                      <p className="text-muted-foreground">kontakt@wesselkvartalet.no</p>
+                      <p className="text-muted-foreground">perwesselnore@gmail.com</p>
                     </div>
                   </div>
                   
@@ -81,7 +81,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Telefon</h4>
-                      <p className="text-muted-foreground">+47 xx xx xx xx</p>
+                      <p className="text-muted-foreground">+47 99 58 94 33</p>
                     </div>
                   </div>
                   
@@ -106,8 +106,7 @@ export function ContactSection() {
                     <div>
                       <h4 className="font-semibold">Åpningstider</h4>
                       <p className="text-muted-foreground">
-                        Mandag - Fredag: 09:00 - 17:00<br />
-                        Lørdag - Søndag: Stengt
+                        Mandag - Søndag: 00:00 - 24:00<br />
                       </p>
                     </div>
                   </div>
