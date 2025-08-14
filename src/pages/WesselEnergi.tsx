@@ -94,6 +94,15 @@ export default function WesselEnergi() {
       ]
     },
     {
+      category: "Varmepumpesystem 2",
+      specs: [
+        "Kuldemedium: NH3",
+        "Antall kompressorer: 10 stk",
+        "Kapasitet: 2 MW",
+        "System: Høy- og lavtemperatur rørsystemer"
+      ]
+    },
+    {
       category: "Energilagring",
       specs: [
         "Lagringsvolum: 70,000 m³",
