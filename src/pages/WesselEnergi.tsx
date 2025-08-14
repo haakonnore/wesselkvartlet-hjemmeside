@@ -60,6 +60,12 @@ export default function WesselEnergi() {
       stat: "8 MW",
       description: "Varmelageret leverer opptil 8 MW til snøsmelting i sentrum, reduserer kommunens behov for elkjel betydelig."
     }
+    {
+      icon: "🥶",
+      title: "Leveranse av varme og kjøling",
+      stat: "7 MW",
+      description: "Vi leverer kjøling om sommer og varme om vinter med samme anlegg"
+    },
   ];
 
   const innovations = [
@@ -84,7 +90,7 @@ export default function WesselEnergi() {
     {
       category: "Energiforsyning",
       specs: [
-        "Kontinuerlig leveranse: 3 MW",
+        "Kontinuerlig leveranse: 5 MW",
         "Spisslastkapasitet: 13.5 MW", 
         "Årlig varmelevering: 7 GWh",
         "Hovedenergikilder: Geotermi + gatevarme"
