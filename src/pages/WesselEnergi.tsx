@@ -328,7 +328,7 @@ export default function WesselEnergi() {
 
               <div className="mt-8 text-center">
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  Netto døgngevinst: +14,660 kr
+                  Netto døgngevinst: +14 660 kr
                 </div>
                 <p className="text-lg text-muted-foreground">
                   Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en 50 % besparelse sammenlignet med tradisjonelle oppvarmingsløsninger.
