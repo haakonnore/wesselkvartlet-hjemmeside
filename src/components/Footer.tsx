@@ -53,7 +53,7 @@ export function Footer() {
               <Button 
                 variant="outline" 
                 size="sm" 
-                className="w-full border-primary-foreground/20"
+                className="w-full border-primary-foreground/20 text-primary-foreground hover:text-primary hover:bg-primary-foreground"
                 onClick={() => window.open("https://onepark.no/parkering/akershus/wesselkvartalet/", "_blank")}
               >
                 Bestill parkeringsplass
@@ -61,7 +61,7 @@ export function Footer() {
               <Button 
                 variant="outline" 
                 size="sm" 
-                className="w-full border-primary-foreground/20"
+                className="w-full border-primary-foreground/20 text-primary-foreground hover:text-primary hover:bg-primary-foreground"
                 onClick={() => window.open("https://www.aneo.com/no/tjenester/mobility/kontakt/", "_blank")}
               >
                 Bestill lader
@@ -69,7 +69,7 @@ export function Footer() {
               <Button 
                 variant="outline" 
                 size="sm" 
-                className="w-full border-primary-foreground/20"
+                className="w-full border-primary-foreground/20 text-primary-foreground hover:text-primary hover:bg-primary-foreground"
                 onClick={() => window.open("https://www.finn.no/realestate/businessrent/ad.html?finnkode=396460332", "_blank")}
               >
                 Se takhage på Finn.no
