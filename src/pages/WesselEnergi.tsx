@@ -309,11 +309,11 @@ export default function WesselEnergi() {
                 <div className="flex justify-center space-x-8 text-sm">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                    <span>Gevinst</span>
+                    <span>Netto gevinst ved høy leveranse</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
-                    <span>Tap</span>
+                    <span>Netto tap ved høy produksjon</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-orange-400 rounded mr-2"></div>
