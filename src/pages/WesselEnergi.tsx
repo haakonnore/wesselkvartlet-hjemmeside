@@ -476,6 +476,10 @@ export default function WesselEnergi() {
                       <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Nettavlastning:</strong> Reduserer behov for nettutbygging og stabiliserer strømnettet</span>
                     </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Deltakelse i reguleringsmarkedet:</strong> Bidrar til å opprettholde stabil nett­frekvens (nær 50 Hz) ved å justere strømforbruket.</span>
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -553,56 +557,6 @@ export default function WesselEnergi() {
                 Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* Grid Relief and Ground Heat */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6">
-            <Card className="shadow-sm">
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-center">
-                  Grunnvarme og avlastning av strømnettet 🔋
-                </h3>
-                
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Wessel Energi i Asker sentrum bidrar til å avlaste strømnettet betydelig ved å redusere behovet for elektrisk oppvarming, spesielt i perioder med høyt strømforbruk. Selskapet bruker store varmepumper til å hente varme fra energibrønner i bakken, som så distribueres som vannbåren varme til bygg. Denne metoden er langt mer effektiv enn direkte elektrisk oppvarming, som for eksempel panelovner. Ved å levere fjernvarme til en rekke boliger og næringsbygg, forhindrer Wessel Energi at disse byggene trekker store mengder strøm samtidig.
-                  </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Dette reduserer belastningen på strømnettet, bidrar til å utjevne strømforbruket og reduserer dermed risikoen for overbelastning, noe som er avgjørende for nettstabilitet.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Frequency Market */}
-        <section className="py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-6">
-            <Card className="shadow-sm">
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-center">
-                  Wessel Energi og frekvensmarkedet ⚡
-                </h3>
-                
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Wessel Energi kan delta aktivt i reguleringsmarkedet, ofte kalt frekvensmarkedet, for å bidra til å opprettholde stabiliteten i strømnettet. Frekvensen i nettet må holdes svært nær 50 Hz. Hvis forbruket overstiger produksjonen, synker frekvensen, og hvis produksjonen overstiger forbruket, stiger den. Wessel Energi bruker varmepumpene sine som et "flytende forbruk", som kan justeres opp eller ned i sanntid.
-                  </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Når frekvensen i nettet synker, kan Wessel Energi midlertidig redusere strømforbruket til varmepumpene. Motsatt, hvis frekvensen stiger, kan de øke forbruket.
-                  </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Denne raske responsen bidrar til å balansere produksjon og forbruk og sikrer at nettet forblir stabilt, noe som er spesielt viktig når andelen av variabel produksjon fra sol- og vindkraft øker.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </section>
       </main>
