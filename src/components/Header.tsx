@@ -16,6 +16,8 @@ const sectionLinks = [
   { name: "Kontakt", href: "/#kontakt" },
 ];
 
+// Force browser refresh by adding this comment
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
