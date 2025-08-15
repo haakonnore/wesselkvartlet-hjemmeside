@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Ledige lokaler", href: "#lokaler" },
@@ -19,11 +20,11 @@ export function Header() {
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
               Wesselkvartalet
             </span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -36,15 +37,30 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navigation.map((item) => {
+            // Use Link for routes, anchor for hash links
+            if (item.href.startsWith('#')) {
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </a>
+              );
+            } else {
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </Link>
+              );
+            }
+          })}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button variant="default" className="primary-gradient border-0 text-foreground hover:text-primary-foreground">
@@ -58,11 +74,11 @@ export function Header() {
         <div className="fixed inset-0 z-50" />
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="text-xl font-bold primary-gradient bg-clip-text text-transparent">
                 Wesselkvartalet
               </span>
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-muted-foreground"
@@ -75,16 +91,32 @@ export function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-border">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                {navigation.map((item) => {
+                  // Use Link for routes, anchor for hash links
+                  if (item.href.startsWith('#')) {
+                    return (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    );
+                  } else {
+                    return (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  }
+                })}
               </div>
               <div className="py-6">
                 <Button variant="default" className="w-full primary-gradient border-0 text-foreground hover:text-primary-foreground">
