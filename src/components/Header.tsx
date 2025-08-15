@@ -52,18 +52,6 @@ export function Header() {
             <Menu className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button 
-            variant="default" 
-            className="primary-gradient border-0 text-foreground hover:text-primary-foreground"
-            onClick={() => {
-              const kontaktSection = document.getElementById('kontakt');
-              if (kontaktSection) kontaktSection.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Kontakt oss
-          </Button>
-        </div>
       </nav>
 
       {/* Mobile menu */}
@@ -99,39 +87,6 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
-                
-                {/* Separator */}
-                <div className="h-px bg-border my-4" />
-                
-                {/* Section links */}
-                {sectionLinks.map((item) => {
-                  const sectionId = item.href.substring(2); // Remove "/#" to get section id
-                  return (
-                    <button
-                      key={item.name}
-                      onClick={() => {
-                        const section = document.getElementById(sectionId);
-                        if (section) section.scrollIntoView({ behavior: 'smooth' });
-                        setMobileMenuOpen(false);
-                      }}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted text-left w-full"
-                    >
-                      {item.name}
-                    </button>
-                  );
-                })}
-              </div>
-              <div className="py-6">
-                <Button 
-                  variant="default" 
-                  className="w-full primary-gradient border-0 text-foreground hover:text-primary-foreground"
-                  onClick={() => {
-                    const kontaktSection = document.getElementById('kontakt');
-                    if (kontaktSection) kontaktSection.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Kontakt oss
-                </Button>
               </div>
             </div>
           </div>
