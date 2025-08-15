@@ -17,32 +17,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Hurtiglenker</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#lokaler" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Ledige lokaler
-                </a>
-              </li>
-              <li>
-                <a href="#energi" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Energisentral
-                </a>
-              </li>
-              <li>
-                <a href="#doga" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Utmerkelser
-                </a>
-              </li>
-              <li>
-                <a href="#om" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Om kvartalet
-                </a>
-              </li>
-            </ul>
-          </div>
 
           {/* External Links */}
           <div>
