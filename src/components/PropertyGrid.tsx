@@ -73,7 +73,7 @@ export function PropertyGrid() {
       size: "20 m²",
       image: rooftopImage,
       features: ["Fantastisk utsikt", "Bærekraftig", "Leie eller kjøp"],
-      buttonText: "Se annonse",
+      buttonText: "Se på Finn.no",
       buttonAction: () => window.open("https://www.finn.no/realestate/businessrent/ad.html?finnkode=396460332", "_blank")
     }
   ];
