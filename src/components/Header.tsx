@@ -41,37 +41,38 @@ export function Header() {
             <Menu className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-8">
-          {/* Subpages */}
-          {subpages.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="hidden lg:flex lg:flex-col lg:gap-y-2">
+          {/* Section links - first line */}
+          <div className="flex gap-x-8">
+            {sectionLinks.map((item) => {
+              const sectionId = item.href.substring(2); // Remove "/#" to get section id
+              return (
+                <button
+                  key={item.name}
+                  onClick={() => {
+                    const section = document.getElementById(sectionId);
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </button>
+              );
+            })}
+          </div>
           
-          {/* Separator */}
-          <div className="w-px h-6 bg-border self-center" />
-          
-          {/* Section links */}
-          {sectionLinks.map((item) => {
-            const sectionId = item.href.substring(2); // Remove "/#" to get section id
-            return (
-              <button
+          {/* Subpages - second line */}
+          <div className="flex gap-x-8">
+            {subpages.map((item) => (
+              <Link
                 key={item.name}
-                onClick={() => {
-                  const section = document.getElementById(sectionId);
-                  if (section) section.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+                to={item.href}
+                className="text-sm font-medium leading-6 text-muted-foreground hover:text-primary transition-colors"
               >
                 {item.name}
-              </button>
-            );
-          })}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button 
