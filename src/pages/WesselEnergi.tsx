@@ -306,11 +306,13 @@ export default function WesselEnergi() {
             </Card>
           </div>
         </section>
-        
         {/* Economic Benefits Chart */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <Card className="p-8 mb-12">
+              <h3 className="text-2xl font-semibold text-center mb-6">
+                  Eksempel på gevinst ved bruk av vårt system - timefordelt energiforbruk og produksjon på vinteren 
+                </h3>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <Card className="bg-green-50 border-green-200 p-6">
                   <h3 className="text-lg font-semibold mb-3 text-green-800">Lavpris-periode (00-06 & 06-12)</h3>
