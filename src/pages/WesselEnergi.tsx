@@ -430,11 +430,11 @@ export default function WesselEnergi() {
                       <span><strong>Redusert infrastruktur:</strong> Mindre overføringskapasitet nødvendig enn andre systemer</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Optimal kapasitetsutnyttelse:</strong> Varmepumper kjører på maksimal effektivitet i stedet for 30-40% delkapasitet</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Direkte varmeuttrekk:</strong> Varme hentes fra temperaturreservoar, ikke direkte fra varmepumpe</span>
                     </li>
                   </ul>
@@ -507,26 +507,26 @@ export default function WesselEnergi() {
               {/* Future Plans */}
               <Card className="shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-indigo-700">🚀 Fremtidsplaner</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-red-700">🚀 Fremtidsplaner</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Utvidelse til Føyka-Elvely området:</strong> Ekspanderer forsyningsområdet</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Utvidelse til Asker-stasjon og perronger:</strong> Inkluderer transportknutepunkt</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Potensial for hele Asker-regionen:</strong> Skalering til regional energiløsning</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Paradigmeskifte i urban energiforsyning:</strong> Ny standard for bærekraftig byutvikling</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Referanseprosjekt for nye anlegg:</strong> Mal for andre byer i Norge</span>
                     </li>
                   </ul>
