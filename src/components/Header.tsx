@@ -38,16 +38,20 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => {
-            // Use Link for routes, anchor for hash links
-            if (item.href.startsWith('#')) {
+            // Use Link for routes, smooth scroll for hash links
+            if (item.href.startsWith('/#')) {
+              const sectionId = item.href.substring(2); // Remove "/#" to get section id
               return (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => {
+                    const section = document.getElementById(sectionId);
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
                 >
                   {item.name}
-                </a>
+                </button>
               );
             } else {
               return (
@@ -99,17 +103,21 @@ export function Header() {
             <div className="-my-6 divide-y divide-border">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => {
-                  // Use Link for routes, anchor for hash links
-                  if (item.href.startsWith('#')) {
+                  // Use Link for routes, smooth scroll for hash links
+                  if (item.href.startsWith('/#')) {
+                    const sectionId = item.href.substring(2); // Remove "/#" to get section id
                     return (
-                      <a
+                      <button
                         key={item.name}
-                        href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
-                        onClick={() => setMobileMenuOpen(false)}
+                        onClick={() => {
+                          const section = document.getElementById(sectionId);
+                          if (section) section.scrollIntoView({ behavior: 'smooth' });
+                          setMobileMenuOpen(false);
+                        }}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted text-left w-full"
                       >
                         {item.name}
-                      </a>
+                      </button>
                     );
                   } else {
                     return (
