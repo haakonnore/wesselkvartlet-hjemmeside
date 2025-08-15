@@ -30,24 +30,16 @@ const HistorienOmWesselkvartalet = () => {
               
               <p className="text-muted-foreground leading-relaxed mb-8">Wesselgården har vært i Wessel-familiens ( Nå kun arvingene Nore)  siden Thor Wessel overtok den. I 2011 kom Tandberg Eiendom inn på eiersiden, og i dag er eierskapet til Wesselkvartalet AS fordelt med 51% til barnebarn og oldebarn av Thor Wessel (nå Nore, representert ved som styreleder og prosjektleder Henrik Nore) og 49% til Tandberg Eiendom. De to familieeide selskapene eierskapet har gitt prosjektet en viktig lokal forankring og fokus på kvalitet i arkitektur og stedsutvikling.</p>
 
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Fra Wesselgården og Bankveien 10 til et Fremtidsrettet Kvartal
-              </h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">Fra Wesselgården og Bankveien 4 til et Fremtidsrettet Kvartal</h3>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Før det ble kjent som Wesselkvartalet, var dette området preget av eldre bebyggelse, inkludert Wesselgården (også kjent som Apotekergården) og Bankveien 10 – også kjent som Sentrumsgården. Dette var et historisk viktig punkt i Asker, og utviklingen av Wesselkvartalet representerer en ambisiøs transformasjon.
-              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">Før det ble kjent som Wesselkvartalet, var dette området preget av eldre bebyggelse, inkludert Wesselgården (også kjent som Apotekergården) og Bankveien 4. Dette var et historisk viktig punkt i Asker, og utviklingen av Wesselkvartalet representerer en ambisiøs transformasjon.</p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
                 En interessant del av historien er at Wesselgården, eller Apotekergården, ble flyttet i 1929. Dette skjedde i forbindelse med at apoteker Thor Wessel overtok gården, og hele bygningen ble flyttet til en ny plassering like ved sin opprinnelige lokasjon. Dette viser at området har en lang historie med endringer og tilpasninger.
               </p>
 
               <div className="relative mx-auto max-w-2xl mb-8">
-                <img 
-                  src="/lovable-uploads/e59f2949-46d7-4d3e-add4-da8e808d7027.png" 
-                  alt="Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997" 
-                  className="w-full h-auto rounded-lg shadow-lg" 
-                />
+                <img src="/lovable-uploads/e59f2949-46d7-4d3e-add4-da8e808d7027.png" alt="Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <p className="text-sm text-muted-foreground text-center mt-2 italic">
                   Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997
