@@ -574,12 +574,13 @@ export default function WesselEnergi() {
             </Card>
             
           </div>
+          </section>
           <div className="text-center">
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
               </p>
             </div>
-        </section>
+        
       </main>
       <Footer />
     </div>
