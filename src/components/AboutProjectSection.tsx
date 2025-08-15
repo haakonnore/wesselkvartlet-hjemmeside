@@ -68,11 +68,7 @@ export function AboutProjectSection() {
         {/* Main About Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Om Wesselkvartalet</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Et unikt arkitektonisk mesterverk som kombinerer moderne design med bærekraftige prinsipper. Wesselkvartalet representerer fremtidens byutvikling i hjertet av Asker.
-
-Wesselgården og Bankveien 4 har etter stort byggeprosjekt blitt til Wesselkvartalet.
-
- Det utviklet av familieselskapet  Wessel/Nore familien som i 2011 fikk med Tandberg Eiendom som medeier.</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Et unikt arkitektonisk mesterverk som kombinerer moderne design med bærekraftige prinsipper. Wesselkvartalet representerer fremtidens byutvikling i hjertet av Asker. Wesselgården og Bankveien 4 har etter stort byggeprosjekt blitt til Wesselkvartalet.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
