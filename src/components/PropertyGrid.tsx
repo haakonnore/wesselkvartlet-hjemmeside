@@ -24,7 +24,6 @@ export function PropertyGrid() {
       description: "240 m² næringslokale som kan deles opp. Lokalene skal renoveres med nye vinduer.",
       price: "Avhengig av avtale",
       size: "240 m²",
-      image: "/lovable-uploads/75901622-78bc-437e-805c-b1f83fd76283.png",
       features: ["Kan deles opp", "Nye vinduer", "Sentral beliggenhet"],
       buttonText: "Kontakt oss",
       buttonAction: () => {
