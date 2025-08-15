@@ -52,23 +52,6 @@ export function Header() {
             <Menu className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex gap-x-8">
-          {sectionLinks.map((item) => {
-            const sectionId = item.href.substring(2); // Remove "/#" to get section id
-            return (
-              <button
-                key={item.name}
-                onClick={() => {
-                  const section = document.getElementById(sectionId);
-                  if (section) section.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-              >
-                {item.name}
-              </button>
-            );
-          })}
-        </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button 
             variant="default" 
