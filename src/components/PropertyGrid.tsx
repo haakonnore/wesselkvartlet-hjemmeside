@@ -24,7 +24,11 @@ export function PropertyGrid() {
       price: "Avhengig av avtale",
       size: "240 m²",
       features: ["Kan deles opp", "Nye vinduer", "Sentral beliggenhet"],
-      buttonText: "Kontakt oss"
+      buttonText: "Kontakt oss",
+      buttonAction: () => {
+        const kontaktSection = document.getElementById('kontakt');
+        if (kontaktSection) kontaktSection.scrollIntoView({ behavior: 'smooth' });
+      }
     },
     {
       icon: "💻",
@@ -54,7 +58,11 @@ export function PropertyGrid() {
       description: "Tilgang til garderobe med skap og dusj. Perfekt for pendlere og aktive mennesker.",
       price: "Ta kontakt",
       features: ["Skap inkludert", "Dusj tilgjengelig", "Sikker adgang"],
-      buttonText: "Kontakt oss"
+      buttonText: "Kontakt oss",
+      buttonAction: () => {
+        const kontaktSection = document.getElementById('kontakt');
+        if (kontaktSection) kontaktSection.scrollIntoView({ behavior: 'smooth' });
+      }
     },
     {
       icon: "🌿",
