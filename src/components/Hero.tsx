@@ -15,7 +15,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+      <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Wesselkvartalet
         </h1>
