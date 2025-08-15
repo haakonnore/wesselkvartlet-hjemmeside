@@ -62,6 +62,14 @@ const HistorienOmWesselkvartalet = () => {
                 Et særlig interessant kapittel i Asker sentrums historie er flyttingen av Apotekergården. Vis-à-vis Asker stasjon finner vi Apotekgården (1923) som ble flyttet hit i 1997 og sammen med Fusdalgården (1928) danner et lite trehusmiljø. Denne flyttingen viser hvordan verdifull historisk arkitektur kan bevares og integreres i moderne byutvikling, noe som har vært et viktig prinsipp også for utviklingen av Wesselkvartalet.
               </p>
 
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                <strong className="text-foreground">Apotekgården (Wesselgården):</strong> Bygd i 1924, av apoteker Ragnar Boyesen. I 1929 overtok apoteker Thor Wessel, og siden har eiendommen vært i Wessel-familiens eie. På bildet ligger gården på sin opprinnelige plass, omgitt av et moderne tilbygg, men ble flyttet til et nytt liv i Torvveien i 1997. I dag holder Peppes Pizza til i huset.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                <strong className="text-foreground">Wesselgården:</strong> På bildet omringer førsteutgaven av Wesselgården den gamle apoteket. Da Apotekgården ble flyttet, oppsto «Nye Wesselgården», med et stort utvalg forretninger på den samme tomten, og slik ligger den der fremdeles, med Petra, Asker Sko og Asker Gull og Sølv blant leietagerne.
+              </p>
+
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
                 Asker Sentrum - Fra Jordbruk til Moderne By
               </h3>
