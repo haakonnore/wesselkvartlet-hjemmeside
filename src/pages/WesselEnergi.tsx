@@ -483,6 +483,64 @@ export default function WesselEnergi() {
                   </ul>
                 </CardContent>
               </Card>
+
+              {/* Customer Cases */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-blue-700">🌱 Kundecaser</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Erstattet 7 MW oljekjele i Asker kommune</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Wesselkvartalet er A klassifisert</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Naturlig kjøling med grunnvann til alle påkoblede kunder</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Elvelykvartalet sparte utbygging av egen sentral og ny trafo</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Miljøvennlig varme og kjøling til alle påkoblede kunder</strong></span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Future Plans */}
+              <Card className="shadow-sm">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4 text-indigo-700">🔋 Fremtidsplaner</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Utvidelse til Føyka-Elvely området</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Utvidelse til Asker-stasjon og perronger</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Potensial for hele Asker-regionen</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Paradigmeskifte i urban energiforsyning</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Referanseprosjekt for nye anlegg i andre byer</strong></span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
