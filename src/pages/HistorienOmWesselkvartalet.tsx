@@ -1,9 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-
 const HistorienOmWesselkvartalet = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
         {/* Hero Section with Historical Image */}
@@ -14,11 +12,7 @@ const HistorienOmWesselkvartalet = () => {
                 Historien om hvordan Wesselkvartalet ble til
               </h1>
               <div className="relative mx-auto max-w-2xl mb-8">
-                <img 
-                  src="/lovable-uploads/ab39b28a-08fc-4222-bc6f-b2bc78b18399.png"
-                  alt="Historisk bilde av Wesselgården (Apotekergården) i vinter"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
+                <img src="/lovable-uploads/ab39b28a-08fc-4222-bc6f-b2bc78b18399.png" alt="Historisk bilde av Wesselgården (Apotekergården) i vinter" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/20 rounded-lg"></div>
               </div>
             </div>
@@ -34,9 +28,7 @@ const HistorienOmWesselkvartalet = () => {
                 Velkommen til Wesselkvartalet – Et Levende Hjerte i Asker Sentrum
               </h2>
               
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Wesselgården har vært i Wessel-familiens eie siden Thor Wessel overtok den. I 2011 kom Tandberg Eiendom inn på eiersiden, og i dag er eierskapet til Wesselkvartalet AS fordelt med 51% til barnebarn og oldebarn av Thor Wessel (nå Nore, representert ved som styreleder og prosjektleder Henrik Nore) og 49% til Tandberg Eiendom. De to familieeide selskapene eierskapet har gitt prosjektet en viktig lokal forankring og fokus på kvalitet i arkitektur og stedsutvikling.
-              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">Wesselgården har vært i Wessel-familiens ( Nå kun arvingene Nore)  siden Thor Wessel overtok den. I 2011 kom Tandberg Eiendom inn på eiersiden, og i dag er eierskapet til Wesselkvartalet AS fordelt med 51% til barnebarn og oldebarn av Thor Wessel (nå Nore, representert ved som styreleder og prosjektleder Henrik Nore) og 49% til Tandberg Eiendom. De to familieeide selskapene eierskapet har gitt prosjektet en viktig lokal forankring og fokus på kvalitet i arkitektur og stedsutvikling.</p>
 
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
                 Fra Wesselgården og Bankveien 10 til et Fremtidsrettet Kvartal
@@ -102,8 +94,6 @@ const HistorienOmWesselkvartalet = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default HistorienOmWesselkvartalet;
