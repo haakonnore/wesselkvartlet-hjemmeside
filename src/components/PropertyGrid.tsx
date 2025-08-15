@@ -14,7 +14,8 @@ export function PropertyGrid() {
       size: "2.5 m² - 240 m²",
       image: "/lovable-uploads/3dd8daf6-3570-4b9e-98e0-3b9babf5262a.png",
       features: ["Videoovervåkning", "Sikker adgang", "Fleksible størrelser"],
-      buttonText: "Les mer"
+      buttonText: "Les mer",
+      buttonAction: () => window.open("https://www.finn.no/realestate/businessrent/ad.html?finnkode=396460332", "_blank")
     },
     {
       icon: "🏢",
