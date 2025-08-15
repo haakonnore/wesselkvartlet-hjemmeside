@@ -9,9 +9,6 @@ export const ArchitectsSection = () => {
             <h2 className="text-4xl font-bold mb-4 text-foreground">
               Arkitektene Bak Wesselkvartalet
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Et samarbeid mellom to ledende norske arkitektfirmaer som har skapt en arkitektonisk perle i Asker sentrum
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
