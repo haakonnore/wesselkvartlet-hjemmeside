@@ -311,16 +311,13 @@ export default function WesselEnergi() {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <Card className="p-8 mb-12">
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                Eksempel på timefordelte energiforbruk og produksjon om vinteren
-              </p>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <Card className="bg-green-50 border-green-200 p-6">
                   <h3 className="text-lg font-semibold mb-3 text-green-800">Lavpris-periode (00-06 & 06-12)</h3>
                   <p className="text-green-700">
                     Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
                   </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">-22 650 kr</div>
+                  <div className="mt-4 text-2xl font-bold text-red-600">-22 650 kr</div>
                 </Card>
                 
                 <Card className="bg-green-50 border-green-200 p-6">
@@ -334,11 +331,54 @@ export default function WesselEnergi() {
 
               {/* Chart representation */}
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
-                <img 
-                  src="/lovable-uploads/4d4c7c86-4d23-4fca-90b7-8f9d1ef34fba.png" 
-                  alt="Økonomisk gevinst ved bruk av våre varmepumper - timefordelte energiforbruk og produksjon om vinteren"
-                  className="w-full h-auto rounded-lg"
-                />
+                       <div className="grid grid-cols-4 gap-4 mb-8">
+                  {[
+                    { time: "00-06", produced: 380, delivered: 250, profit: -5660 },
+                    { time: "06-12", produced: 350, delivered: 250, profit: -16990 },
+                    { time: "12-18", produced: 80, delivered: 320, profit: 33060 },
+                    { time: "18-00", produced: 260, delivered: 340, profit: 6250 }
+                  ].map((period, index) => (
+                    <div key={period.time} className="text-center">
+                      <div className="mb-4">
+                        <h4 className="font-semibold mb-2">{period.time}</h4>
+                        <div className="flex justify-center space-x-2 mb-2">
+                          <div 
+                            className="w-8 bg-orange-400 rounded"
+                            style={{ height: `${period.produced / 4}px` }}
+                            title="Varme produsert"
+                          ></div>
+                          <div 
+                            className="w-8 bg-yellow-400 rounded"
+                            style={{ height: `${period.delivered / 4}px` }}
+                            title="Varme levert"
+                          ></div>
+                        </div>
+                        <div className={`text-sm font-bold ${period.profit > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                          {period.profit > 0 ? '+' : ''}{period.profit}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="flex justify-center space-x-8 text-sm">
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
+                    <span>Netto gevinst ved høy leveranse</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
+                    <span>Netto tap ved høy produksjon</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-orange-400 rounded mr-2"></div>
+                    <span>Varme produsert</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-yellow-400 rounded mr-2"></div>
+                    <span>Varme levert</span>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-8 text-center">
