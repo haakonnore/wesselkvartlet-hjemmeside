@@ -205,59 +205,7 @@ export default function WesselEnergi() {
         </section>
 
 
-
-        {/* Economic Benefits Chart */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">Økonomisk gevinst: ca 50% ved bruk av vårt varmesystem</h2>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                Eksempel på timefordelte energiforbruk og produksjon om vinteren
-              </p>
-
-            </div>
-
-            <Card className="p-8 mb-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                <Card className="bg-green-50 border-green-200 p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-green-800">Lavpris-periode (00-06 & 06-12)</h3>
-                  <p className="text-green-700">
-                    Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
-                  </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">-22 650 kr</div>
-                </Card>
-                
-                <Card className="bg-green-50 border-green-200 p-6">
-                  <h3 className="text-lg font-semibold mb-3 text-green-800">Høypris-periode (12-18)</h3>
-                  <p className="text-green-700">
-                    Rundt middagstider, når strømprisen er høyest og etterspørselen etter varme er stor, selger vi <strong>mest varme</strong> men vår produksjon er minimal.
-                  </p>
-                  <div className="mt-4 text-2xl font-bold text-green-600">+39 310 kr</div>
-                </Card>
-              </div>
-
-              {/* Chart representation */}
-              <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
-                <img 
-                  src="/lovable-uploads/4d4c7c86-4d23-4fca-90b7-8f9d1ef34fba.png" 
-                  alt="Økonomisk gevinst ved bruk av våre varmepumper - timefordelte energiforbruk og produksjon om vinteren"
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-
-              <div className="mt-8 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">
-                  Netto døgngevinst: +14 660 kr
-                </div>
-                <p className="text-lg text-muted-foreground">
-                  Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en 50 % besparelse sammenlignet med tradisjonelle oppvarmingsløsninger.
-                </p>
-              </div>
-            </Card>
-          </div>
-        </section>
-
-        {/* Arbitrage Strategies */}
+{/* Arbitrage Strategies */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
@@ -358,6 +306,54 @@ export default function WesselEnergi() {
             </Card>
           </div>
         </section>
+        
+        {/* Economic Benefits Chart */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <Card className="p-8 mb-12">
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+                Eksempel på timefordelte energiforbruk og produksjon om vinteren
+              </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <Card className="bg-green-50 border-green-200 p-6">
+                  <h3 className="text-lg font-semibold mb-3 text-green-800">Lavpris-periode (00-06 & 06-12)</h3>
+                  <p className="text-green-700">
+                    Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
+                  </p>
+                  <div className="mt-4 text-2xl font-bold text-green-600">-22 650 kr</div>
+                </Card>
+                
+                <Card className="bg-green-50 border-green-200 p-6">
+                  <h3 className="text-lg font-semibold mb-3 text-green-800">Høypris-periode (12-18)</h3>
+                  <p className="text-green-700">
+                    Rundt middagstider, når strømprisen er høyest og etterspørselen etter varme er stor, selger vi <strong>mest varme</strong> men vår produksjon er minimal.
+                  </p>
+                  <div className="mt-4 text-2xl font-bold text-green-600">+39 310 kr</div>
+                </Card>
+              </div>
+
+              {/* Chart representation */}
+              <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-lg">
+                <img 
+                  src="/lovable-uploads/4d4c7c86-4d23-4fca-90b7-8f9d1ef34fba.png" 
+                  alt="Økonomisk gevinst ved bruk av våre varmepumper - timefordelte energiforbruk og produksjon om vinteren"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+
+              <div className="mt-8 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">
+                  Netto døgngevinst: +14 660 kr
+                </div>
+                <p className="text-lg text-muted-foreground">
+                  Grafen viser inntjeningen ved bruk av vårt varmesystem. For hver krone som genereres fra salg av energi, oppnår man i snitt en 50 % besparelse sammenlignet med tradisjonelle oppvarmingsløsninger.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </section>
+
+        
 
         {/* Comprehensive Benefits */}
         <section className="py-20 bg-muted/30">
