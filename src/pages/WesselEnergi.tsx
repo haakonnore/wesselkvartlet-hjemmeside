@@ -305,7 +305,6 @@ export default function WesselEnergi() {
               </CardContent>
             </Card>
           </div>
-        </section>
         {/* Economic Benefits Chart */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6">
@@ -394,7 +393,7 @@ export default function WesselEnergi() {
             </Card>
           </div>
         </section>
-
+      </section>
         
 
         {/* Comprehensive Benefits */}
@@ -551,11 +550,7 @@ export default function WesselEnergi() {
                 </CardContent>
               </Card>
             </div>
-            <div className="text-center">
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
-              </p>
-            </div>
+            
           </div>
         </section>
                 {/* Innovation Section */}
@@ -577,6 +572,11 @@ export default function WesselEnergi() {
                 </div>
               </CardContent>
             </Card>
+            <div className="text-center">
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
+              </p>
+            </div>
           </div>
         </section>
       </main>
