@@ -4,10 +4,13 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Ledige lokaler", href: "/#lokaler" },
+const subpages = [
   { name: "Wessel Energi", href: "/wessel-energi" },
   { name: "Historien", href: "/historien-om-wesselkvartalet" },
+];
+
+const sectionLinks = [
+  { name: "Ledige lokaler", href: "/#lokaler" },
   { name: "Utmerkelser", href: "/#doga" },
   { name: "Om kvartalet", href: "/#om" },
   { name: "Kontakt", href: "/#kontakt" },
@@ -37,33 +40,35 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => {
-            // Use Link for routes, smooth scroll for hash links
-            if (item.href.startsWith('/#')) {
-              const sectionId = item.href.substring(2); // Remove "/#" to get section id
-              return (
-                <button
-                  key={item.name}
-                  onClick={() => {
-                    const section = document.getElementById(sectionId);
-                    if (section) section.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-                >
-                  {item.name}
-                </button>
-              );
-            } else {
-              return (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-                >
-                  {item.name}
-                </Link>
-              );
-            }
+          {/* Subpages */}
+          {subpages.map((item) => (
+            <Link
+              key={item.name}
+              to={item.href}
+              className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
+          
+          {/* Separator */}
+          <div className="w-px h-6 bg-border self-center" />
+          
+          {/* Section links */}
+          {sectionLinks.map((item) => {
+            const sectionId = item.href.substring(2); // Remove "/#" to get section id
+            return (
+              <button
+                key={item.name}
+                onClick={() => {
+                  const section = document.getElementById(sectionId);
+                  if (section) section.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
+              >
+                {item.name}
+              </button>
+            );
           })}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -102,35 +107,37 @@ export function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-border">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => {
-                  // Use Link for routes, smooth scroll for hash links
-                  if (item.href.startsWith('/#')) {
-                    const sectionId = item.href.substring(2); // Remove "/#" to get section id
-                    return (
-                      <button
-                        key={item.name}
-                        onClick={() => {
-                          const section = document.getElementById(sectionId);
-                          if (section) section.scrollIntoView({ behavior: 'smooth' });
-                          setMobileMenuOpen(false);
-                        }}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted text-left w-full"
-                      >
-                        {item.name}
-                      </button>
-                    );
-                  } else {
-                    return (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    );
-                  }
+                {/* Subpages */}
+                {subpages.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                
+                {/* Separator */}
+                <div className="h-px bg-border my-4" />
+                
+                {/* Section links */}
+                {sectionLinks.map((item) => {
+                  const sectionId = item.href.substring(2); // Remove "/#" to get section id
+                  return (
+                    <button
+                      key={item.name}
+                      onClick={() => {
+                        const section = document.getElementById(sectionId);
+                        if (section) section.scrollIntoView({ behavior: 'smooth' });
+                        setMobileMenuOpen(false);
+                      }}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-foreground hover:bg-muted text-left w-full"
+                    >
+                      {item.name}
+                    </button>
+                  );
                 })}
               </div>
               <div className="py-6">
