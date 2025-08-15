@@ -204,27 +204,7 @@ export default function WesselEnergi() {
           </div>
         </section>
 
-        {/* Innovation Section */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6">
-            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20">
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-semibold text-center mb-8">
-                  Teknisk innovasjon med Enova-støtte
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {innovations.map((innovation, index) => (
-                    <div key={index} className="text-center">
-                      <div className="text-4xl mb-4">{innovation.icon}</div>
-                      <h4 className="text-lg font-semibold mb-3 text-primary">{innovation.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed">{innovation.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+
 
         {/* Economic Benefits Chart */}
         <section className="py-20">
@@ -538,6 +518,27 @@ export default function WesselEnergi() {
                 Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
               </p>
             </div>
+          </div>
+        </section>
+                {/* Innovation Section */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20">
+              <CardContent className="p-8">
+                <h3 className="text-3xl font-semibold text-center mb-8">
+                  Teknisk innovasjon med Enova-støtte
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {innovations.map((innovation, index) => (
+                    <div key={index} className="text-center">
+                      <div className="text-4xl mb-4">{innovation.icon}</div>
+                      <h4 className="text-lg font-semibold mb-3 text-primary">{innovation.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed">{innovation.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>
