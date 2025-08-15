@@ -63,8 +63,8 @@ export function Header() {
           })}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button variant="default" className="primary-gradient border-0 text-foreground hover:text-primary-foreground">
-            Kontakt oss
+          <Button variant="default" className="primary-gradient border-0 text-foreground hover:text-primary-foreground" asChild>
+            <Link to="/#kontakt">Kontakt oss</Link>
           </Button>
         </div>
       </nav>
@@ -119,8 +119,8 @@ export function Header() {
                 })}
               </div>
               <div className="py-6">
-                <Button variant="default" className="w-full primary-gradient border-0 text-foreground hover:text-primary-foreground">
-                  Kontakt oss
+                <Button variant="default" className="w-full primary-gradient border-0 text-foreground hover:text-primary-foreground" asChild>
+                  <Link to="/#kontakt">Kontakt oss</Link>
                 </Button>
               </div>
             </div>
