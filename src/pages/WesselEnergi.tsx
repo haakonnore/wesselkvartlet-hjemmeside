@@ -402,7 +402,7 @@ export default function WesselEnergi() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-6">Systemets fordeler</h2>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-                En komplett oversikt over fordelene ved vårt innovative energisystem
+                Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
               </p>
             </div>
 
@@ -572,15 +572,8 @@ export default function WesselEnergi() {
                 </div>
               </CardContent>
             </Card>
-            
           </div>
           </section>
-          <div className="text-center">
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
-              </p>
-            </div>
-        
       </main>
       <Footer />
     </div>
