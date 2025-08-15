@@ -4,6 +4,7 @@ import { PropertyGrid } from "@/components/PropertyGrid";
 import { AboutProjectSection } from "@/components/AboutProjectSection";
 import { EnergySection } from "@/components/EnergySection";
 import { AwardsSection } from "@/components/AwardsSection";
+import { ArchitectsSection } from "@/components/ArchitectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
@@ -17,6 +18,7 @@ const Index = () => {
         <AboutProjectSection />
         <EnergySection />
         <AwardsSection />
+        <ArchitectsSection />
         <ContactSection />
       </main>
       <Footer />
