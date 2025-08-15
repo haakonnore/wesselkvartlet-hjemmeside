@@ -88,16 +88,6 @@ export const ArchitectsSection = () => {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <div className="bg-background rounded-lg p-6 shadow-lg max-w-4xl mx-auto">
-              <h4 className="text-xl font-semibold text-foreground mb-3">
-                Prestisjetunge priser og anerkjennelse
-              </h4>
-              <p className="text-muted-foreground">
-                Samarbeidet mellom de to arkitektfirmaene har resultert i <strong className="text-foreground">Murverksprisen 2021</strong> og <strong className="text-foreground">DOGA-merket for design og arkitektur 2022</strong>, som anerkjenner den eksepsjonelle kvaliteten i både bygningsarkitektur og landskapsdesign.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
