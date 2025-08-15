@@ -42,6 +42,38 @@ const HistorienOmWesselkvartalet = () => {
                 En interessant del av historien er at Wesselgården, eller Apotekergården, ble flyttet i 1929. Dette skjedde i forbindelse med at apoteker Thor Wessel overtok gården, og hele bygningen ble flyttet til en ny plassering like ved sin opprinnelige lokasjon. Dette viser at området har en lang historie med endringer og tilpasninger.
               </p>
 
+              <div className="relative mx-auto max-w-2xl mb-8">
+                <img 
+                  src="/lovable-uploads/e59f2949-46d7-4d3e-add4-da8e808d7027.png" 
+                  alt="Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997" 
+                  className="w-full h-auto rounded-lg shadow-lg" 
+                />
+                <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+                <p className="text-sm text-muted-foreground text-center mt-2 italic">
+                  Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997
+                </p>
+              </div>
+
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Apotekergårdens Flytting i 1997
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Et særlig interessant kapittel i Asker sentrums historie er flyttingen av Apotekergården. Vis-à-vis Asker stasjon finner vi Apotekgården (1923) som ble flyttet hit i 1997 og sammen med Fusdalgården (1928) danner et lite trehusmiljø. Denne flyttingen viser hvordan verdifull historisk arkitektur kan bevares og integreres i moderne byutvikling, noe som har vært et viktig prinsipp også for utviklingen av Wesselkvartalet.
+              </p>
+
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Asker Sentrum - Fra Jordbruk til Moderne By
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Asker sentrum er tettbebyggelsen rundt Asker stasjon. Det opprinnelige sentrum lå ved Asker-gårdene, nå krysset Hønsveien–Askerveien. Dagens sentrum ble etablert etter at jernbanen kom i 1872. Det mest iøyenfallende i utviklingen av sentrum har vært endringen fra et lite sted – preget av jordbruk – frem til dagens pulserende byliv.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Fra 1950-årene har utviklingen i sentrum gått fort. Dette førte til protester under Asker-aksjonen i 1978, en protest mot utbyggingen av Trekanten, det dominerende handlesenteret som ble starten på utbyggingen av det moderne sentrum fra et fredelig, stille stasjonssted til et travelt kommunesentrum med utekafeer og arenaer som torget ved stasjonen og Bakerløkka med steinpyramiden, bygd av alle bergartene i Asker.
+              </p>
+
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Med dype røtter i Asker, har både Nore-familien og Tandberg-familien vokst opp på Høn, og Henrik, Espen og Gubrand er fortsatt bosatt i Asker.
               </p>
