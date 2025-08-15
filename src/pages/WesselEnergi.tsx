@@ -313,7 +313,7 @@ export default function WesselEnergi() {
                   Eksempel på gevinst ved bruk av vårt system - timefordelt energiforbruk og produksjon på vinteren 
                 </h3>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                <Card className="bg-green-50 border-red-200 p-6">
+                <Card className="bg-red-50 border-red-200 p-6">
                   <h3 className="text-lg font-semibold mb-3 text-red-800">Lavpris-periode (00-06 & 06-12)</h3>
                   <p className="text-red-700">
                     Når strømprisen er lavest, øker vi effekten for å <strong>maksimere produksjonen</strong> av varme til minimal kostnad
