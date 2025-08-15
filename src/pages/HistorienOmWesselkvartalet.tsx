@@ -28,7 +28,7 @@ const HistorienOmWesselkvartalet = () => {
                 Velkommen til Wesselkvartalet – Et Levende Hjerte i Asker Sentrum
               </h2>
               
-              <p className="text-muted-foreground leading-relaxed mb-8">Wesselgården har en lang historie i Wessel-familien. Den opprinnelige eieren, Thor Wessel, ga den videre i familien, og i dag er arvingene representert ved familien Nore. Henrik Nore er styreleder og daglig leder for eiendommen. Han er en av Thor Wessels tre barneban som fremdeles er med på eiersiden. I 2011 kom Tandberg Eiendom  inn som medeier. Nå er Wesselkvartalet AS eid av to familier. Nore-familien (etterkommere av Thor Wessel) eier 51 %, mens Tandberg Eiendom eier 49 %.  Dette familieeide eierskapet har bidratt til en sterk lokal forankring, med fokus på god arkitektur og byutvikling.</p>
+              <p className="text-muted-foreground leading-relaxed mb-8">Wesselgården har en lang historie i Wessel-familien. Den opprinnelige eieren, Thor Wessel, ga den videre i familien, og i dag er arvingene representert ved familien Nore. Henrik Nore er styreleder og daglig leder for eiendommen. Han er en av Thor Wessels tre barneban som fremdeles er med på eiersiden. I 2011 kom Tandberg Eiendom  inn som medeier. Nå er Wesselkvartalet AS eid av to familier. Nore-familien (etterkommere av Thor Wessel) eier 53 %, mens Tandberg Eiendom eier 47 %.  Dette familieeide eierskapet har bidratt til en sterk lokal forankring, med fokus på god arkitektur og byutvikling.</p>
 
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Fra Wesselgården og Bankveien 4 til et Fremtidsrettet Kvartal</h3>
               
