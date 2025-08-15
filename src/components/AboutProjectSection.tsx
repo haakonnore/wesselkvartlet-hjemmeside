@@ -68,7 +68,8 @@ export function AboutProjectSection() {
         {/* Main About Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Om Wesselkvartalet</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Et unikt arkitektonisk mesterverk som kombinerer moderne design med bærekraftige prinsipper. Wesselkvartalet representerer fremtidens byutvikling i hjertet av Asker. Wesselgården og Bankveien 4 har etter stort byggeprosjekt blitt til Wesselkvartalet.</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">Et unikt arkitektonisk mesterverk som kombinerer moderne design med bærekraftige prinsipper. Wesselkvartalet representerer fremtidens byutvikling i hjertet av Asker. Wesselgården og Bankveien 4 har etter stort byggeprosjekt blitt til Wesselkvartalet.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Med sin karakteristiske buede arkitektur og bærekraftige energiløsninger skaper kvartalet et levende miljø hvor moderne boliger, kontorer og handelslokaler smelter sammen i harmoni med Askers sentrumsutvikling.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
