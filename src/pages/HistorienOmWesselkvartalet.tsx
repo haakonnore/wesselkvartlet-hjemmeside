@@ -53,6 +53,54 @@ const HistorienOmWesselkvartalet = () => {
               </p>
 
               <div className="relative mx-auto max-w-2xl mb-8">
+                <img src="/lovable-uploads/db80c6e7-1807-4d06-a5c2-41a8f782353f.png" alt="Asker jernbanestasjon med Apotekergården i bakgrunnen ca. 1947" className="w-full h-auto rounded-lg shadow-lg" />
+                <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+                <p className="text-sm text-muted-foreground text-center mt-2 italic">
+                  Asker jernbanestasjon med Apotekergården i bakgrunnen ca. 1947
+                </p>
+              </div>
+
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Historien om Apotekergården
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                I årene før første verdenskrig ble det fra legehold tatt opp spørsmål om opprettelse av et apotek i Asker. På den tiden var det allerede apotek i nabokommunene Bærum og Lier, og en mente at Asker ikke burde være dårligere stilt.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Det var imidlertid ikke så helt enkelt å få konsesjon for apotekvirksomhet, noe som krevde behandling i departementet ved medisinaldirektøren og senere godkjennelse i herredsstyret i kommunen. Saken tok derfor en del tid før apoteker Ragnar Boyesen den 6. november 1914 ble meddelt at bevilling var gitt til å drive apotek i Asker kommune.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Boyesen bygget da opp den første apotekergården på en mindre fjellknaus i nærheten av Asker stasjon i 1915, og apoteket ble åpnet for drift den 29. desember samme år. Denne gården, som var ikke så ulik det gamle Asker Hotell, brant helt ned til grunnen den 6. februar 1923, men ble bygget opp igjen og sto ferdig året etter. Boyesen bygget stort sett på grunnmuren som sto igjen etter brannen, men foretok endringer i byggestilen slik den fremstår uforandret i dag.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Den nye gården ble solgt i 1924, samme året den var ferdig, til apoteker D Grønn-Nielsen som kun hadde stedet i to år. Han solgte da til O.H. Hvoslef som i 1929 solgte eiendommen videre til apoteker Thor Wessel, hvis familie ennå er eiere av stedet.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Wessel drev apoteket til han døde i 1943 og virksomheten ble senere leid ut av fru Wessel til flere forskjellige. Den siste som drev i den gamle gården var apoteker Eivind Christiansen som holdt til der inntil virksomheten i 1959 ble flyttet over til Asker Sparebanks gård i Semsveien, nå Strøket 6.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Etter at apotekervirksomheten var slutt, bygget familien Wessel en forretningsgård i en etasje på arealet foran den gamle gården. Denne ble bygget i tilknytning til Rypegården i 1960 og ligger til den nåværende Bankveien.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Etter at sentrumsplanene tok form, ble det klart at høydedraget som apotekergården var bygget på, skulle vekk. Man ønsket imidlertid å beholde den gamle, flotte bygningen i Asker sentrum, og kommunen sikret seg tomt på sydsiden mot stasjonsområdet, tilhørende den gamle sentrumsgården. I august 1997 ble den gamle apotekergården firt ned ved hjelp av store kraner til samme nivå som den omkringliggende bebyggelsen og plassert på nyoppsatt grunnmur. En teknisk komplisert oppgave som ble bivånet av en stor tilskuerskare av unge som gamle Askerfolk.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Gården i Bankveien vil bli bygget på i høyden. Hva som skjer med arealet der fjellknausen nå er sprengt vekk, er ennå ikke besluttet.
+              </p>
+
+              <p className="text-sm text-muted-foreground italic mb-8">
+                <em>Alf "Bassen" Andersen, trykket i Asker og Bærums Budstikke 7. oktober 1998</em>
+              </p>
+
+              <div className="relative mx-auto max-w-2xl mb-8">
                 <img src="/lovable-uploads/e59f2949-46d7-4d3e-add4-da8e808d7027.png" alt="Apotekergården i ferd med å bli flyttet til sin nye plass, 19. august 1997" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <p className="text-sm text-muted-foreground text-center mt-2 italic">
