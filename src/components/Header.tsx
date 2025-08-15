@@ -24,12 +24,23 @@ export function Header() {
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 items-center gap-x-8">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
               Wesselkvartalet
             </span>
           </Link>
+          <div className="hidden lg:flex gap-x-6">
+            {subpages.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-sm font-medium leading-6 text-muted-foreground hover:text-primary transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -41,38 +52,22 @@ export function Header() {
             <Menu className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-col lg:gap-y-2">
-          {/* Section links - first line */}
-          <div className="flex gap-x-8">
-            {sectionLinks.map((item) => {
-              const sectionId = item.href.substring(2); // Remove "/#" to get section id
-              return (
-                <button
-                  key={item.name}
-                  onClick={() => {
-                    const section = document.getElementById(sectionId);
-                    if (section) section.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
-                >
-                  {item.name}
-                </button>
-              );
-            })}
-          </div>
-          
-          {/* Subpages - second line */}
-          <div className="flex gap-x-8">
-            {subpages.map((item) => (
-              <Link
+        <div className="hidden lg:flex gap-x-8">
+          {sectionLinks.map((item) => {
+            const sectionId = item.href.substring(2); // Remove "/#" to get section id
+            return (
+              <button
                 key={item.name}
-                to={item.href}
-                className="text-sm font-medium leading-6 text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => {
+                  const section = document.getElementById(sectionId);
+                  if (section) section.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="text-sm font-medium leading-6 text-foreground hover:text-primary transition-colors"
               >
                 {item.name}
-              </Link>
-            ))}
-          </div>
+              </button>
+            );
+          })}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button 
