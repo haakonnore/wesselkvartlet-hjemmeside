@@ -7,6 +7,7 @@ import { AwardsSection } from "@/components/AwardsSection";
 import { ArchitectsSection } from "@/components/ArchitectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import ProjectGallery from "@/components/ProjectGallery";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <Hero />
         <PropertyGrid />
         <AboutProjectSection />
+        <ProjectGallery />
         <EnergySection />
         <AwardsSection />
         <ArchitectsSection />
