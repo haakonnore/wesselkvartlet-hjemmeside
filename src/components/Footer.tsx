@@ -6,9 +6,8 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Wesselkvartalet</h3>
-            <p className="text-primary-foreground/80 mb-4">
-              Askers nye hjerte - hvor moderne arkitektur møter bærekraftig innovasjon. 
-              Vi tilbyr moderne lokaler og fasiliteter i hjertet av Asker sentrum.
+            <p className="text-lg text-primary-foreground/80 mb-6 leading-relaxed">
+              Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
             </p>
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p>Asker sentrum, 1383 Asker</p>
