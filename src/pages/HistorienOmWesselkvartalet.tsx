@@ -25,17 +25,31 @@ const HistorienOmWesselkvartalet = () => {
             <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
               
               <h2 className="text-3xl font-bold mb-6 text-foreground">
-                Velkommen til Wesselkvartalet – Et Levende Hjerte i Asker Sentrum
+                Wesselkvartalet: Et Levende Hjerte i Asker Sentrum
               </h2>
               
-              <p className="text-muted-foreground leading-relaxed mb-8">Wesselgården har en lang historie i Wessel-familien. Den opprinnelige eieren, Thor Wessel, ga den videre i familien, og i dag er arvingene representert ved familien Nore. Henrik Nore er styreleder og daglig leder for eiendommen. Han er en av Thor Wessels tre barneban som fremdeles er med på eiersiden. I 2011 kom Tandberg Eiendom  inn som medeier. Nå er Wesselkvartalet AS eid av to familier. Nore-familien (etterkommere av Thor Wessel) eier 53 %, mens Tandberg Eiendom eier 47 %.  Dette familieeide eierskapet har bidratt til en sterk lokal forankring, med fokus på god arkitektur og byutvikling.</p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Wesselkvartalet er et godt eksempel på hvordan man kan transformere et historisk sentrumsområde til et levende og fremtidsrettet knutepunkt. Med en ambisiøs visjon som forener stedets identitet med nyskapende arkitektur og miljøhensyn, har kvartalet blitt et pulserende samlingspunkt for bolig, handel og fritid.
+              </p>
 
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Fra Wesselgården og Bankveien 4 til et Fremtidsrettet Kvartal</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Eierskap, lokal forankring og visjon
+              </h3>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">Før det ble kjent som Wesselkvartalet, var dette området preget av eldre bebyggelse, inkludert Wesselgården (også kjent som Apotekergården) og Bankveien 4. Dette var et historisk viktig punkt i Asker, og utviklingen av Wesselkvartalet representerer en ambisiøs transformasjon.</p>
-
               <p className="text-muted-foreground leading-relaxed mb-6">
-                En interessant del av historien er at Wesselgården, eller Apotekergården, ble flyttet i 1929. Dette skjedde i forbindelse med at apoteker Thor Wessel overtok gården, og hele bygningen ble flyttet til en ny plassering like ved sin opprinnelige lokasjon. Dette viser at området har en lang historie med endringer og tilpasninger.
+                Historien til Wesselkvartalet er tett knyttet til familien Wessel og deres eiendom, Wesselgården. Den opprinnelige eieren, Thor Wessel, overtok apoteket og den tilhørende hagen i 1927. Siden den gang har eiendommen gått i arv, og arvingene er i dag representert av Nore-familien. Henrik Nore, en av Thor Wessels barnebarn, er i dag styreleder og daglig leder for Wesselkvartalet AS.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                I 2014 kom Tandberg Eiendom inn som medeier, og selskapet eies i dag av Nore-familien (53 %) og Tandberg Eiendom (47 %). Dette sterke, familiedrevne eierskapet har bidratt til en solid lokal forankring, med et unikt fokus på kvalitet over kvantitet. Byggherre Henrik Nore understreker at kvartalet «ikke er profittmaksimert», og at valget av buede former fremfor en firkantet kloss bevisst prioriterte arkitektonisk kvalitet og bymiljø fremfor flest mulig kvadratmeter.
+              </p>
+
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Fra historisk bygård til moderne kvartal
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Før dagens kvartal sto ferdig, var området preget av eldre bebyggelse, inkludert Wesselgården og Bankveien 4. En viktig del av denne historien er flyttingen av Apotekergården (bygget i 1924) i 2002, 50 meter lenger mot Torvveien. Denne bevaringen av den historiske trebygningen, som da huset Peppes Pizza, viser hvordan viktig arkitektur kan integreres i moderne byutvikling. Apotekergården står i dag sammen med Fusdalgården og danner et sjarmerende trehusmiljø, som har vært et viktig prinsipp i utviklingen av Wesselkvartalet.
               </p>
 
               <div className="relative mx-auto max-w-2xl mb-8">
@@ -47,76 +61,59 @@ const HistorienOmWesselkvartalet = () => {
               </div>
 
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Apotekergårdens Flytting i 1997
+                Byggeprosessen: Utfordringer og løsninger
               </h3>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Et særlig interessant kapittel i Asker sentrums historie er flyttingen av Apotekergården. Vis-à-vis Asker stasjon finner vi Apotekgården (1923) som ble flyttet hit i 1997 og sammen med Fusdalgården (1928) danner et lite trehusmiljø. Denne flyttingen viser hvordan verdifull historisk arkitektur kan bevares og integreres i moderne byutvikling, noe som har vært et viktig prinsipp også for utviklingen av Wesselkvartalet.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                <strong className="text-foreground">Apotekgården (Wesselgården):</strong> Bygd i 1924, av apoteker Ragnar Boyesen. I 1929 overtok apoteker Thor Wessel, og siden har eiendommen vært i Wessel-familiens eie. På bildet ligger gården på sin opprinnelige plass, omgitt av et moderne tilbygg, men ble flyttet til et nytt liv i Torvveien i 1997. I dag holder Peppes Pizza til i huset.
+                Byggeprosjektet ble påbegynt med riving av det gamle næringsbygget i januar 2018 og ble ferdigstilt i 2021/2022. Totalentreprenør SV Betong møtte flere utfordringer underveis. De gode grunnundersøkelsene viste seg å inneholde store kampesteiner mellom borepunktene, noe som krevde ekstra tid og ressurser. Parkeringskjelleren på tre plan, hele 13 meter under bakken, ble utfordrende å bygge midt i sentrum, med sprengningsarbeid, liten riggplass og strenge arbeidstidsbestemmelser.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                <strong className="text-foreground">Wesselgården:</strong> På bildet omringer førsteutgaven av Wesselgården den gamle apoteket. Da Apotekgården ble flyttet, oppsto «Nye Wesselgården», med et stort utvalg forretninger på den samme tomten, og slik ligger den der fremdeles, med Petra, Asker Sko og Asker Gull og Sølv blant leietagerne.
+                På grunn av kvartalets buede former og varierende radier, var det nødvendig å plasstøpe betongstrukturen, da prefabrikkerte elementer ikke kunne brukes. Dette bidro til prosjektets unike utforming og det store mangfoldet av leilighetstyper.
               </p>
 
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Asker Sentrum - Fra Jordbruk til Moderne By
+                Arkitektonisk kvalitet og innovasjon
               </h3>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Asker sentrum er tettbebyggelsen rundt Asker stasjon. Det opprinnelige sentrum lå ved Asker-gårdene, nå krysset Hønsveien–Askerveien. Dagens sentrum ble etablert etter at jernbanen kom i 1872. Det mest iøyenfallende i utviklingen av sentrum har vært endringen fra et lite sted – preget av jordbruk – frem til dagens pulserende byliv.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Fra 1950-årene har utviklingen i sentrum gått fort. Dette førte til protester under Asker-aksjonen i 1978, en protest mot utbyggingen av Trekanten, det dominerende handlesenteret som ble starten på utbyggingen av det moderne sentrum fra et fredelig, stille stasjonssted til et travelt kommunesentrum med utekafeer og arenaer som torget ved stasjonen og Bakerløkka med steinpyramiden, bygd av alle bergartene i Asker.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed mb-8">Med dype røtter i Asker, har både Nore-familien og Tandberg-familien vokst opp på Høn, og Henrik og  Espen vokste opp sammen på Høn, og er fortsatt bosatt i Asker i dag.</p>
-
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Visjonen for det nye kvartalet var å skape et dynamisk og attraktivt sentrumsområde som ivaretar stedets identitet samtidig som det tilbyr moderne fasiliteter. Til og med en bevaringsverdig trevilla som huset Peppes Pizza ble flyttet for å gi plass til det nye. Byggeprosjektet ble påbegynt rundt 2019 og ferdigstilt i 2021/2022.
-              </p>
-
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                En Arkitektonisk Perle med Priser og Anerkjennelse
-              </h3>
-              
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Wesselkvartalet, tegnet av Vigsnæs+Kosberg++ Arkitekter, utmerker seg med sin nyskapende og særpregede arkitektur. I motsetning til den mer tradisjonelle, rektangulære bebyggelsen i området, kjennetegnes Wesselkvartalet av myke, buede linjer og fasader kledd i lys teglstein. Denne unike designen er ikke bare estetisk tiltalende, men også funksjonell, utformet for å maksimere dagslys og redusere støy, samtidig som den skaper spennende og menneskevennlige gangforløp.
+                Wesselkvartalet, tegnet av Vigsnæs+Kosberg++ Arkitekter, skiller seg ut med sin unike og særpregede arkitektur. I motsetning til den tradisjonelle, rektangulære bebyggelsen i området, er kvartalet kjennetegnet av myke, buede linjer og fasader kledd i lys teglstein. Arkitektene beskriver at volumet følger en rettlinjet form mot gatene, mens fasadene er mykere og bølgete mot kvartalets indre.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Bruken av relieffmurverk, flettverksmuring og inntrukne skift i teglfasaden gir bygget et rikt detaljpreg som endrer karakter med lyset gjennom dagen. Wesselkvartalets arkitektoniske kvalitet har blitt anerkjent med prestisjetunge priser, blant annet Murverksprisen i 2021 og DOGA-merket for design og arkitektur i 2022.
+                Fasadene er artikulert med et relieff murt i bånd rundt hver etasje, og detaljer som flettverksmuring gir bygget et rikt uttrykk som endrer karakter med lyset gjennom dagen. Arkitekturkvaliteten er anerkjent med prestisjetunge priser, inkludert Murverksprisen i 2021 og DOGA-merket for design og arkitektur i 2022.
               </p>
 
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Et Levende Samlingspunkt for Bolig, Handel og Fritid
+                Miljø og bærekraft
+              </h3>
+              
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Under parkeringskjelleren ligger et innovativt hydrogeologisk system for energiutvinning og -lagring. Dette anlegget, som er støttet av Enova, utnytter et stort varmelager i oppsprukket fjell og vann under bakken. Dette systemet skal ikke bare betjene Wesselkvartalet, men også levere vannbåren varme til 30.000 kvadratmeter av Askers gater, og understreker prosjektets miljøprofil.
+              </p>
+
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                Et levende samlingspunkt
               </h3>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Wesselkvartalet er et blandingskvartal som tilbyr en komplett urban livsstil. Her finner du:
+                Wesselkvartalet fremstår som ett bygg, men består av ulike volumer på fire, fem og syv etasjer. Her finner man et bredt spekter av tilbud:
               </p>
 
               <ul className="list-disc pl-6 mb-8 space-y-4 text-muted-foreground">
                 <li>
-                  <strong className="text-foreground">Boliger:</strong> Et mangfold av moderne leiligheter med smarte løsninger, de fleste med balkonger eller private takterrasser.
+                  <strong className="text-foreground">Boliger:</strong> Et mangfold av moderne leiligheter med smarte løsninger.
                 </li>
                 <li>
-                  <strong className="text-foreground">Næringslokaler:</strong> Et pulserende utvalg av butikker, kafeer og restauranter på gateplan, samt kontorlokaler.
+                  <strong className="text-foreground">Næringslokaler:</strong> 1.900 kvadratmeter næring i første etasje og 1.400 kvadratmeter kontor i andre etasje, med et pulserende utvalg av butikker, kafeer og restauranter.
                 </li>
                 <li>
-                  <strong className="text-foreground">Fellesarealer:</strong> Et frodig og innbydende fellesområde med en urban hage og et vakkert vannspeil som innbyr til avslapning og sosiale møter. I tillegg er det felles takhager med mulighet for leie av private parseller for dyrking.
-                </li>
-                <li>
-                  <strong className="text-foreground">Parkering:</strong> En romslig underjordisk parkeringskjeller for beboere og besøkende.
+                  <strong className="text-foreground">Fellesarealer:</strong> Flere private og felles takhager, samt gangveier som fører til den offentlig tilgjengelige Apotekerhagen.
                 </li>
               </ul>
 
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Wesselkvartalet har blitt et sentralt samlingspunkt i Asker, et sted hvor du kan bo, arbeide, handle og nyte det urbane livet i et estetisk tiltalende og funksjonelt utformet miljø. Det er et kvartal som er designet for å skape en følelse av fellesskap og tilbyr alt du trenger i umiddelbar nærhet.
+                Kvartalet er designet for å skape en følelse av fellesskap, der beboere og besøkende kan nyte det urbane livet i et funksjonelt og estetisk tiltalende miljø.
               </p>
 
             </div>
