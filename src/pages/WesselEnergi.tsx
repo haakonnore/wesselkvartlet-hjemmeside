@@ -429,6 +429,14 @@ export default function WesselEnergi() {
                       <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>Redusert infrastruktur:</strong> Mindre overføringskapasitet nødvendig enn andre systemer</span>
                     </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Optimal kapasitetsutnyttelse:</strong> Varmepumper kjører på maksimal effektivitet i stedet for 30-40% delkapasitet</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>Direkte varmeuttrekk:</strong> Varme hentes fra temperaturreservoar, ikke direkte fra varmepumpe</span>
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -445,23 +453,6 @@ export default function WesselEnergi() {
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <span><strong>BREEAM-excellent:</strong> Systemet bidrar til å oppnå BREEAM-excellent klassifisering</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* System Efficiency */}
-              <Card className="shadow-sm">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-red-700">🎯 Systemeffektivitet</h3>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Optimal kapasitetsutnyttelse:</strong> Varmepumper kjører på maksimal effektivitet i stedet for 30-40% delkapasitet</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Direkte varmeuttrekk:</strong> Varme hentes fra temperaturreservoar, ikke direkte fra varmepumpe</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -487,7 +478,7 @@ export default function WesselEnergi() {
               {/* Customer Cases */}
               <Card className="shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-blue-700">🌱 Kundecaser</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-blue-700">🤝 Kundecaser</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -516,7 +507,7 @@ export default function WesselEnergi() {
               {/* Future Plans */}
               <Card className="shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-indigo-700">🔋 Fremtidsplaner</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-indigo-700">🚀 Fremtidsplaner</h3>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -542,74 +533,6 @@ export default function WesselEnergi() {
                 </CardContent>
               </Card>
             </div>
-          </div>
-        </section>
-
-        {/* Environmental Impact */}
-        <section className="py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6">Kundecaser og fremtid</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card className="shadow-sm">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-primary">🌱 Kundecaser</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Erstattet 7 MW oljekjele i Asker kommune</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Wesselkvartalet er A klassifisert</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Naturlig kjøling med grunnvann til alle påkoblede kunder</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                    <span>Elvelykvartalet sparte utbygging av egen sentral og ny trafo</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></span>
-                      <span>Miljøvennlig varme og kjøling til alle påkoblede kunder</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-sm">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-primary">🚀 Fremtidsplaner</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Utvidelse til Føyka-Elvely området</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Utvidelse til Asker-stasjon og perronger</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Potensial for hele Asker-regionen</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Paradigmeskifte i urban energiforsyning</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>
-                      <span>Referanseprosjekt for nye anlegg i andre byer</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
             <div className="text-center">
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Wessel Energi representerer fremtiden for bærekraftig byutvikling og er et bevis på at innovative energiløsninger kan skape både miljøgevinster og økonomisk verdi.
