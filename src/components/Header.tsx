@@ -5,12 +5,12 @@ import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Ledige lokaler", href: "#lokaler" },
+  { name: "Ledige lokaler", href: "/#lokaler" },
   { name: "Wessel Energi", href: "/wessel-energi" },
   { name: "Historien", href: "/historien-om-wesselkvartalet" },
-  { name: "Utmerkelser", href: "#doga" },
-  { name: "Om kvartalet", href: "#om" },
-  { name: "Kontakt", href: "#kontakt" },
+  { name: "Utmerkelser", href: "/#doga" },
+  { name: "Om kvartalet", href: "/#om" },
+  { name: "Kontakt", href: "/#kontakt" },
 ];
 
 export function Header() {
