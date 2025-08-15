@@ -17,16 +17,7 @@ export function ContactSection() {
         <div className="grid grid-cols-1 gap-12">
           {/* Economic Benefits Chart */}
           <div className="space-y-8">
-            <Card className="property-card">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6">Økonomisk gevinst</h3>
-                <img 
-                  src="/lovable-uploads/5ceb3438-e9a3-4d37-a403-60d8c05ad43a.png" 
-                  alt="Økonomisk gevinst ved bruk av våre varmepumper - ca 50% besparelse"
-                  className="w-full h-auto rounded-lg"
-                />
-              </CardContent>
-            </Card>
+            
           </div>
 
           {/* Contact Information */}
