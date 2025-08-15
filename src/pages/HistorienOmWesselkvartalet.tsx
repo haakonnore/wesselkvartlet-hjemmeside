@@ -74,9 +74,7 @@ const HistorienOmWesselkvartalet = () => {
                 Fra 1950-årene har utviklingen i sentrum gått fort. Dette førte til protester under Asker-aksjonen i 1978, en protest mot utbyggingen av Trekanten, det dominerende handlesenteret som ble starten på utbyggingen av det moderne sentrum fra et fredelig, stille stasjonssted til et travelt kommunesentrum med utekafeer og arenaer som torget ved stasjonen og Bakerløkka med steinpyramiden, bygd av alle bergartene i Asker.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Med dype røtter i Asker, har både Nore-familien og Tandberg-familien vokst opp på Høn, og Henrik, Espen og Gubrand er fortsatt bosatt i Asker.
-              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">Med dype røtter i Asker, har både Nore-familien og Tandberg-familien vokst opp på Høn, og Henrik og  Espen vokste opp sammen på Høn, og er fortsatt bosatt i Asker i dag.</p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Visjonen for det nye kvartalet var å skape et dynamisk og attraktivt sentrumsområde som ivaretar stedets identitet samtidig som det tilbyr moderne fasiliteter. Til og med en bevaringsverdig trevilla som huset Peppes Pizza ble flyttet for å gi plass til det nye. Byggeprosjektet ble påbegynt rundt 2019 og ferdigstilt i 2021/2022.
