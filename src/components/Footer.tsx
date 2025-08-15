@@ -36,9 +36,8 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/60 text-sm">
-            © 2024 Wesselkvartalet. Alle rettigheter forbeholdt.
-          </p>
+          <p className="text-primary-foreground/60 text-sm">© 2025 Wesselkvartalet AS, Org nr 934 140 745
+. Alle rettigheter forbeholdt.</p>
         </div>
       </div>
     </footer>;
