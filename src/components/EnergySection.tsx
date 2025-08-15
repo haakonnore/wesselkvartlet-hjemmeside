@@ -12,15 +12,15 @@ export function EnergySection() {
     },
     {
       icon: "🌍",
-      title: "CO2-varmepumpe",
-      stat: "2 MW",
-      description: "Miljøvennlig CO2-teknologi med høy effektivitet"
+      title: "CO2 & NH3 -varmepumper",
+      stat: "4 MW",
+      description: "2 varmepumper med miljøvennlig CO2 og NH3 og høy effektivitet"
     },
     {
       icon: "🔋",
       title: "Varmelager i fjell",
       stat: "70,000 m³",
-      description: "Ett av Norges største geotermiske varmelagre"
+      description: "Ett av Norges største geotermiske varmelagre leverer varme på vinteren og kjøling på sommeren"
     },
     {
       icon: "🌨️",
