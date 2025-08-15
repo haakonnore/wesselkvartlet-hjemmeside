@@ -491,23 +491,23 @@ export default function WesselEnergi() {
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Erstattet 7 MW oljekjele i Asker kommune</strong></span>
+                      <span><strong>Erstattet 7 MW oljekjele i Asker kommune:</strong> Faser ut fossile oppvarmingsløsninger</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Wesselkvartalet er A klassifisert</strong></span>
+                      <span><strong>Wesselkvartalet er A klassifisert:</strong> Oppnår høyeste energieffektivitetsklasse</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Naturlig kjøling med grunnvann til alle påkoblede kunder</strong></span>
+                      <span><strong>Naturlig kjøling med grunnvann:</strong> Levert til alle påkoblede kunder</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Elvelykvartalet sparte utbygging av egen sentral og ny trafo</strong></span>
+                      <span><strong>Elvelykvartalet sparte utbygging:</strong> Unngikk egen sentral og ny trafo</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Miljøvennlig varme og kjøling til alle påkoblede kunder</strong></span>
+                      <span><strong>Miljøvennlig varme og kjøling:</strong> Forsyner alle påkoblede kunder</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -520,23 +520,23 @@ export default function WesselEnergi() {
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Utvidelse til Føyka-Elvely området</strong></span>
+                      <span><strong>Utvidelse til Føyka-Elvely området:</strong> Ekspanderer forsyningsområdet</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Utvidelse til Asker-stasjon og perronger</strong></span>
+                      <span><strong>Utvidelse til Asker-stasjon og perronger:</strong> Inkluderer transportknutepunkt</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Potensial for hele Asker-regionen</strong></span>
+                      <span><strong>Potensial for hele Asker-regionen:</strong> Skalering til regional energiløsning</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Paradigmeskifte i urban energiforsyning</strong></span>
+                      <span><strong>Paradigmeskifte i urban energiforsyning:</strong> Ny standard for bærekraftig byutvikling</span>
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <span><strong>Referanseprosjekt for nye anlegg i andre byer</strong></span>
+                      <span><strong>Referanseprosjekt for nye anlegg:</strong> Mal for andre byer i Norge</span>
                     </li>
                   </ul>
                 </CardContent>
