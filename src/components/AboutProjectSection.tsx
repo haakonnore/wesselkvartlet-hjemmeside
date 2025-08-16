@@ -32,7 +32,7 @@ export function AboutProjectSection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const architecturalFeatures = [{
     title: "Bærekraftig arkitektur",
-    description: "Innovative mursteinsdesign med naturlige materialer og energieffektive løsninger",
+    description: "Karakteristisk murstein og geometriske mønstre",
     image: buildingView1
   }, {
     title: "Buede balkonger med trepanel",
