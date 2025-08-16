@@ -18,8 +18,7 @@ const VideoSection = () => {
               className="w-full h-full object-cover"
               poster="/lovable-uploads/76eb514d-787b-4ebe-94a0-8561b43d914d.png"
             >
-              <source src="/wesselkvartalet-video.mov" type="video/quicktime" />
-              <source src="/wesselkvartalet-video.mp4" type="video/mp4" />
+              <source src="https://www.flytas.no/wp-content/uploads/2023/03/Wesselkvartalet-redigert.mov" type="video/quicktime" />
               Din nettleser støtter ikke video-elementet.
             </video>
           </div>
