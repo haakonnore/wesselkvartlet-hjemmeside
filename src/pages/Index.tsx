@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { PropertyGrid } from "@/components/PropertyGrid";
 import { AboutProjectSection } from "@/components/AboutProjectSection";
+import VideoSection from "@/components/VideoSection";
 import { EnergySection } from "@/components/EnergySection";
 import { AwardsSection } from "@/components/AwardsSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -15,6 +16,7 @@ const Index = () => {
         <Hero />
         <PropertyGrid />
         <AboutProjectSection />
+        <VideoSection />
         <EnergySection />
         <AwardsSection />
         <ContactSection />
