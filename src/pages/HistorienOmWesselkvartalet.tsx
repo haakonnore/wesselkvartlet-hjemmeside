@@ -48,9 +48,7 @@ const HistorienOmWesselkvartalet = () => {
                 Fra historisk bygård til moderne kvartal
               </h3>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Før dagens kvartal sto ferdig, var området preget av eldre bebyggelse, inkludert Wesselgården og Bankveien 4. En viktig del av denne historien er flyttingen av Apotekergården (bygget i 1924) i 2002, 50 meter lenger mot Torvveien. Denne bevaringen av den historiske trebygningen, som da huset Peppes Pizza, viser hvordan viktig arkitektur kan integreres i moderne byutvikling. Apotekergården står i dag sammen med Fusdalgården og danner et sjarmerende trehusmiljø, som har vært et viktig prinsipp i utviklingen av Wesselkvartalet.
-              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">Før dagens kvartal sto ferdig, var området preget av eldre bebyggelse, inkludert Wesselgården og Bankveien 4. En viktig del av denne historien er flyttingen av Apotekergården (bygget i 1924) i 1997, 50 meter lenger mot Torvveien. Denne bevaringen av den historiske trebygningen, viser hvordan arkitektur kan integreres i moderne byutvikling. Apotekergården og Fusdalgården danner et sjarmerende trehusmiljø, som har vært et viktig å ta vare på i utviklingen av Wesselkvartalet.</p>
 
               <div className="relative mx-auto max-w-2xl mb-8">
                 <img src="/lovable-uploads/db80c6e7-1807-4d06-a5c2-41a8f782353f.png" alt="Asker jernbanestasjon med Apotekergården i bakgrunnen ca. 1947" className="w-full h-auto rounded-lg shadow-lg" />
