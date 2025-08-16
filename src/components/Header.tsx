@@ -9,6 +9,9 @@ const subpages = [{
 }, {
   name: "Historien",
   href: "/historien-om-wesselkvartalet"
+}, {
+  name: "Arkitektur",
+  href: "/arkitektur"
 }];
 const sectionLinks = [{
   name: "Ledige lokaler",
