@@ -4,7 +4,7 @@ import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Book, ExternalLink, Award, Globe, Newspaper } from "lucide-react";
+import { Book, ExternalLink, Award, Globe, Newspaper, MapPin } from "lucide-react";
 
 const Arkitektur = () => {
   return (
@@ -36,7 +36,7 @@ const Arkitektur = () => {
             </div>
             
             
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {/* Book Card */}
               <Card className="bg-background shadow-lg">
                 <CardContent className="p-8">
@@ -166,6 +166,39 @@ const Arkitektur = () => {
                           rel="noopener noreferrer"
                         >
                           Les artikkel
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Archello International Card */}
+              <Card className="bg-background shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <MapPin className="w-8 h-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                        International omtale
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+                        Wesselkvartalet har fått internasjonal oppmerksomhet på Archello, 
+                        en global plattform for arkitektur og design. Prosjektet fremheves 
+                        som et eksempel på innovativ skandinavisk arkitektur.
+                      </p>
+                      <Button asChild size="sm" className="inline-flex items-center gap-2">
+                        <a 
+                          href="https://archello.com/project/wesselkvartalet-7?fbclid=IwQ0xDSwMLq9djbGNrAwuryWV4dG4DYWVtAjExAAEeus1Yj9t3mtQCHZmkrz3ZvJrDmvonyPv2u11naXEbMAwIaFxzFbkhYoTyW9g_aem_ML2crdqJDafsokWEsl65yw" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Se på Archello
                           <ExternalLink className="w-4 h-4" />
                         </a>
                       </Button>
