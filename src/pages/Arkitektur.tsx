@@ -38,172 +38,172 @@ const Arkitektur = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Book Card */}
-              <Card className="bg-background shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-6">
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Book className="w-8 h-8 text-primary" />
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Book className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
                         Project: Wesselkvartalet, architect: Vigsnæs+Kosberg++Arkitekter
                       </h3>
-                      <div className="space-y-2 mb-4">
-                        <p className="text-muted-foreground text-sm">
-                          <span className="font-medium">Forfattere:</span> Børre Skodvin, Dagfinn Sagen (red), Karl Otto Ellefsen (red)
-                        </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="font-medium">Bokserie:</span> asBUILT
-                        </p>
-                      </div>
-                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                        Denne publikasjonen dokumenterer den innovative arkitekturen og designprosessen bak Wesselkvartalet, 
-                        og er en del av den anerkjente asBUILT-serien som fremhever eksepsjonell norsk arkitektur.
-                      </p>
-                      <Button asChild size="sm" className="inline-flex items-center gap-2">
-                        <a 
-                          href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Kjøp boken
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
                     </div>
                   </div>
+                  <div className="space-y-2 mb-4">
+                    <p className="text-muted-foreground text-sm">
+                      <span className="font-medium">Forfattere:</span> Børre Skodvin, Dagfinn Sagen (red), Karl Otto Ellefsen (red)
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      <span className="font-medium">Bokserie:</span> asBUILT
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    Denne publikasjonen dokumenterer den innovative arkitekturen og designprosessen bak Wesselkvartalet, 
+                    og er en del av den anerkjente asBUILT-serien som fremhever eksepsjonell norsk arkitektur.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Kjøp boken
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
               {/* Arkitektur.no Card */}
-              <Card className="bg-background shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-6">
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Globe className="w-8 h-8 text-primary" />
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Globe className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
                         Arkitektur.no - Prosjektomtale
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                        Les mer om Wesselkvartalet på Arkitektur.no, Norges ledende plattform for 
-                        arkitektur og design. Her finner du detaljert informasjon om prosjektet, 
-                        arkitektoniske løsninger og designprinsipper.
-                      </p>
-                      <Button asChild size="sm" className="inline-flex items-center gap-2">
-                        <a 
-                          href="https://www.arkitektur.no/prosjekter/bolig/wesselkvartalet/" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Les på Arkitektur.no
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    Les mer om Wesselkvartalet på Arkitektur.no, Norges ledende plattform for 
+                    arkitektur og design. Her finner du detaljert informasjon om prosjektet, 
+                    arkitektoniske løsninger og designprinsipper.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://www.arkitektur.no/prosjekter/bolig/wesselkvartalet/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Les på Arkitektur.no
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
-              <Card className="bg-background shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-6">
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Award className="w-8 h-8 text-primary" />
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Award className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
                         DOGA-merket for design og arkitektur
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                        Wesselkvartalet har mottatt DOGA-merket, en prestisjetung utmerkelse som tildeles 
-                        prosjekter med høy designkvalitet og som bidrar til en bedre samfunnsutvikling. 
-                        Utmerkelsen anerkjenner prosjektets innovative arkitektur og bærekraftige tilnærming.
-                      </p>
-                      <Button asChild size="sm" className="inline-flex items-center gap-2">
-                        <a 
-                          href="https://doga.no/aktiviteter/dogas-priser/doga-merket-design-arkitektur/vinnere-av-doga-merket/wesselkvartalet/" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Les mer hos DOGA
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    Wesselkvartalet har mottatt DOGA-merket, en prestisjetung utmerkelse som tildeles 
+                    prosjekter med høy designkvalitet og som bidrar til en bedre samfunnsutvikling. 
+                    Utmerkelsen anerkjenner prosjektets innovative arkitektur og bærekraftige tilnærming.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://doga.no/aktiviteter/dogas-priser/doga-merket-design-arkitektur/vinnere-av-doga-merket/wesselkvartalet/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Les mer hos DOGA
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
               {/* Morgenbladet Article Card */}
-              <Card className="bg-background shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-6">
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Newspaper className="w-8 h-8 text-primary" />
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Newspaper className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
                         Morgenbladet - Arkitekturomtale
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                        "Arkitektur som på egen hånd gjør Asker til et bedre sted" - Les Morgenbladets 
-                        dyptgående artikkel om hvordan Wesselkvartalet bidrar til å transformere 
-                        og forbedre Asker sentrum gjennom gjennomtenkt arkitektur.
-                      </p>
-                      <Button asChild size="sm" className="inline-flex items-center gap-2">
-                        <a 
-                          href="https://www.morgenbladet.no/kultur/arkitektur-som-pa-egen-hand-gjor-asker-til-et-bedre-sted/9344631" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Les artikkel
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    "Arkitektur som på egen hånd gjør Asker til et bedre sted" - Les Morgenbladets 
+                    dyptgående artikkel om hvordan Wesselkvartalet bidrar til å transformere 
+                    og forbedre Asker sentrum gjennom gjennomtenkt arkitektur.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://www.morgenbladet.no/kultur/arkitektur-som-pa-egen-hand-gjor-asker-til-et-bedre-sted/9344631" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Les artikkel
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
               {/* Archello International Card */}
-              <Card className="bg-background shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-6">
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <MapPin className="w-8 h-8 text-primary" />
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <MapPin className="w-6 h-6 text-primary" />
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
                         International omtale
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                        Wesselkvartalet har fått internasjonal oppmerksomhet på Archello, 
-                        en global plattform for arkitektur og design. Prosjektet fremheves 
-                        som et eksempel på innovativ skandinavisk arkitektur.
-                      </p>
-                      <Button asChild size="sm" className="inline-flex items-center gap-2">
-                        <a 
-                          href="https://archello.com/project/wesselkvartalet-7?fbclid=IwQ0xDSwMLq9djbGNrAwuryWV4dG4DYWVtAjExAAEeus1Yj9t3mtQCHZmkrz3ZvJrDmvonyPv2u11naXEbMAwIaFxzFbkhYoTyW9g_aem_ML2crdqJDafsokWEsl65yw" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Se på Archello
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
                     </div>
                   </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    Wesselkvartalet har fått internasjonal oppmerksomhet på Archello, 
+                    en global plattform for arkitektur og design. Prosjektet fremheves 
+                    som et eksempel på innovativ skandinavisk arkitektur.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://archello.com/project/wesselkvartalet-7?fbclid=IwQ0xDSwMLq9djbGNrAwuryWV4dG4DYWVtAjExAAEeus1Yj9t3mtQCHZmkrz3ZvJrDmvonyPv2u11naXEbMAwIaFxzFbkhYoTyW9g_aem_ML2crdqJDafsokWEsl65yw" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Se på Archello
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
