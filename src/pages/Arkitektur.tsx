@@ -223,9 +223,9 @@ const Arkitektur = () => {
                     </div>
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
-                    Les hva folk sier om Wesselkvartalet på sosiale medier. 
-                    Prosjektet har fått mye positiv oppmerksomhet og ros for 
-                    sin innovative arkitektur og bidrag til lokalsamfunnet.
+                    "The Line of Beauty: According to William Hogarth's 'The Analysis of Beauty' (1753), the presence of specific varieties of curves creates beauty in architecture and art. A precursor of the theory of Biophilia, he found that especially the S-curve as identified in nature and the human body was extremely helpful in creating harmonious and yet stimulating artificial environments. Perhaps these ideas were also present when the owners and the architects of this project were thinking along the same (curved) lines in creating Wesselkvartalet. This mixed-use project in Asker, Norway, was built in 2021 and has facades made from warm sand-coloured bricks which bulge and meander across the urban spaces it inhabits. The variation in the use of the bricks approaches ornamentation and supplies a modern structure with an organic interface. A job well done by the family who built it, the craftspeople who constructed it, and the architects Vigsnæs+Kosberg++."
+                    <br /><br />
+                    <em>— Arkitekt Kristian Hoff-Andersen, 11 October 2023</em>
                   </p>
                   <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
                     <a 
