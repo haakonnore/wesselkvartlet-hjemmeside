@@ -22,6 +22,8 @@ const Arkitektur = () => {
           </div>
         </div>
         
+        <ArchitectsSection />
+        
         <ProjectGallery />
         
         {/* Book Section */}
@@ -210,8 +212,6 @@ const Arkitektur = () => {
             </div>
           </div>
         </section>
-        
-        <ArchitectsSection />
       </main>
       <Footer />
     </div>
