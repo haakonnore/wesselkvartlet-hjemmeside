@@ -206,39 +206,6 @@ const Arkitektur = () => {
                   </Button>
                 </CardContent>
               </Card>
-
-              {/* Facebook Quote Card */}
-              <Card className="bg-background shadow-lg h-full">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <MessageCircle className="w-6 h-6 text-primary" />
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-lg font-bold mb-2 text-foreground">
-                        Ros på Facebook
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
-                    "The Line of Beauty: According to William Hogarth's 'The Analysis of Beauty' (1753), the presence of specific varieties of curves creates beauty in architecture and art. A precursor of the theory of Biophilia, he found that especially the S-curve as identified in nature and the human body was extremely helpful in creating harmonious and yet stimulating artificial environments. Perhaps these ideas were also present when the owners and the architects of this project were thinking along the same (curved) lines in creating Wesselkvartalet. This mixed-use project in Asker, Norway, was built in 2021 and has facades made from warm sand-coloured bricks which bulge and meander across the urban spaces it inhabits. The variation in the use of the bricks approaches ornamentation and supplies a modern structure with an organic interface. A job well done by the family who built it, the craftspeople who constructed it, and the architects Vigsnæs+Kosberg++."
-                    <br /><br />
-                    <em>— Arkitekt Kristian Hoff-Andersen, 11 October 2023</em>
-                  </p>
-                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
-                    <a 
-                      href="https://www.facebook.com/story.php?story_fbid=655887086645761&id=100066734251434&rdid=2dVnNvqRiaRcG8XZ" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Les på Facebook
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
