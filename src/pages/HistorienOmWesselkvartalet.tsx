@@ -87,7 +87,7 @@ const HistorienOmWesselkvartalet = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Etter at sentrumsplanene tok form, ble det klart at høydedraget som apotekergården var bygget på, skulle vekk. Man ønsket imidlertid å beholde den gamle, flotte bygningen i Asker sentrum, og kommunen sikret seg tomt på sydsiden mot stasjonsområdet, tilhørende den gamle sentrumsgården. I august 1997 ble den gamle apotekergården firt ned ved hjelp av store kraner til samme nivå som den omkringliggende bebyggelsen og plassert på nyoppsatt grunnmur. En teknisk komplisert oppgave som ble bivånet av en stor tilskuerskare av unge som gamle Askerfolk.
+                Etter at sentrumsplanene tok form, ble det klart at høydedraget som apotekergården var bygget på, skulle vekk. Man ønsket imidlertid å beholde den gamle, flotte bygningen i Asker sentrum, og kommunen sikret seg tomt på sydsiden mot stasjonsområdet, tilhørende den gamle sentrumsgården. I august 1997 ble den gamle apotekergården flyttet av flere lastebiler til samme nivå som den omkringliggende bebyggelsen og plassert på nyoppsatt grunnmur. En teknisk komplisert oppgave som ble bivånet av en stor tilskuerskare av unge som gamle Askerfolk.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
