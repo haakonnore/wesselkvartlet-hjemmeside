@@ -27,6 +27,30 @@ const galleryImages = [{
   src: "/lovable-uploads/9cb76891-08d1-4213-b269-02b584356261.png",
   alt: "Wesselkvartalet helhetsbilde med parker og moderne utbyggingsområde",
   title: "Helhetlig utviklingsområde"
+}, {
+  src: "/lovable-uploads/80f363fb-b697-44cd-b65c-8f2976d0ce8b.png",
+  alt: "Apotekerhagen med vannelementer og lek for barn",
+  title: "Apotekerhagen"
+}, {
+  src: "/lovable-uploads/5dbf5235-1f3a-4fda-a870-37091a63a103.png",
+  alt: "Inngangen til Wesselkvartalet med moderne arkitektur og teglsteinfasade",
+  title: "Hovedinngang"
+}, {
+  src: "/lovable-uploads/adffce7c-a626-4649-8072-1049321b4051.png",
+  alt: "Gårdsplass med kurvet teglsteinfasade og butikklokaler",
+  title: "Gårdsplass"
+}, {
+  src: "/lovable-uploads/9bdb99e5-f927-48ec-a49f-489d74ca83e1.png",
+  alt: "Takterrasser og uteområder med moderne design",
+  title: "Takterrasser"
+}, {
+  src: "/lovable-uploads/f2d21b23-5b51-4277-bf04-2d9e1d135871.png",
+  alt: "Gårdsplassen sett fra bakkeplan med butikker og restauranter",
+  title: "Handelsgata"
+}, {
+  src: "/lovable-uploads/7dcce2ef-bbc3-42dd-81fb-dc9a105b4078.png",
+  alt: "Wesselkvartalet sett utenfra med kurvet fasade som reiser seg over de historiske bygningene",
+  title: "Eksteriør"
 }];
 export function AboutProjectSection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
