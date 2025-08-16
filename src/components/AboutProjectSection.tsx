@@ -8,45 +8,45 @@ import buildingView2 from "/lovable-uploads/b4bee2d3-5b73-49c3-874b-cc1da2a65ddc
 import buildingView3 from "/lovable-uploads/1b0f4c04-b5ad-4004-9cb1-bfb36ce1bf9b.png";
 import buildingView4 from "/lovable-uploads/33066afb-850f-44f0-b9a7-c05f160fa162.png";
 const galleryImages = [{
-  src: "/lovable-uploads/88f6b913-8d40-4ef9-83cd-bb1d175c08a2.png",
-  alt: "Wesselkvartalet fasade med moderne arkitektur og butikker i førsteetasje",
-  title: "Hovedinngang og butikkområde"
-}, {
-  src: "/lovable-uploads/95789669-ad3c-47d7-a975-5d38fe7701f6.png",
-  alt: "Wesselkvartalet boligbygg med grønne fellesområder og rundede balkonger",
-  title: "Boligområde med grønne fellesarealer"
-}, {
-  src: "/lovable-uploads/942702a4-8b44-4259-ba77-f5fef779f7ec.png",
-  alt: "Detaljert arkitektur av Wesselkvartalet med tegl og tre elementer",
-  title: "Arkitektoniske detaljer"
-}, {
-  src: "/lovable-uploads/780bb704-694b-40e3-8322-a7de34abed19.png",
-  alt: "Wesselkvartalet kurvet fasade med innovative designelementer",
-  title: "Innovativ fasadedesign"
+  src: "/lovable-uploads/7dcce2ef-bbc3-42dd-81fb-dc9a105b4078.png",
+  alt: "Wesselkvartalet sett utenfra med kurvet fasade som reiser seg over de historiske bygningene",
+  title: "Eksteriør"
 }, {
   src: "/lovable-uploads/9cb76891-08d1-4213-b269-02b584356261.png",
   alt: "Wesselkvartalet helhetsbilde med parker og moderne utbyggingsområde",
   title: "Helhetlig utviklingsområde"
 }, {
-  src: "/lovable-uploads/80f363fb-b697-44cd-b65c-8f2976d0ce8b.png",
-  alt: "Apotekerhagen med vannelementer og lek for barn",
-  title: "Apotekerhagen"
-}, {
-  src: "/lovable-uploads/adffce7c-a626-4649-8072-1049321b4051.png",
-  alt: "Gårdsplass med kurvet teglsteinfasade og butikklokaler",
-  title: "Gårdsplass"
-}, {
-  src: "/lovable-uploads/9bdb99e5-f927-48ec-a49f-489d74ca83e1.png",
-  alt: "Takterrasser og uteområder med moderne design",
-  title: "Takterrasser"
+  src: "/lovable-uploads/88f6b913-8d40-4ef9-83cd-bb1d175c08a2.png",
+  alt: "Wesselkvartalet fasade med moderne arkitektur og butikker i førsteetasje",
+  title: "Hovedinngang og butikkområde"
 }, {
   src: "/lovable-uploads/f2d21b23-5b51-4277-bf04-2d9e1d135871.png",
   alt: "Gårdsplassen sett fra bakkeplan med butikker og restauranter",
   title: "Handelsgata"
 }, {
-  src: "/lovable-uploads/7dcce2ef-bbc3-42dd-81fb-dc9a105b4078.png",
-  alt: "Wesselkvartalet sett utenfra med kurvet fasade som reiser seg over de historiske bygningene",
-  title: "Eksteriør"
+  src: "/lovable-uploads/adffce7c-a626-4649-8072-1049321b4051.png",
+  alt: "Gårdsplass med kurvet teglsteinfasade og butikklokaler",
+  title: "Gårdsplass"
+}, {
+  src: "/lovable-uploads/80f363fb-b697-44cd-b65c-8f2976d0ce8b.png",
+  alt: "Apotekerhagen med vannelementer og lek for barn",
+  title: "Apotekerhagen"
+}, {
+  src: "/lovable-uploads/95789669-ad3c-47d7-a975-5d38fe7701f6.png",
+  alt: "Wesselkvartalet boligbygg med grønne fellesområder og rundede balkonger",
+  title: "Boligområde med grønne fellesarealer"
+}, {
+  src: "/lovable-uploads/9bdb99e5-f927-48ec-a49f-489d74ca83e1.png",
+  alt: "Takterrasser og uteområder med moderne design",
+  title: "Takterrasser"
+}, {
+  src: "/lovable-uploads/780bb704-694b-40e3-8322-a7de34abed19.png",
+  alt: "Wesselkvartalet kurvet fasade med innovative designelementer",
+  title: "Innovativ fasadedesign"
+}, {
+  src: "/lovable-uploads/942702a4-8b44-4259-ba77-f5fef779f7ec.png",
+  alt: "Detaljert arkitektur av Wesselkvartalet med tegl og tre elementer",
+  title: "Arkitektoniske detaljer"
 }];
 export function AboutProjectSection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
