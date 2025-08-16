@@ -165,7 +165,7 @@ export default function WesselEnergi() {
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl mb-4">{stat.icon}</div>
                     <h3 className="font-semibold mb-2">{stat.title}</h3>
-                    <div className="text-2xl font-bold text-white mb-3">{stat.stat}</div>
+                    <div className="text-2xl font-bold text-green-300 mb-3">{stat.stat}</div>
                     <p className="text-sm text-white/90 leading-relaxed">{stat.description}</p>
                   </CardContent>
                 </Card>
