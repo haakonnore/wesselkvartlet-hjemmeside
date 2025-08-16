@@ -35,7 +35,7 @@ export function AboutProjectSection() {
     description: "Innovative mursteinsdesign med naturlige materialer og energieffektive løsninger",
     image: buildingView1
   }, {
-    title: "Moderne balkonger",
+    title: "Buede balkonger med trepanel",
     description: "Curved balkonger med trepanel og fantastisk utsikt over Asker sentrum",
     image: buildingView2
   }, {
