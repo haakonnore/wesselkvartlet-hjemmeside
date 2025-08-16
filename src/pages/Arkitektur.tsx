@@ -4,7 +4,7 @@ import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Book, ExternalLink } from "lucide-react";
+import { Book, ExternalLink, Award } from "lucide-react";
 
 const Arkitektur = () => {
   return (
@@ -28,51 +28,88 @@ const Arkitektur = () => {
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Arkitekturdokumentasjon
+                Anerkjennelse og dokumentasjon
               </h2>
               <p className="text-lg text-muted-foreground">
-                Wesselkvartalet er dokumentert i den prestisjetunge bokserien asBUILT
+                Wesselkvartalet har fått bred anerkjennelse og er dokumentert i prestisjetunge publikasjoner
               </p>
             </div>
             
-            <Card className="bg-background shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <Book className="w-8 h-8 text-primary" />
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Book Card */}
+              <Card className="bg-background shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Book className="w-8 h-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                        Project: Wesselkvartalet, architect: Vigsnæs+Kosberg++Arkitekter
+                      </h3>
+                      <div className="space-y-2 mb-4">
+                        <p className="text-muted-foreground text-sm">
+                          <span className="font-medium">Forfattere:</span> Børre Skodvin, Dagfinn Sagen (red), Karl Otto Ellefsen (red)
+                        </p>
+                        <p className="text-muted-foreground text-sm">
+                          <span className="font-medium">Bokserie:</span> asBUILT
+                        </p>
+                      </div>
+                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+                        Denne publikasjonen dokumenterer den innovative arkitekturen og designprosessen bak Wesselkvartalet, 
+                        og er en del av den anerkjente asBUILT-serien som fremhever eksepsjonell norsk arkitektur.
+                      </p>
+                      <Button asChild size="sm" className="inline-flex items-center gap-2">
+                        <a 
+                          href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Kjøp boken
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3 text-foreground">
-                      Project: Wesselkvartalet, architect: Vigsnæs+Kosberg++Arkitekter
-                    </h3>
-                    <div className="space-y-2 mb-4">
-                      <p className="text-muted-foreground">
-                        <span className="font-medium">Forfattere:</span> Børre Skodvin, Dagfinn Sagen (red), Karl Otto Ellefsen (red)
-                      </p>
-                      <p className="text-muted-foreground">
-                        <span className="font-medium">Bokserie:</span> asBUILT
-                      </p>
+                </CardContent>
+              </Card>
+
+              {/* DOGA Award Card */}
+              <Card className="bg-background shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Award className="w-8 h-8 text-primary" />
+                      </div>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      Denne publikasjonen dokumenterer den innovative arkitekturen og designprosessen bak Wesselkvartalet, 
-                      og er en del av den anerkjente asBUILT-serien som fremhever eksepsjonell norsk arkitektur.
-                    </p>
-                    <Button asChild className="inline-flex items-center gap-2">
-                      <a 
-                        href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Kjøp boken
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </Button>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                        DOGA-merket for design og arkitektur
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+                        Wesselkvartalet har mottatt DOGA-merket, en prestisjetung utmerkelse som tildeles 
+                        prosjekter med høy designkvalitet og som bidrar til en bedre samfunnsutvikling. 
+                        Utmerkelsen anerkjenner prosjektets innovative arkitektur og bærekraftige tilnærming.
+                      </p>
+                      <Button asChild size="sm" className="inline-flex items-center gap-2">
+                        <a 
+                          href="https://doga.no/aktiviteter/dogas-priser/doga-merket-design-arkitektur/vinnere-av-doga-merket/wesselkvartalet/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Les mer hos DOGA
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </section>
         
