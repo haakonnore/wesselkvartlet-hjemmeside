@@ -111,7 +111,7 @@ const HistorienOmWesselkvartalet = () => {
               </h3>
               
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Byggeprosjektet ble påbegynt med riving av det gamle næringsbygget i januar 2018 og ble ferdigstilt i 2021/2022. Totalentreprenør SV Betong møtte flere utfordringer underveis. De gode grunnundersøkelsene viste seg å inneholde store kampesteiner mellom borepunktene, noe som krevde ekstra tid og ressurser. Parkeringskjelleren på tre plan, hele 13 meter under bakken, ble utfordrende å bygge midt i sentrum, med sprengningsarbeid, liten riggplass og strenge arbeidstidsbestemmelser.
+                Byggeprosjektet ble påbegynt med riving av det gamle næringsbygget i januar 2018 og ble ferdigstilt i 2021/2022. Totalentreprenør SV Betong møtte flere utfordringer underveis. De gode grunnundersøkelsene viste seg å inneholde store kampesteiner mellom borepunktene, noe som krevde ekstra tid og ressurser. Parkeringskjelleren på tre plan, hele 13 meter under bakken, ble utfordrende å bygge midt i sentrum, med sprengningsarbeid, liten riggplass og strenge arbeidstidsbestemmelser. Omfattende arbeider med borring av grunnvarmebrønner skapte også flere forsinkelser i prosjektet.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
