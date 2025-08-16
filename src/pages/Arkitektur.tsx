@@ -209,6 +209,39 @@ const Arkitektur = () => {
                   </Button>
                 </CardContent>
               </Card>
+
+              {/* Aftenposten Article Card */}
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <MessageCircle className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
+                        Aftenposten - Arkitekturomtale
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    "Hvorfor blir noen hus så fine? Det handler om kvalitet, ikke om stil" - 
+                    Les Aftenpostens kommentar om kvalitet i arkitektur, der Wesselkvartalet 
+                    fremheves som et eksempel på eksepsjonell bygningskvalitet og håndverk.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://www.aftenposten.no/kultur/kommentar/i/onr0a7/hvorfor-blir-noen-hus-saa-fine-det-handler-om-kvalitet-ikke-om-stil" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Les kommentar
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
