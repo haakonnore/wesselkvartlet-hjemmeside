@@ -4,7 +4,7 @@ import { ArchitecturePrizeSection } from "@/components/ArchitecturePrizeSection"
 import { PropertyGrid } from "@/components/PropertyGrid";
 import { AboutProjectSection } from "@/components/AboutProjectSection";
 
-import VideoSection from "@/components/VideoSection";
+
 import { EnergySection } from "@/components/EnergySection";
 import { AwardsSection } from "@/components/AwardsSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -19,7 +19,7 @@ const Index = () => {
         <ArchitecturePrizeSection />
         <PropertyGrid />
         <AboutProjectSection />
-        <VideoSection />
+        
         <EnergySection />
         <AwardsSection />
         <ContactSection />
