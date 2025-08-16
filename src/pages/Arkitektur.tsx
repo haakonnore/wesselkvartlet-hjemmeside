@@ -4,7 +4,7 @@ import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Book, ExternalLink, Award, Globe, Newspaper, MapPin } from "lucide-react";
+import { Book, ExternalLink, Award, Globe, Newspaper, MapPin, MessageCircle } from "lucide-react";
 
 const Arkitektur = () => {
   return (
@@ -201,6 +201,39 @@ const Arkitektur = () => {
                       rel="noopener noreferrer"
                     >
                       Se på Archello
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Facebook Quote Card */}
+              <Card className="bg-background shadow-lg h-full">
+                <CardContent className="p-6 h-full flex flex-col">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <MessageCircle className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-foreground">
+                        Ros på Facebook
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                    Les hva folk sier om Wesselkvartalet på sosiale medier. 
+                    Prosjektet har fått mye positiv oppmerksomhet og ros for 
+                    sin innovative arkitektur og bidrag til lokalsamfunnet.
+                  </p>
+                  <Button asChild size="sm" className="inline-flex items-center gap-2 w-fit">
+                    <a 
+                      href="https://www.facebook.com/story.php?story_fbid=655887086645761&id=100066734251434&rdid=2dVnNvqRiaRcG8XZ" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Les på Facebook
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </Button>
