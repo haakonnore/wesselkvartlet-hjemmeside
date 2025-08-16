@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
-import { Book } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Book, ExternalLink } from "lucide-react";
 
 const Arkitektur = () => {
   return (
@@ -54,10 +55,20 @@ const Arkitektur = () => {
                         <span className="font-medium">Bokserie:</span> asBUILT
                       </p>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed mb-6">
                       Denne publikasjonen dokumenterer den innovative arkitekturen og designprosessen bak Wesselkvartalet, 
                       og er en del av den anerkjente asBUILT-serien som fremhever eksepsjonell norsk arkitektur.
                     </p>
+                    <Button asChild className="inline-flex items-center gap-2">
+                      <a 
+                        href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        Kjøp boken
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </CardContent>
