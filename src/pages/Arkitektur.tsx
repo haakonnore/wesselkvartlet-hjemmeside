@@ -4,7 +4,7 @@ import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Book, ExternalLink, Award } from "lucide-react";
+import { Book, ExternalLink, Award, Globe } from "lucide-react";
 
 const Arkitektur = () => {
   return (
@@ -36,7 +36,7 @@ const Arkitektur = () => {
             </div>
             
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Book Card */}
               <Card className="bg-background shadow-lg">
                 <CardContent className="p-8">
@@ -77,7 +77,38 @@ const Arkitektur = () => {
                 </CardContent>
               </Card>
 
-              {/* DOGA Award Card */}
+              {/* Arkitektur.no Card */}
+              <Card className="bg-background shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Globe className="w-8 h-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-3 text-foreground">
+                        Arkitektur.no - Prosjektomtale
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+                        Les mer om Wesselkvartalet på Arkitektur.no, Norges ledende plattform for 
+                        arkitektur og design. Her finner du detaljert informasjon om prosjektet, 
+                        arkitektoniske løsninger og designprinsipper.
+                      </p>
+                      <Button asChild size="sm" className="inline-flex items-center gap-2">
+                        <a 
+                          href="https://www.arkitektur.no/prosjekter/bolig/wesselkvartalet/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Les på Arkitektur.no
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
               <Card className="bg-background shadow-lg">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-6">
