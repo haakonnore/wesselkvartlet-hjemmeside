@@ -36,7 +36,7 @@ export function AboutProjectSection() {
     image: buildingView1
   }, {
     title: "Buede balkonger med trepanel",
-    description: "Curved balkonger med trepanel og fantastisk utsikt over Asker sentrum",
+    description: "Utsikt over Askerbygda; fra takhagen kan du se helt til Oslo.",
     image: buildingView2
   }, {
     title: "Ikonisk fasade",
