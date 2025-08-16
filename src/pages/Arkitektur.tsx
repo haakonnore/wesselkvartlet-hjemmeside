@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArchitectsSection } from "@/components/ArchitectsSection";
+import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Book, ExternalLink, Award, Globe, Newspaper, MapPin, MessageCircle } from "lucide-react";
@@ -20,6 +21,8 @@ const Arkitektur = () => {
             </p>
           </div>
         </div>
+        
+        <ProjectGallery />
         
         {/* Book Section */}
         <section className="py-16 bg-muted/30">

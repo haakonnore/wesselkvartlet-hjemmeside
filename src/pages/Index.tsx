@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { PropertyGrid } from "@/components/PropertyGrid";
 import { AboutProjectSection } from "@/components/AboutProjectSection";
-import ProjectGallery from "@/components/ProjectGallery";
+
 import VideoSection from "@/components/VideoSection";
 import { EnergySection } from "@/components/EnergySection";
 import { AwardsSection } from "@/components/AwardsSection";
@@ -17,7 +17,6 @@ const Index = () => {
         <Hero />
         <PropertyGrid />
         <AboutProjectSection />
-        <ProjectGallery />
         <VideoSection />
         <EnergySection />
         <AwardsSection />
