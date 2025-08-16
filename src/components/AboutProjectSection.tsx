@@ -40,7 +40,7 @@ export function AboutProjectSection() {
     image: buildingView2
   }, {
     title: "Ikonisk fasade",
-    description: "Karakteristisk murstein og geometriske mønstre som skaper visuell interesse",
+    description: "Takhager og grønne elementer i hele kvartalet",
     image: buildingView3
   }, {
     title: "Integrert grøntområde",
