@@ -32,10 +32,6 @@ const galleryImages = [{
   alt: "Apotekerhagen med vannelementer og lek for barn",
   title: "Apotekerhagen"
 }, {
-  src: "/lovable-uploads/5dbf5235-1f3a-4fda-a870-37091a63a103.png",
-  alt: "Inngangen til Wesselkvartalet med moderne arkitektur og teglsteinfasade",
-  title: "Hovedinngang"
-}, {
   src: "/lovable-uploads/adffce7c-a626-4649-8072-1049321b4051.png",
   alt: "Gårdsplass med kurvet teglsteinfasade og butikklokaler",
   title: "Gårdsplass"
