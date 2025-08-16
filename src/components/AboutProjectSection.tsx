@@ -44,7 +44,7 @@ export function AboutProjectSection() {
     image: buildingView3
   }, {
     title: "Integrert grøntområde",
-    description: "Takhager og grønne elementer integrert i hele byggets design",
+    description: "Takhager og grønne elementer i hele kvartalet",
     image: buildingView4
   }];
   const openModal = (index: number) => {
