@@ -27,7 +27,14 @@ const VideoSection = () => {
           <div className="mt-4 text-center">
             <p className="text-sm text-muted-foreground">
               Video produsert av{" "}
-              <span className="font-semibold text-foreground">Flyt</span>
+              <a 
+                href="https://www.flytas.no/referanser/wesselkvartalet/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground hover:text-primary transition-colors"
+              >
+                Flyt
+              </a>
             </p>
           </div>
         </div>
