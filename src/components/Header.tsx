@@ -10,6 +10,9 @@ const subpages = [{
   name: "Historien om Apotekergården",
   href: "/historien-om-wesselkvartalet"
 }, {
+  name: "Fra familietomt til bærekraftig byutvikling",
+  href: "/fra-familietomt-til-byutvikling"
+}, {
   name: "Arkitektur",
   href: "/arkitektur"
 }];
