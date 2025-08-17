@@ -476,6 +476,14 @@ export default function WesselEnergi() {
                     <span className="inline-block w-3 h-3 rounded mr-2 bg-red-500" />
                     <span>Netto tap ved høy produksjon</span>
                   </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-orange-400 rounded mr-2"></div>
+                    <span>Varme produsert</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-yellow-400 rounded mr-2"></div>
+                    <span>Varme levert</span>
+                  </div>
                 </div>
 
                 <div className="mt-6 text-center">
