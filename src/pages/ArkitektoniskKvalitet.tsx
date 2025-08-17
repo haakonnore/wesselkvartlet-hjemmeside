@@ -26,10 +26,6 @@ const ArkitektoniskKvalitet = () => {
                 Børre Skodvins diagnose av norsk byggepraksis og Wesselkvartalets rolle som lysende unntak
               </h2>
               
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Denne teksten er et utdrag fra essayet til Børre Skodvin som han skrev ved utgivelse av asBUILT 28 om Wesselkvartalet.
-              </p>
-
               <div className="flex items-center gap-4 mb-8 p-4 bg-muted/50 rounded-lg">
                 <img src="/lovable-uploads/e612a6f4-48a4-456c-9afb-54c71778ab89.png" alt="asBUILT 28 - Project: Wesselkvartalet" className="w-24 h-auto rounded" />
                 <div>
