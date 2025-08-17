@@ -172,7 +172,7 @@ export default function WesselEnergi() {
             <div className="mb-6 md:mb-8">
               <Button
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 w-full sm:w-auto"
+                className="border-white/30 text-black hover:bg-white/10 w-full sm:w-auto"
                 onClick={() => window.history.back()}
                 aria-label="Tilbake til Wesselkvartalet"
               >
