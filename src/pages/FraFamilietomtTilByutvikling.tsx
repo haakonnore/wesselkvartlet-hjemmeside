@@ -39,7 +39,7 @@ const FraFamilietomtTilByutvikling = () => {
               </h3>
 
               <div className="relative mx-auto max-w-2xl mb-8">
-                <img src="/lovable-uploads/9cb76891-08d1-4213-b269-02b584356261.png" alt="Vokste opp sammen på Høn: Gudbrand Tandberg(t.v.), Henrik Nore og Espen Tandberg" className="w-full h-auto rounded-lg shadow-lg" />
+                <img src="/lovable-uploads/6bf20f99-1b6e-4b59-b43b-e7258f7fe24f.png" alt="Vokste opp sammen på Høn: Gudbrand Tandberg(t.v.), Henrik Nore og Espen Tandberg" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <p className="text-sm text-muted-foreground text-center mt-2 italic">
                   Vokste opp sammen på Høn: Gudbrand Tandberg(t.v.), Henrik Nore og Espen Tandberg
@@ -99,7 +99,7 @@ const FraFamilietomtTilByutvikling = () => {
               </p>
 
               <div className="relative mx-auto max-w-2xl mb-8">
-                <img src="/lovable-uploads/942702a4-8b44-4259-ba77-f5fef779f7ec.png" alt="Bygherre Henrik Nore(tv.). Arkitekt Håkon Vigsnæs (til høyre). Foto: MARIT HELLAND" className="w-full h-auto rounded-lg shadow-lg" />
+                <img src="/lovable-uploads/3a33e679-e60c-4c1f-9ffe-901184601499.png" alt="Bygherre Henrik Nore(tv.). Arkitekt Håkon Vigsnæs (til høyre). Foto: MARIT HELLAND" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <p className="text-sm text-muted-foreground text-center mt-2 italic">
                   Bygherre Henrik Nore(tv.). Arkitekt Håkon Vigsnæs (til høyre). Foto: MARIT HELLAND
