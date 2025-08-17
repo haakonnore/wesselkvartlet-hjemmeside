@@ -15,6 +15,9 @@ const subpages = [{
 }, {
   name: "Arkitektur",
   href: "/arkitektur"
+}, {
+  name: "Arkitektonisk kvalitet i en skamløs bransje",
+  href: "/arkitektonisk-kvalitet"
 }];
 const sectionLinks = [{
   name: "Ledige lokaler",
