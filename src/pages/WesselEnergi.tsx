@@ -9,15 +9,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-} from "recharts";
 
 export default function WesselEnergi() {
   const energyStats = [
@@ -439,18 +430,40 @@ export default function WesselEnergi() {
                   </Card>
                 </div>
 
-                {/* Responsive chart using Recharts */}
-                <div className="w-full h-64 md:h-80">
-                  <ResponsiveContainer>
-                    <BarChart data={periods} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
-                      <XAxis dataKey="time" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Bar dataKey="produced" name="Varme produsert" />
-                      <Bar dataKey="delivered" name="Varme levert" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                {/* Manuell, responsiv minigraf (uten eksterne biblioteker) */}
+                <div
+                  role="img"
+                  aria-label="Sammenligning av varme produsert og levert per tidsintervall"
+                  className="bg-gradient-to-r from-slate-50 to-slate-100 p-4 md:p-6 rounded-lg"
+                >
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
+                    {periods.map((period) => (
+                      <div key={period.time} className="text-center">
+                        <h4 className="font-semibold mb-2 text-sm md:text-base">{period.time}</h4>
+                        <div className="flex justify-center items-end h-40 md:h-48 gap-2">
+                          <div
+                            className="w-6 sm:w-8 bg-orange-400 rounded"
+                            style={{ height: `${Math.max(8, period.produced / 4)}px` }}
+                            title={`Varme produsert: ${period.produced}`}
+                            aria-label={`Varme produsert ${period.produced}`}
+                          />
+                          <div
+                            className="w-6 sm:w-8 bg-yellow-400 rounded"
+                            style={{ height: `${Math.max(8, period.delivered / 4)}px` }}
+                            title={`Varme levert: ${period.delivered}`}
+                            aria-label={`Varme levert ${period.delivered}`}
+                          />
+                        </div>
+                        <div
+                          className={`mt-2 text-xs md:text-sm font-bold ${period.profit > 0 ? "text-green-600" : "text-red-600"}`}
+                          aria-label={`Netto ${period.profit > 0 ? "gevinst" : "tap"} ${period.profit} kroner`}
+                        >
+                          {period.profit > 0 ? "+" : ""}
+                          {period.profit} kr
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Legend for profit colors */}
