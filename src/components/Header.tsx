@@ -7,7 +7,7 @@ const subpages = [{
   name: "Wessel Energi",
   href: "/wessel-energi"
 }, {
-  name: "Historien til Apotekergården",
+  name: "Historien om Apotekergården",
   href: "/historien-om-wesselkvartalet"
 }, {
   name: "Arkitektur",
