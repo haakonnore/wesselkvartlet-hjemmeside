@@ -46,9 +46,9 @@ export function Header() {
             </span>
           </Link>
         </div>
-        <div className="flex flex-col gap-y-2 w-full">
+        <div className="flex flex-col gap-y-1 w-auto">
           {subpages.map(item => (
-            <Link key={item.name} to={item.href} className="text-sm font-medium leading-6 text-muted-foreground hover:text-primary transition-colors py-1">
+            <Link key={item.name} to={item.href} className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
               {item.name}
             </Link>
           ))}
