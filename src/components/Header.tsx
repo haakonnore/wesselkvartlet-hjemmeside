@@ -56,43 +56,23 @@ export function Header() {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-col gap-y-1 w-auto mt-4">
-          <div className="flex items-center gap-x-2">
-            <Link to="/wessel-energi" className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
-              Wessel Energi
-            </Link>
-            <span className="text-muted-foreground">|</span>
-            <Link to="/arkitektur" className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
-              Arkitektur
-            </Link>
-          </div>
-          {subpages.filter(item => item.name !== "Wessel Energi" && item.name !== "Arkitektur").map(item => (
-            <Link key={item.name} to={item.href} className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
-              {item.name}
-            </Link>
+        <div className="hidden md:flex flex-wrap items-center gap-x-4 gap-y-2 w-full mt-4">
+          {subpages.map((item, index) => (
+            <div key={item.name} className="flex items-center gap-x-4">
+              <Link to={item.href} className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
+                {item.name}
+              </Link>
+              {index < subpages.length - 1 && (
+                <span className="text-muted-foreground">|</span>
+              )}
+            </div>
           ))}
         </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden flex flex-col gap-y-2 w-full mt-4 pb-4 border-t border-border pt-4">
-            <div className="flex flex-col gap-y-2">
-              <Link 
-                to="/wessel-energi" 
-                className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Wessel Energi
-              </Link>
-              <Link 
-                to="/arkitektur" 
-                className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Arkitektur
-              </Link>
-            </div>
-            {subpages.filter(item => item.name !== "Wessel Energi" && item.name !== "Arkitektur").map(item => (
+            {subpages.map(item => (
               <Link 
                 key={item.name} 
                 to={item.href} 
