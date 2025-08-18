@@ -47,7 +47,16 @@ export function Header() {
           </Link>
         </div>
         <div className="flex flex-col gap-y-1 w-auto">
-          {subpages.map(item => (
+          <div className="flex items-center gap-x-2">
+            <Link to="/wessel-energi" className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
+              Wessel Energi
+            </Link>
+            <span className="text-muted-foreground">|</span>
+            <Link to="/arkitektur" className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
+              Arkitektur
+            </Link>
+          </div>
+          {subpages.filter(item => item.name !== "Wessel Energi" && item.name !== "Arkitektur").map(item => (
             <Link key={item.name} to={item.href} className="text-sm font-medium leading-5 text-muted-foreground hover:text-primary transition-colors">
               {item.name}
             </Link>
