@@ -38,7 +38,7 @@ const sectionLinks = [{
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      <nav className="mx-auto flex max-w-7xl flex-col items-start p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl flex-col items-start p-3 lg:px-4" aria-label="Global">
         <div className="flex items-center justify-between w-full mb-4">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
