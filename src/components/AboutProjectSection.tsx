@@ -89,7 +89,7 @@ export function AboutProjectSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Om Wesselkvartalet</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">Et unikt arkitektonisk kvartal som kombinerer moderne design med bærekraftige prinsipper. Wesselkvartalet representerer fremtidens byutvikling i hjertet av Asker. Wesselgården og Bankveien 4 har etter stort byggeprosjekt blitt til Wesselkvartalet.</p>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Prosjektet er utviklet i samarbeid mellom to familier fra Høn. Wessel/Nore-familien som i 2011 fikk Tandberg Eiendom inn som medeier i selskapet. Sammen ønsket de å bygge noe de kunne være stolte av.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Prosjektet er utviklet i samarbeid mellom to familier fra Høn. Wessel/Nore-familien som i 2015 fikk Tandberg Eiendom inn som medeier i selskapet. Sammen ønsket de å bygge noe de kunne være stolte av.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
