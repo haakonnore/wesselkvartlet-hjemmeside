@@ -8,9 +8,7 @@ const HistorienOmWesselkvartalet = () => {
         <section className="relative py-16 bg-gradient-to-b from-muted/30 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                Historien om hvordan Wesselkvartalet ble til
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Historien om Apotekergården</h1>
               <div className="relative mx-auto max-w-2xl mb-8">
                 <img src="/lovable-uploads/ab39b28a-08fc-4222-bc6f-b2bc78b18399.png" alt="Historisk bilde av Wesselgården (Apotekergården) i vinter" className="w-full h-auto rounded-lg shadow-lg" />
                 <div className="absolute inset-0 bg-black/20 rounded-lg"></div>
