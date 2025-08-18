@@ -1,3 +1,7 @@
+Can you now make this tsx responsive? 
+
+The listing of the subpages should be on one line if the screen is large enough
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
