@@ -59,6 +59,22 @@ const FrieToyler = () => {
             <h1 className="text-4xl font-bold mb-2 text-foreground">FRIE TØYLER</h1>
             <p className="text-muted-foreground text-lg italic">Av Børre Skodvin</p>
           </div>
+
+          {/* Summary Section */}
+          <div className="bg-muted/30 p-6 rounded-lg mb-8 border-l-4 border-primary">
+            <h2 className="text-xl font-semibold mb-4 text-foreground">Sammendrag</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Wesselkvartalet i Asker har blitt mottatt med nærmest unison begeistring og fremstår som et sjeldent eksempel på høy arkitektonisk kvalitet i norsk kommersiell boligutvikling. Med sin organiske teglarkitektur og gjennomtenkte stedstilpasning viser prosjektet at det er mulig å skape noe mer enn den "ambisjonsløse og inkompetente middelmådigheten" som dominerer bransjen.
+              </p>
+              <p>
+                Suksessen bygger på et unikt samspill mellom tre aktører: En visjonær kommuneplansjef (Tor Arne Midtbø) med 40 års erfaring og stayer-evne, lokale utbyggere (Tandberg Eiendom og Nore-familien) med hundreårs-perspektiv som bryr seg om omdømme, og arkitekter som har fått betydelig mer ansvar og frihet enn vanlig. Dette står i sterk kontrast til store utviklere som OBOS og Selvaag, som opererer med marginer på 15-25% mens bransjen generelt ligger på 7,9%.
+              </p>
+              <p>
+                Essayet argumenterer for at norsk boligarkitektur kan bli mye bedre hvis utviklere gis - eller tar seg - friere tøyler til å prioritere kvalitet over maksimal profitt. Når markedet ikke krever høy kvalitet, må utviklerne selv velge å investere i bedre arkitektur, noe som på lang sikt er lønnsomt både for stedet og for byggherren selv.
+              </p>
+            </div>
+          </div>
           
           <div className="text-muted-foreground leading-relaxed space-y-6">
             <p>
@@ -112,7 +128,7 @@ const FrieToyler = () => {
             </p>
 
             <p>
-              Midt i denne tilsynelatende idyllen var Asker sentrum samtidig i ferd med å strupes av 70-tallets hemningsløse biltrafikk. Handelslekkasjen til Sandvika, Drammen og Oslo var betydelig, og livsgrunnlaget for det lokale næringslivet ble stadig skrinnere. Etter en arkitektkonkurranse i 1972 startet arbeidet med en ny sentrumsplan for alvor. Hovedhensikten var å tøyle trafikken og etablere gågater. Samtidig skulle planen legge til rette for ny bebyggelse og sanering av uhensiktsmessige eldre hus.
+              Midt i denne tilsynelatende idyllen var Asker sentrum samtidig i ferd med å strupes av 70-tallets hemmensløse biltrafikk. Handelslekkasjen til Sandvika, Drammen og Oslo var betydelig, og livsgrunnlaget for det lokale næringslivet ble stadig skrinnere. Etter en arkitektkonkurranse i 1972 startet arbeidet med en ny sentrumsplan for alvor. Hovedhensikten var å tøyle trafikken og etablere gågater. Samtidig skulle planen legge til rette for ny bebyggelse og sanering av uhensiktsmessige eldre hus.
             </p>
 
             <p>
