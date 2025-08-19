@@ -9,6 +9,7 @@ import HistorienOmWesselkvartalet from "./pages/HistorienOmWesselkvartalet";
 import FraFamilietomtTilByutvikling from "./pages/FraFamilietomtTilByutvikling";
 import Arkitektur from "./pages/Arkitektur";
 import ArkitektoniskKvalitet from "./pages/ArkitektoniskKvalitet";
+import FrieToyler from "./pages/FrieToyler";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/fra-familietomt-til-byutvikling" element={<FraFamilietomtTilByutvikling />} />
           <Route path="/arkitektur" element={<Arkitektur />} />
           <Route path="/arkitektonisk-kvalitet" element={<ArkitektoniskKvalitet />} />
+          <Route path="/frie-toyler" element={<FrieToyler />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
