@@ -16,9 +16,6 @@ const subpages = [{
   name: "Arkitektur",
   href: "/arkitektur"
 }, {
-  name: "Arkitektonisk kvalitet i en skamløs bransje",
-  href: "/arkitektonisk-kvalitet"
-}, {
   name: "Frie Tøyler",
   href: "/frie-toyler"
 }];
