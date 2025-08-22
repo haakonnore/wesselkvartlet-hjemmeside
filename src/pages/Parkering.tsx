@@ -98,6 +98,9 @@ const Parkering = () => {
                     <li>• Ingen ladeplikt - parker med både bensin og elbil</li>
                     <li>• HC-parkering tilgjengelig</li>
                   </ul>
+                  <p className="mt-4 text-sm font-medium text-foreground">
+                    Her står bilen din trygt. Parkeringskjelleren er kameraovervåket.
+                  </p>
                 </div>
               </div>
             </div>
