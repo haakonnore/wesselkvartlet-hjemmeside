@@ -42,7 +42,7 @@ const Parkering = () => {
 
   const handleNavigate = () => {
     // Open Google Maps navigation
-    window.open("https://maps.app.goo.gl/PMtBhgYfguDKe3xe8", "_blank");
+    window.open("https://maps.app.goo.gl/Q2uPD9hmBYAn43CD7", "_blank");
   };
 
   return (
