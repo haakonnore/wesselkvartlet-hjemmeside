@@ -9,41 +9,78 @@ const Parkering = () => {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   useEffect(() => {
+    let scriptElement: HTMLScriptElement | null = null;
+    
     const initMap = () => {
       if (mapRef.current && window.google) {
-        // Coordinates for Wesselkvartalet (approximate location in Oslo)
-        const wesselkvartaletLocation = { lat: 59.9139, lng: 10.7522 };
-        
-        const map = new window.google.maps.Map(mapRef.current, {
-          center: wesselkvartaletLocation,
-          zoom: 16,
-          mapTypeControl: false,
-          streetViewControl: false,
-          fullscreenControl: false,
-        });
+        try {
+          // Coordinates for Wesselkvartalet (approximate location in Oslo)
+          const wesselkvartaletLocation = { lat: 59.9139, lng: 10.7522 };
+          
+          const map = new window.google.maps.Map(mapRef.current, {
+            center: wesselkvartaletLocation,
+            zoom: 16,
+            mapTypeControl: false,
+            streetViewControl: false,
+            fullscreenControl: false,
+          });
 
-        // Add marker
-        new window.google.maps.Marker({
-          position: wesselkvartaletLocation,
-          map: map,
-          title: "Wesselkvartalet Parkering",
-        });
+          // Add marker
+          new window.google.maps.Marker({
+            position: wesselkvartaletLocation,
+            map: map,
+            title: "Wesselkvartalet Parkering",
+          });
 
-        setMapLoaded(true);
+          setMapLoaded(true);
+        } catch (error) {
+          console.error("Error initializing map:", error);
+        }
       }
     };
 
-    // Load Google Maps API
-    if (!window.google) {
-      const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
-      script.async = true;
-      script.defer = true;
-      script.onload = initMap;
-      document.head.appendChild(script);
-    } else {
+    // Check if Google Maps API is already loaded
+    if (window.google && window.google.maps) {
       initMap();
+    } else {
+      // Check if script is already being loaded
+      const existingScript = document.querySelector('script[src*="maps.googleapis.com"]');
+      
+      if (!existingScript) {
+        scriptElement = document.createElement('script');
+        scriptElement.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&loading=async`;
+        scriptElement.async = true;
+        scriptElement.defer = true;
+        scriptElement.onload = initMap;
+        scriptElement.onerror = (error) => {
+          console.error("Error loading Google Maps script:", error);
+        };
+        document.head.appendChild(scriptElement);
+      } else {
+        // If script exists, wait for it to load
+        const checkForGoogle = setInterval(() => {
+          if (window.google && window.google.maps) {
+            clearInterval(checkForGoogle);
+            initMap();
+          }
+        }, 100);
+        
+        // Clean up interval after 10 seconds
+        setTimeout(() => clearInterval(checkForGoogle), 10000);
+      }
     }
+
+    // Cleanup function
+    return () => {
+      if (scriptElement && scriptElement.parentNode) {
+        try {
+          scriptElement.parentNode.removeChild(scriptElement);
+        } catch (error) {
+          // Ignore errors if script was already removed
+          console.warn("Script cleanup warning:", error);
+        }
+      }
+    };
   }, []);
 
   const handleNavigate = () => {
