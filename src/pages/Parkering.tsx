@@ -95,6 +95,7 @@ const Parkering = () => {
                     <li>• 1 time gratis parkering (plan U1 og U2)</li>
                     <li>• Autopay - automatisk skiltgjenkjenning</li>
                     <li>• Døgnåpen parkering (24/7)</li>
+                    <li>• Høydebegrensning: 2,5m</li>
                     <li>• Ingen ladeplikt - parker med både bensin og elbil</li>
                     <li>• HC-parkering tilgjengelig</li>
                   </ul>
