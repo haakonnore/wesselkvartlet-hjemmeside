@@ -1,88 +1,9 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Navigation, MapPin } from "lucide-react";
+import { Navigation, MapPin, Clock, Car } from "lucide-react";
 
 const Parkering = () => {
-  const mapRef = useRef<HTMLDivElement>(null);
-  const [mapLoaded, setMapLoaded] = useState(false);
-
-  useEffect(() => {
-    let scriptElement: HTMLScriptElement | null = null;
-    
-    const initMap = () => {
-      if (mapRef.current && window.google) {
-        try {
-          // Coordinates for Wesselkvartalet (approximate location in Oslo)
-          const wesselkvartaletLocation = { lat: 59.9139, lng: 10.7522 };
-          
-          const map = new window.google.maps.Map(mapRef.current, {
-            center: wesselkvartaletLocation,
-            zoom: 16,
-            mapTypeControl: false,
-            streetViewControl: false,
-            fullscreenControl: false,
-          });
-
-          // Add marker
-          new window.google.maps.Marker({
-            position: wesselkvartaletLocation,
-            map: map,
-            title: "Wesselkvartalet Parkering",
-          });
-
-          setMapLoaded(true);
-        } catch (error) {
-          console.error("Error initializing map:", error);
-        }
-      }
-    };
-
-    // Check if Google Maps API is already loaded
-    if (window.google && window.google.maps) {
-      initMap();
-    } else {
-      // Check if script is already being loaded
-      const existingScript = document.querySelector('script[src*="maps.googleapis.com"]');
-      
-      if (!existingScript) {
-        scriptElement = document.createElement('script');
-        scriptElement.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&loading=async`;
-        scriptElement.async = true;
-        scriptElement.defer = true;
-        scriptElement.onload = initMap;
-        scriptElement.onerror = (error) => {
-          console.error("Error loading Google Maps script:", error);
-        };
-        document.head.appendChild(scriptElement);
-      } else {
-        // If script exists, wait for it to load
-        const checkForGoogle = setInterval(() => {
-          if (window.google && window.google.maps) {
-            clearInterval(checkForGoogle);
-            initMap();
-          }
-        }, 100);
-        
-        // Clean up interval after 10 seconds
-        setTimeout(() => clearInterval(checkForGoogle), 10000);
-      }
-    }
-
-    // Cleanup function
-    return () => {
-      if (scriptElement && scriptElement.parentNode) {
-        try {
-          scriptElement.parentNode.removeChild(scriptElement);
-        } catch (error) {
-          // Ignore errors if script was already removed
-          console.warn("Script cleanup warning:", error);
-        }
-      }
-    };
-  }, []);
-
   const handleNavigate = () => {
     // Open Google Maps navigation
     window.open("https://maps.app.goo.gl/PMtBhgYfguDKe3xe8", "_blank");
@@ -98,11 +19,11 @@ const Parkering = () => {
               Parkering
             </h1>
             <p className="text-xl text-muted-foreground">
-              Finn parkering ved Wesselkvartalet
+              Wessel P-hus - Praktisk parkering i sentrum
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="bg-card rounded-lg p-6 border border-border">
                 <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
@@ -110,7 +31,7 @@ const Parkering = () => {
                   Lokasjon
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  Wesselkvartalet ligger sentralt i Oslo med god tilgang til offentlig transport og parkering.
+                  Wessel P-hus ligger i Oslo sentrum med lett tilgang til Wesselkvartalet.
                 </p>
                 <Button 
                   onClick={handleNavigate}
@@ -123,30 +44,57 @@ const Parkering = () => {
               </div>
 
               <div className="bg-card rounded-lg p-6 border border-border">
-                <h3 className="text-xl font-semibold mb-3">Parkeringsmuligheter</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Gateparkering i området</li>
-                  <li>• Offentlige parkeringsplasser i nærheten</li>
-                  <li>• God tilgang til kollektivtransport</li>
-                  <li>• Sykkelparkering tilgjengelig</li>
-                </ul>
+                <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <Car className="h-5 w-5 text-primary" />
+                  Om Wessel P-hus
+                </h3>
+                <div className="space-y-3 text-muted-foreground">
+                  <p>
+                    Wessel P-hus er et moderne parkeringshus som tilbyr trygg og praktisk parkering 
+                    i Oslo sentrum. Parkeringshuset er ideelt plassert for besøkende til Wesselkvartalet.
+                  </p>
+                  <ul className="space-y-2">
+                    <li>• Døgnåpen parkering</li>
+                    <li>• Sikker og overvåket</li>
+                    <li>• Enkelt å finne ledig plass</li>
+                    <li>• Kort gåavstand til Wesselkvartalet</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div 
-                ref={mapRef} 
-                className="w-full h-96 rounded-lg border border-border bg-muted flex items-center justify-center"
-              >
-                {!mapLoaded && (
-                  <div className="text-center text-muted-foreground">
-                    <MapPin className="h-12 w-12 mx-auto mb-2" />
-                    <p>Laster kart...</p>
-                    <p className="text-sm mt-2">
-                      Krever Google Maps API-nøkkel for å vise kartet
-                    </p>
+            <div className="space-y-6">
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <Clock className="h-5 w-5 text-primary" />
+                  Åpningstider & Priser
+                </h3>
+                <div className="space-y-3 text-muted-foreground">
+                  <div>
+                    <p className="font-medium text-foreground">Åpningstider:</p>
+                    <p>Døgnåpen - 24/7</p>
                   </div>
-                )}
+                  <div>
+                    <p className="font-medium text-foreground">Betaling:</p>
+                    <p>Kontaktløs betaling tilgjengelig</p>
+                    <p>Kort og mobile betalingsløsninger</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">Tilgjengelighet:</p>
+                    <p>Universell utforming</p>
+                    <p>Tilrettelagt for bevegelseshemmede</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <h3 className="text-xl font-semibold mb-3">Andre parkeringsmuligheter</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Gateparkering i området</li>
+                  <li>• Andre parkeringshus i nærheten</li>
+                  <li>• God tilgang til kollektivtransport</li>
+                  <li>• Sykkelparkering ved Wesselkvartalet</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -156,5 +104,4 @@ const Parkering = () => {
     </div>
   );
 };
-
 export default Parkering;
