@@ -18,6 +18,9 @@ const subpages = [{
 }, {
   name: "Frie Tøyler",
   href: "/frie-toyler"
+}, {
+  name: "Parkering",
+  href: "/parkering"
 }];
 const sectionLinks = [{
   name: "Ledige lokaler",

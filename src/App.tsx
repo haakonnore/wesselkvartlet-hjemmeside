@@ -10,6 +10,7 @@ import FraFamilietomtTilByutvikling from "./pages/FraFamilietomtTilByutvikling";
 import Arkitektur from "./pages/Arkitektur";
 import ArkitektoniskKvalitet from "./pages/ArkitektoniskKvalitet";
 import FrieToyler from "./pages/FrieToyler";
+import Parkering from "./pages/Parkering";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/arkitektur" element={<Arkitektur />} />
           <Route path="/arkitektonisk-kvalitet" element={<ArkitektoniskKvalitet />} />
           <Route path="/frie-toyler" element={<FrieToyler />} />
+          <Route path="/parkering" element={<Parkering />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
