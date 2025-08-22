@@ -54,7 +54,7 @@ export function ContactSection() {
                       <h4 className="font-semibold">Adresse</h4>
                       <p className="text-muted-foreground">
                         Wesselkvartalet<br />
-                        Asker sentrum<br />
+                        Apotekerhagen 3<br />
                         1383 Asker
                       </p>
                     </div>

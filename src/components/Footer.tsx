@@ -11,7 +11,7 @@ export function Footer() {
               Vi tilbyr moderne lokaler og fasiliteter i hjertet av Asker sentrum.
             </p>
             <div className="space-y-2 text-sm text-primary-foreground/80">
-              <p>Asker sentrum, 1383 Asker</p>
+              <p>Apotekerhagen 3, 1383 Asker</p>
               <p>kontakt@wesselkvartalet.no</p>
               <p>+47 99 58 94 33</p>
             </div>
