@@ -5,6 +5,8 @@ pages_build_output_dir = "dist"
 
 [env.preview.vars]
 NODE_ENV = "development"
+NPM_FLAGS = "--legacy-peer-deps"
 
 [env.production.vars]
 NODE_ENV = "production"
+NPM_FLAGS = "--legacy-peer-deps"
