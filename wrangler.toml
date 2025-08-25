@@ -1,0 +1,11 @@
+name = "wesselkvartlet-hjemmeside"
+compatibility_date = "2024-08-25"
+
+[build]
+command = "npm run build"
+
+[env.development.vars]
+NODE_ENV = "development"
+
+[env.production.vars]
+NODE_ENV = "production"
