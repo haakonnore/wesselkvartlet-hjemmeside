@@ -5,6 +5,7 @@ import { Navigation, MapPin, Clock, Car } from "lucide-react";
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { SEOHead } from "@/components/SEOHead";
 
 const Parkering = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -47,6 +48,11 @@ const Parkering = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Parkering - Wessel P-hus | Wesselkvartalet"
+        description="Parkering i Wessel P-hus, Asker sentrum. 1 time gratis, Autopay skiltgjenkjenning, døgnåpen. Adresse: 9 Torvveien, 1383 Asker."
+        canonicalUrl="https://wesselkvartalet.no/parkering"
+      />
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">

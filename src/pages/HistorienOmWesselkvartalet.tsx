@@ -1,7 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 const HistorienOmWesselkvartalet = () => {
   return <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Historien om Wesselkvartalet - Fra familietomt til moderne kvarter | Wesselkvartalet"
+        description="Opplev historien om Wesselkvartalet - fra familietomt til Askers moderne hjerte. Les om utviklingen av dette unike kvarteret."
+        canonicalUrl="https://wesselkvartalet.no/historien-om-wesselkvartalet"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section with Historical Image */}

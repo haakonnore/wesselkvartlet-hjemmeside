@@ -1,9 +1,15 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const FraFamilietomtTilByutvikling = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Fra Familietomt til Byutvikling | Wesselkvartalet"
+        description="Følg transformasjonen fra familietomt til moderne byutvikling i Asker sentrum. Wesselkvartalets utviklingshistorie."
+        canonicalUrl="https://wesselkvartalet.no/fra-familietomt-til-byutvikling"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
