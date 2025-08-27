@@ -41,8 +41,18 @@ export function OptimizedImage({
     }
 
     const extension = originalSrc.split('.').pop()?.toLowerCase();
-    const basePath = originalSrc.replace(/\.[^/.]+$/, '');
     
+    // If already a WebP file, use as-is and generate PNG fallback
+    if (extension === 'webp') {
+      const fallbackPath = originalSrc.replace('/webp/', '/').replace('.webp', '.png');
+      return {
+        webp: originalSrc,
+        fallback: fallbackPath,
+      };
+    }
+    
+    // For other formats, generate WebP version
+    const basePath = originalSrc.replace(/\.[^/.]+$/, '');
     return {
       webp: `${basePath}.webp`,
       fallback: originalSrc,
@@ -94,14 +104,9 @@ export function OptimizedImage({
       return imageSrc;
     }
 
-    const extension = imageSrc.split('.').pop()?.toLowerCase();
-    const basePath = imageSrc.replace(/\.[^/.]+$/, '');
-    
-    // Generate different sizes
-    const sizes = [400, 800, 1200, 1600];
-    return sizes
-      .map(size => `${basePath}-${size}w.${extension} ${size}w`)
-      .join(', ');
+    // For now, just return the single image since we don't have multiple sizes
+    // In the future, this could be enhanced to generate multiple sizes
+    return imageSrc;
   };
 
   return (
