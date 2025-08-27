@@ -1,26 +1,27 @@
 import { useState } from "react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const ProjectGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
     {
-      src: "/lovable-uploads/33d5590e-dfc2-4735-b895-c5104728d4ac.png",
+      src: "/lovable-uploads/webp/33d5590e-dfc2-4735-b895-c5104728d4ac.webp",
       alt: "Tverrsnitt av Wesselkvartalet som viser bygningens profil og sammenheng med Apotekergården",
       title: "Tverrsnitt"
     },
     {
-      src: "/lovable-uploads/358fd518-f5cc-4eaa-9826-37ca5f0a702b.png",
+      src: "/lovable-uploads/webp/358fd518-f5cc-4eaa-9826-37ca5f0a702b.webp",
       alt: "Situasjonsplan som viser Wesselkvartalets plassering i Asker sentrum",
       title: "Situasjonsplan"
     },
     {
-      src: "/lovable-uploads/f1da76e6-3e04-44d6-a5b0-a0d62f57daa1.png",
+      src: "/lovable-uploads/webp/f1da76e6-3e04-44d6-a5b0-a0d62f57daa1.webp",
       alt: "Plantegning som viser leilighetsløsningene i Wesselkvartalet",
       title: "Plantegning leiligheter"
     },
     {
-      src: "/lovable-uploads/1f7b83ec-1de9-4b1f-8008-a2d8f18a3464.png",
+      src: "/lovable-uploads/webp/1f7b83ec-1de9-4b1f-8008-a2d8f18a3464.webp",
       alt: "Plantegning av førsteetasje med landskapsdesign og Apotekerhagen",
       title: "Førsteetasje og hageplan"
     }
@@ -46,10 +47,12 @@ const ProjectGallery = () => {
               onClick={() => setSelectedImage(image.src)}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img
+                <OptimizedImage
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-contain bg-white p-4 group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  placeholder="blur"
                 />
               </div>
               <div className="p-4">
@@ -72,10 +75,12 @@ const ProjectGallery = () => {
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
-              <img
+              <OptimizedImage
                 src={selectedImage}
                 alt="Forstørret arkitekturtegning"
                 className="max-w-full max-h-full object-contain bg-white rounded-lg"
+                priority={true}
+                sizes="90vw"
               />
               <button
                 onClick={() => setSelectedImage(null)}

@@ -2,49 +2,46 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 import { ChevronLeft, ChevronRight, X, ExternalLink, Building2, Users, Award } from "lucide-react";
-import buildingView1 from "/lovable-uploads/695a7bce-4ed8-4ab2-9464-13ab4755497f.png";
-import buildingView2 from "/lovable-uploads/b4bee2d3-5b73-49c3-874b-cc1da2a65ddc.png";
-import buildingView3 from "/lovable-uploads/1b0f4c04-b5ad-4004-9cb1-bfb36ce1bf9b.png";
-import buildingView4 from "/lovable-uploads/33066afb-850f-44f0-b9a7-c05f160fa162.png";
 const galleryImages = [{
-  src: "/lovable-uploads/7dcce2ef-bbc3-42dd-81fb-dc9a105b4078.png",
+  src: "/lovable-uploads/webp/7dcce2ef-bbc3-42dd-81fb-dc9a105b4078.webp",
   alt: "Wesselkvartalet sett utenfra med kurvet fasade som reiser seg over de historiske bygningene",
   title: "Eksteriør"
 }, {
-  src: "/lovable-uploads/9cb76891-08d1-4213-b269-02b584356261.png",
+  src: "/lovable-uploads/webp/9cb76891-08d1-4213-b269-02b584356261.webp",
   alt: "Wesselkvartalet helhetsbilde med parker og moderne utbyggingsområde",
   title: "Helhetlig utviklingsområde"
 }, {
-  src: "/lovable-uploads/88f6b913-8d40-4ef9-83cd-bb1d175c08a2.png",
+  src: "/lovable-uploads/webp/88f6b913-8d40-4ef9-83cd-bb1d175c08a2.webp",
   alt: "Wesselkvartalet fasade med moderne arkitektur og butikker i førsteetasje",
   title: "Hovedinngang og butikkområde"
 }, {
-  src: "/lovable-uploads/f2d21b23-5b51-4277-bf04-2d9e1d135871.png",
+  src: "/lovable-uploads/webp/f2d21b23-5b51-4277-bf04-2d9e1d135871.webp",
   alt: "Gårdsplassen sett fra bakkeplan med butikker og restauranter",
   title: "Handelsgata"
 }, {
-  src: "/lovable-uploads/adffce7c-a626-4649-8072-1049321b4051.png",
+  src: "/lovable-uploads/webp/adffce7c-a626-4649-8072-1049321b4051.webp",
   alt: "Gårdsplass med kurvet teglsteinfasade og butikklokaler",
   title: "Gårdsplass"
 }, {
-  src: "/lovable-uploads/80f363fb-b697-44cd-b65c-8f2976d0ce8b.png",
+  src: "/lovable-uploads/webp/80f363fb-b697-44cd-b65c-8f2976d0ce8b.webp",
   alt: "Apotekerhagen med vannelementer og lek for barn",
   title: "Apotekerhagen"
 }, {
-  src: "/lovable-uploads/95789669-ad3c-47d7-a975-5d38fe7701f6.png",
+  src: "/lovable-uploads/webp/95789669-ad3c-47d7-a975-5d38fe7701f6.webp",
   alt: "Wesselkvartalet boligbygg med grønne fellesområder og rundede balkonger",
   title: "Boligområde med grønne fellesarealer"
 }, {
-  src: "/lovable-uploads/9bdb99e5-f927-48ec-a49f-489d74ca83e1.png",
+  src: "/lovable-uploads/webp/9bdb99e5-f927-48ec-a49f-489d74ca83e1.webp",
   alt: "Takterrasser og uteområder med moderne design",
   title: "Takterrasser"
 }, {
-  src: "/lovable-uploads/780bb704-694b-40e3-8322-a7de34abed19.png",
+  src: "/lovable-uploads/webp/780bb704-694b-40e3-8322-a7de34abed19.webp",
   alt: "Wesselkvartalet kurvet fasade med innovative designelementer",
   title: "Innovativ fasadedesign"
 }, {
-  src: "/lovable-uploads/942702a4-8b44-4259-ba77-f5fef779f7ec.png",
+  src: "/lovable-uploads/webp/942702a4-8b44-4259-ba77-f5fef779f7ec.webp",
   alt: "Detaljert arkitektur av Wesselkvartalet med tegl og tre elementer",
   title: "Arkitektoniske detaljer"
 }];
@@ -53,19 +50,19 @@ export function AboutProjectSection() {
   const architecturalFeatures = [{
     title: "Bærekraftig arkitektur",
     description: "Karakteristisk murstein og geometriske mønstre",
-    image: buildingView1
+    image: "/lovable-uploads/webp/695a7bce-4ed8-4ab2-9464-13ab4755497f.webp"
   }, {
     title: "Buede balkonger med trepanel",
     description: "Utsikt over Askerbygda; fra takhagen kan du se helt til Oslo.",
-    image: buildingView2
+    image: "/lovable-uploads/webp/b4bee2d3-5b73-49c3-874b-cc1da2a65ddc.webp"
   }, {
     title: "Ikonisk fasade",
     description: "Karakteristisk murstein og geometriske mønstre",
-    image: buildingView3
+    image: "/lovable-uploads/webp/1b0f4c04-b5ad-4004-9cb1-bfb36ce1bf9b.webp"
   }, {
     title: "Integrert grøntområde",
     description: "Takhager og grønne elementer i hele kvartalet",
-    image: buildingView4
+    image: "/lovable-uploads/webp/33066afb-850f-44f0-b9a7-c05f160fa162.webp"
   }];
   const openModal = (index: number) => {
     setSelectedImage(index);
@@ -95,7 +92,7 @@ export function AboutProjectSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {architecturalFeatures.map((feature, index) => <Card key={index} className="property-card overflow-hidden">
               <div className="relative h-64">
-                <img src={feature.image} alt={feature.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <OptimizedImage src={feature.image} alt={feature.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 25vw" placeholder="blur" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -163,7 +160,7 @@ export function AboutProjectSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((image, index) => <div key={index} className="group relative overflow-hidden rounded-xl bg-card shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer" onClick={() => openModal(index)}>
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={image.src} alt={image.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <OptimizedImage src={image.src} alt={image.alt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" placeholder="blur" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -199,7 +196,7 @@ export function AboutProjectSection() {
               </Button>
 
               <div className="relative overflow-hidden rounded-lg">
-                <img src={galleryImages[selectedImage].src} alt={galleryImages[selectedImage].alt} className="w-full h-full object-contain max-h-[80vh]" />
+                <OptimizedImage src={galleryImages[selectedImage].src} alt={galleryImages[selectedImage].alt} className="w-full h-full object-contain max-h-[80vh]" priority={true} sizes="90vw" />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                   <h3 className="text-white text-xl font-semibold mb-2">
                     {galleryImages[selectedImage].title}
