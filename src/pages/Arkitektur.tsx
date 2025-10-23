@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 import { ArchitectsSection } from "@/components/ArchitectsSection";
 import ProjectGallery from "@/components/ProjectGallery";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,6 +10,11 @@ import { Book, ExternalLink, Award, Globe, Newspaper, MapPin, MessageCircle } fr
 const Arkitektur = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Arkitektur - Vigsnæs+Kosberg++ Arkitekter | Wesselkvartalet"
+        description="Utforsk Wesselkvartalets prisbelønte arkitektur av Vigsnæs+Kosberg++ Arkitekter. Moderne design møter bærekraftig innovasjon."
+        canonicalUrl="https://wesselkvartalet.no/arkitektur"
+      />
       <Header />
       <main>
         <div className="pt-20 pb-10">

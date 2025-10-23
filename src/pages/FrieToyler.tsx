@@ -3,10 +3,16 @@ import { Footer } from "@/components/Footer";
 import { ExternalLink, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import bookImage from "@/assets/wesselkvartalet-book.jpg";
+import { SEOHead } from "@/components/SEOHead";
 
 const FrieToyler = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Frie Tøyler - Essay av Børre Skodvin | Wesselkvartalet"
+        description="Les essayet 'Frie Tøyler' av Børre Skodvin om Wesselkvartalets arkitektoniske kvalitet og suksessfaktorer i norsk boligutvikling."
+        canonicalUrl="https://wesselkvartalet.no/frie-toyler"
+      />
       <Header />
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Book Purchase Section */}

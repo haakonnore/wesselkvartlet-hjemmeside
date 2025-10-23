@@ -1,15 +1,18 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "/lovable-uploads/76eb514d-787b-4ebe-94a0-8561b43d914d.png";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 export function Hero() {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
+        <OptimizedImage
+          src="/lovable-uploads/webp/76eb514d-787b-4ebe-94a0-8561b43d914d.webp"
           alt="Wesselkvartalet moderne arkitektur"
           className="w-full h-full object-cover"
+          priority={true}
+          sizes="100vw"
+          placeholder="blur"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
       </div>

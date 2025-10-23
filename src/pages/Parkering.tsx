@@ -5,6 +5,7 @@ import { Navigation, MapPin, Clock, Car } from "lucide-react";
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { SEOHead } from "@/components/SEOHead";
 
 const Parkering = () => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -12,11 +13,11 @@ const Parkering = () => {
   useEffect(() => {
     if (mapRef.current) {
       // Create map centered on Asker address
-      const map = L.map(mapRef.current).setView([59.8341334, 10.4339811], 16);
+      const map = L.map(mapRef.current).setView([59.834162, 10.433190], 16);
 
-      // Add OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      // Add Humanitarian OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
       }).addTo(map);
 
       // Custom marker icon
@@ -28,7 +29,7 @@ const Parkering = () => {
       });
 
       // Add marker
-      L.marker([59.8341334, 10.4339811], { icon: customIcon })
+      L.marker([59.834162, 10.433190], { icon: customIcon })
         .addTo(map)
         .bindPopup('<strong>Wessel P-hus</strong><br>9 Torvveien, 1383 Asker')
         .openPopup();
@@ -47,6 +48,11 @@ const Parkering = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Parkering - Wessel P-hus | Wesselkvartalet"
+        description="Parkering i Wessel P-hus, Asker sentrum. 1 time gratis, Autopay skiltgjenkjenning, døgnåpen. Adresse: 9 Torvveien, 1383 Asker."
+        canonicalUrl="https://wesselkvartalet.no/parkering"
+      />
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">

@@ -1,9 +1,15 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const ArkitektoniskKvalitet = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Arkitektonisk Kvalitet - Prisbelønt design | Wesselkvartalet"
+        description="Wesselkvartalets arkitektoniske kvalitet har vunnet prestisjetunge priser. Les om designprinsipper og kvalitetsfokuset."
+        canonicalUrl="https://wesselkvartalet.no/arkitektonisk-kvalitet"
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 import { GhostDigitSection } from "@/components/GhostDigitSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -159,6 +160,11 @@ export default function WesselEnergi() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Wessel Energi - Bærekraftig energiløsning | Wesselkvartalet"
+        description="Wessel Energi - innovativ og bærekraftig energiløsning for Wesselkvartalet i Asker. Les om våre miljøvennlige energisystemer."
+        canonicalUrl="https://wesselkvartalet.no/wessel-energi"
+      />
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] rounded bg-primary px-3 py-2 text-sm text-primary-foreground"
