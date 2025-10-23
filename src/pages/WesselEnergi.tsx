@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
+import { GhostDigitSection } from "@/components/GhostDigitSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -217,6 +218,9 @@ export default function WesselEnergi() {
             </div>
           </div>
         </section>
+
+        {/* GHOST-DIGIT Research Project */}
+        <GhostDigitSection />
 
         {/* Technical Specifications */}
         <section className="py-12 md:py-20 bg-muted/30">
