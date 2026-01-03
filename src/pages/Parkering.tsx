@@ -131,7 +131,7 @@ const Parkering = () => {
                   <p className="text-sm">
                     Man kan også bestille lader i U2 og U3. Se priser på bestilling av lader her:{" "}
                     <a 
-                      href="https://www.aneo.com/no/tjenester/mobility/kontakt/" 
+                      href="https://www.aneomobility.com/no/faq" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
