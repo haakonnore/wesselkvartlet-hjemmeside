@@ -21,11 +21,11 @@ const Index = () => {
         canonicalUrl="https://wesselkvartalet.no/"
       />
       <Header />
-      <ArchitecturePrizeWinnerBanner />
       <main>
         <Hero />
         <GhostDigitSection />
         <EssayTeaserSection />
+        <ArchitecturePrizeWinnerBanner />
         <EnergyArticleSection />
         <PropertyGrid />
         <AboutProjectSection />
