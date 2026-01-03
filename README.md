@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Wesselkvartalet Hjemmeside
 
-## Project info
+Dette er nettsiden for Wesselkvartalet i Asker – et moderne byutviklingsprosjekt der arkitektur, bærekraft og innovasjon møtes.
 
-**URL**: https://lovable.dev/projects/c1fc32b4-a309-441c-9da0-a2b98246199c
+## Utvikling med Antigravity
 
-## How can I edit this code?
+Dette prosjektet utvikles nå med **Antigravity**, en kraftfull AI-drevet kodeassistent. Arbeidsflyten baserer seg på lokal utvikling, versjonskontroll med GitHub, og deployment til Cloudflare Pages.
 
-There are several ways of editing your application.
+### Slik kommer du i gang
 
-**Use Lovable**
+For å arbeide med prosjektet lokalt trenger du Node.js og npm installert.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c1fc32b4-a309-441c-9da0-a2b98246199c) and start prompting.
+1.  **Klone repoet**:
+    ```sh
+    git clone https://github.com/haakonnore/wesselkvartlet-hjemmeside.git
+    cd wesselkvartlet-hjemmeside
+    ```
 
-Changes made via Lovable will be committed automatically to this repo.
+2.  **Installere avhengigheter**:
+    ```sh
+    npm install
+    ```
 
-**Use your preferred IDE**
+3.  **Starte utviklingsserver**:
+    ```sh
+    npm run dev
+    ```
+    Dette starter Vite-serveren med auto-reloading og forhåndsvisning.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Teknologier
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Prosjektet er bygget med:
+- **Vite** (Build tool)
+- **TypeScript** (Programmeringsspråk)
+- **React** (UI-bibliotek)
+- **shadcn-ui** (Komponenter)
+- **Tailwind CSS** (Styling)
 
-Follow these steps:
+## Deployment
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Vi bruker **Cloudflare Pages** for hosting. Deployment gjøres med **Wrangler** (Cloudflare CLI).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Manuelt deployment
 
-# Step 3: Install the necessary dependencies.
-npm i
+For å bygge og deploye endringer manuelt fra din lokale maskin:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1.  **Bygg prosjektet**:
+    ```sh
+    npm run build
+    ```
 
-**Edit a file directly in GitHub**
+2.  **Deploy til Cloudflare**:
+    ```sh
+    npx wrangler pages deploy dist --project-name wesselkvartlet-hjemmeside
+    ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Automatisk deployment
 
-**Use GitHub Codespaces**
+Når endringer pushes til `main`-branchen på GitHub, vil Cloudflare Pages automatisk bygge og deploye den nyeste versjonen til [wesselkvartalet.no](https://wesselkvartalet.no/).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Bidra til prosjektet
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c1fc32b4-a309-441c-9da0-a2b98246199c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Alle endringer skal gjøres via Pull Requests eller direkte commits til `main` (for mindre endringer). Bruk gjerne Antigravity for å planlegge og utføre endringer i kodebasen.
