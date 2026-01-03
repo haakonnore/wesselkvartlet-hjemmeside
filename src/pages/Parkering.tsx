@@ -73,6 +73,59 @@ const Parkering = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
+              <Card className="border-primary/50 shadow-md">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Car className="h-5 w-5 text-primary" />
+                    Månedsleie
+                  </CardTitle>
+                  <CardDescription>
+                    Sikre deg fast parkering i sentrum
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4 text-muted-foreground">
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center p-2 bg-muted/50 rounded-md">
+                        <span className="font-medium">U2 (Fri flyt)</span>
+                        <span className="font-bold text-foreground">1 586 kr/mnd</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted/50 rounded-md">
+                        <span className="font-medium">U3 (Fast plass)</span>
+                        <span className="font-bold text-foreground">2 448 kr/mnd</span>
+                      </div>
+                    </div>
+                    
+                    <p className="text-sm">
+                      Man kan også bestille lader i U2 og U3. Se priser på bestilling av lader hos{" "}
+                      <a 
+                        href="https://portal.aneomobility.com/nb/checkout/housing-company" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline font-medium"
+                      >
+                        Aneo Mobility
+                      </a>.
+                    </p>
+
+                    <Button 
+                      asChild
+                      className="w-full mt-2"
+                      variant="default"
+                      size="lg"
+                    >
+                      <a 
+                        href="https://onepark.no/parkering/akershus/wessel-p-hus/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        Bestill parkering her
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -121,59 +174,6 @@ const Parkering = () => {
                     <p className="mt-4 text-sm font-medium text-foreground">
                       Her står bilen din trygt. Parkeringskjelleren er kameraovervåket.
                     </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-primary/50 shadow-md">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Car className="h-5 w-5 text-primary" />
-                    Månedsleie
-                  </CardTitle>
-                  <CardDescription>
-                    Sikre deg fast parkering i sentrum
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4 text-muted-foreground">
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center p-2 bg-muted/50 rounded-md">
-                        <span className="font-medium">U2 (Fri flyt)</span>
-                        <span className="font-bold text-foreground">1 586 kr/mnd</span>
-                      </div>
-                      <div className="flex justify-between items-center p-2 bg-muted/50 rounded-md">
-                        <span className="font-medium">U3 (Fast plass)</span>
-                        <span className="font-bold text-foreground">2 448 kr/mnd</span>
-                      </div>
-                    </div>
-                    
-                    <p className="text-sm">
-                      Man kan også bestille lader i U2 og U3. Se priser på bestilling av lader hos{" "}
-                      <a 
-                        href="https://www.aneomobility.com/no/faq" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline font-medium"
-                      >
-                        Aneo Mobility
-                      </a>.
-                    </p>
-
-                    <Button 
-                      asChild
-                      className="w-full mt-2"
-                      variant="default"
-                      size="lg"
-                    >
-                      <a 
-                        href="https://onepark.no/parkering/akershus/wessel-p-hus/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Bestill parkering her
-                      </a>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
