@@ -17,7 +17,20 @@ const MetaPixel = () => {
     }
   }, [location]);
 
-  return null;
+  if (location.pathname !== "/parkering") {
+    return null;
+  }
+
+  return (
+    <noscript>
+      <img 
+        height="1" 
+        width="1" 
+        style={{ display: "none" }}
+        src="https://www.facebook.com/tr?id=1179540005525752&ev=PageView&noscript=1"
+      />
+    </noscript>
+  );
 };
 
 export default MetaPixel;
