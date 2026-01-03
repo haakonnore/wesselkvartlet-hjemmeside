@@ -110,6 +110,51 @@ const Parkering = () => {
                   </p>
                 </div>
               </div>
+
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                  <Car className="h-5 w-5 text-primary" />
+                  Månedsleie
+                </h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-2">
+                    <p className="flex justify-between items-center">
+                      <span>U2:</span>
+                      <span className="font-semibold text-foreground">1 586 kr per mnd</span>
+                    </p>
+                    <p className="flex justify-between items-start">
+                      <span>U3 (fast plass bak port):</span>
+                      <span className="font-semibold text-foreground text-right ml-4">2 448 kr per mnd</span>
+                    </p>
+                  </div>
+                  
+                  <p className="text-sm">
+                    Man kan også bestille lader i U2 og U3. Se priser på bestilling av lader her:{" "}
+                    <a 
+                      href="https://www.aneo.com/no/tjenester/mobility/kontakt/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      Aneo Mobility
+                    </a>
+                  </p>
+
+                  <Button 
+                    asChild
+                    className="w-full"
+                    variant="default"
+                  >
+                    <a 
+                      href="https://onepark.no/parkering/akershus/wesselkvartalet" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Bestill her
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-6">
@@ -122,7 +167,7 @@ const Parkering = () => {
                   <div>
                     <p className="font-medium text-foreground">Priser:</p>
                     <p>1 time gratis i plan U1 og U2</p>
-                    <p>22 kr per 30 min ut over gratistiden</p>
+                    <p>Deretter 50 kr per time (U1 & U2)</p>
                     <p>Makspris: 190 kr per 24 timer</p>
                   </div>
                   <div>
