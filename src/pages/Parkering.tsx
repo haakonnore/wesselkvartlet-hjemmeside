@@ -146,7 +146,7 @@ const Parkering = () => {
                     variant="default"
                   >
                     <a 
-                      href="https://onepark.no/parkering/akershus/wesselkvartalet" 
+                      href="https://onepark.no/parkering/akershus/wessel-p-hus/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
