@@ -55,8 +55,8 @@ const Parkering = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title="Parkering - Wessel P-hus | Wesselkvartalet"
-        description="Parkering i Wessel P-hus, Asker sentrum. 1 time gratis, Autopay skiltgjenkjenning, døgnåpen. Adresse: 9 Torvveien, 1383 Asker."
+        title="Parkering i Asker Sentrum - Wessel P-hus | Wesselkvartalet"
+        description="Parkering i Asker sentrum. Wessel P-hus tilbyr 1 time gratis parkering, Autopay skiltgjenkjenning og døgnåpen tilgang. Sentralt i Asker ved Torvveien 9. Ladestasjon tilgjengelig."
         canonicalUrl="https://wesselkvartalet.no/parkering"
       />
       <Header />

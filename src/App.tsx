@@ -11,6 +11,8 @@ import FraFamilietomtTilByutvikling from "./pages/FraFamilietomtTilByutvikling";
 import Arkitektur from "./pages/Arkitektur";
 import ArkitektoniskKvalitet from "./pages/ArkitektoniskKvalitet";
 import FrieToyler from "./pages/FrieToyler";
+import Lokaler from "./pages/Lokaler";
+import Bod from "./pages/Bod";
 import Parkering from "./pages/Parkering";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/arkitektonisk-kvalitet" element={<ArkitektoniskKvalitet />} />
           <Route path="/frie-toyler" element={<FrieToyler />} />
           <Route path="/parkering" element={<Parkering />} />
+          <Route path="/lokaler" element={<Lokaler />} />
+          <Route path="/bod" element={<Bod />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

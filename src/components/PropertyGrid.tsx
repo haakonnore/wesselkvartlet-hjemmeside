@@ -2,7 +2,11 @@ import { PropertyCard } from "./PropertyCard";
 import parkingImage from "@/assets/parking-facility.jpg";
 import rooftopImage from "/lovable-uploads/b906604e-7f45-4382-a192-40914b16e300.png";
 import buildingDetailImage from "/lovable-uploads/c63c1aed-9cfa-4b51-8f39-01ac827b3e52.png";
+import { useNavigate } from "react-router-dom";
+
 export function PropertyGrid() {
+  const navigate = useNavigate();
+
   const properties = [{
     icon: "📦",
     title: "Lager/Bod",
@@ -13,7 +17,7 @@ export function PropertyGrid() {
     image: "/lovable-uploads/3dd8daf6-3570-4b9e-98e0-3b9babf5262a.png",
     features: ["Videoovervåkning", "Sikker adgang", "Fleksible størrelser"],
     buttonText: "Les mer",
-    buttonAction: () => window.open("https://www.finn.no/realestate/businessrent/ad.html?finnkode=396460332", "_blank")
+    buttonAction: () => navigate("/bod")
   }, {
     icon: "🏢",
     title: "Næringslokale",
@@ -23,13 +27,8 @@ export function PropertyGrid() {
     size: "240 m²",
     image: "/lovable-uploads/3c64b751-93ee-4825-aeef-7a90c50a10c7.png",
     features: ["Kan deles opp", "Nye vinduer", "Sentral beliggenhet"],
-    buttonText: "Kontakt oss",
-    buttonAction: () => {
-      const kontaktSection = document.getElementById('kontakt');
-      if (kontaktSection) kontaktSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+    buttonText: "Les mer",
+    buttonAction: () => navigate("/lokaler")
   }, {
     icon: "💻",
     title: "Datarom",
@@ -48,7 +47,7 @@ export function PropertyGrid() {
     image: parkingImage,
     features: ["Videoovervåkning", "Elbillading", "Faste plasser", "Korttidsparkering"],
     buttonText: "Bestill plass",
-    buttonAction: () => window.open("https://onepark.no/parkering/akershus/wesselkvartalet/", "_blank")
+    buttonAction: () => navigate("/parkering")
   }, {
     icon: "🛁",
     title: "Garderober",
