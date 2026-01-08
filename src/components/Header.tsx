@@ -9,17 +9,8 @@ const subpages = [{
   name: "Wessel Energi",
   href: "/wessel-energi"
 }, {
-  name: "Historien om Apotekergården",
-  href: "/historien-om-wesselkvartalet"
-}, {
-  name: "Fra familietomt til bærekraftig byutvikling",
-  href: "/fra-familietomt-til-byutvikling"
-}, {
-  name: "Arkitektur",
-  href: "/arkitektur"
-}, {
-  name: "Frie Tøyler",
-  href: "/frie-toyler"
+  name: "Om prosjektet",
+  href: "/om-prosjektet"
 }, {
   name: "Parkering",
   href: "/parkering"
@@ -35,10 +26,10 @@ export function Header() {
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
-        
+      <nav className="mx-auto flex max-w-7xl items-center justify-start gap-12 p-4 lg:px-8" aria-label="Global">
+
         {/* Logo Area */}
-        <div className="flex lg:flex-1">
+        <div className="flex">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <span className="text-xl md:text-2xl font-bold primary-gradient bg-clip-text text-transparent">
               Wesselkvartalet
@@ -47,19 +38,19 @@ export function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:gap-x-6 items-center">
+        <div className="hidden md:flex md:gap-x-6 items-center">
           {!isHomePage && (
-             <Link 
-             to="/" 
-             className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors flex items-center gap-1 mr-4"
-           >
-             <ArrowLeft className="h-4 w-4" />
-             Tilbake
-           </Link>
+            <Link
+              to="/"
+              className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors flex items-center gap-1 mr-4"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Tilbake
+            </Link>
           )}
-          
-          <Link 
-            to="/" 
+
+          <Link
+            to="/"
             className={cn(
               "text-sm font-semibold leading-6 transition-colors hover:text-primary",
               isHomePage ? "text-primary" : "text-muted-foreground"
@@ -67,11 +58,11 @@ export function Header() {
           >
             Hjem
           </Link>
-          
+
           {subpages.map((item) => (
-            <Link 
-              key={item.name} 
-              to={item.href} 
+            <Link
+              key={item.name}
+              to={item.href}
               className={cn(
                 "text-sm font-semibold leading-6 transition-colors hover:text-primary",
                 isActive(item.href) ? "text-primary" : "text-muted-foreground"
@@ -83,7 +74,7 @@ export function Header() {
         </div>
 
         {/* Mobile Menu Trigger */}
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="sm" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-muted-foreground">
@@ -95,8 +86,8 @@ export function Header() {
               <SheetTitle className="text-left text-lg font-bold mb-4">Meny</SheetTitle>
               <SheetDescription className="sr-only">Navigasjonsmeny for Wesselkvartalet</SheetDescription>
               <div className="flex flex-col gap-4 mt-6">
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   className={cn(
                     "block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-accent hover:text-accent-foreground",
                     isHomePage ? "bg-accent text-accent-foreground" : "text-foreground"
@@ -108,7 +99,7 @@ export function Header() {
                     Hjem
                   </div>
                 </Link>
-                
+
                 {subpages.map((item) => (
                   <Link
                     key={item.name}
@@ -122,7 +113,7 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
-                
+
                 {!isHomePage && (
                   <div className="mt-4 pt-4 border-t border-border">
                     <Link

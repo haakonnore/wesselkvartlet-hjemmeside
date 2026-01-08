@@ -6,11 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MetaPixel from "./components/MetaPixel";
 import Index from "./pages/Index";
 import WesselEnergi from "./pages/WesselEnergi";
-import HistorienOmWesselkvartalet from "./pages/HistorienOmWesselkvartalet";
-import FraFamilietomtTilByutvikling from "./pages/FraFamilietomtTilByutvikling";
-import Arkitektur from "./pages/Arkitektur";
-import ArkitektoniskKvalitet from "./pages/ArkitektoniskKvalitet";
-import FrieToyler from "./pages/FrieToyler";
+import OmProsjektet from "./pages/OmProsjektet";
 import Lokaler from "./pages/Lokaler";
 import Bod from "./pages/Bod";
 import Parkering from "./pages/Parkering";
@@ -28,11 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/wessel-energi" element={<WesselEnergi />} />
-          <Route path="/historien-om-wesselkvartalet" element={<HistorienOmWesselkvartalet />} />
-          <Route path="/fra-familietomt-til-byutvikling" element={<FraFamilietomtTilByutvikling />} />
-          <Route path="/arkitektur" element={<Arkitektur />} />
-          <Route path="/arkitektonisk-kvalitet" element={<ArkitektoniskKvalitet />} />
-          <Route path="/frie-toyler" element={<FrieToyler />} />
+          <Route path="/om-prosjektet" element={<OmProsjektet />} />
           <Route path="/parkering" element={<Parkering />} />
           <Route path="/lokaler" element={<Lokaler />} />
           <Route path="/bod" element={<Bod />} />
