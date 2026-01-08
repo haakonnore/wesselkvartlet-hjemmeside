@@ -14,7 +14,7 @@ import bookImage from "@/assets/wesselkvartalet-book.jpg";
 const OmProsjektet = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   // Get active tab from hash or default to 'historie'
   const [activeTab, setActiveTab] = useState("historie");
 
@@ -39,7 +39,7 @@ const OmProsjektet = () => {
         canonicalUrl="https://wesselkvartalet.no/om-prosjektet"
       />
       <Header />
-      
+
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -89,12 +89,12 @@ const OmProsjektet = () => {
                     <p>
                       I 2014 kom Tandberg Eiendom inn som medeier. Dette sterke, familiedrevne eierskapet har bidratt til en solid lokal forankring, med et unikk fokus på kvalitet over kvantitet. Byggherre Henrik Nore understreker at kvartalet «ikke er profittmaksimert» – valget av buede former fremfor en firkantet kloss bevisst prioriterte arkitektonisk kvalitet og bymiljø fremfor flest mulig kvadratmeter.
                     </p>
-                    
+
                     <h3 className="mt-8">Fra historisk bygård til moderne kvartal</h3>
                     <p>
                       Før dagens kvartal sto ferdig, var området preget av eldre bebyggelse, inkludert Wesselgården og Bankveien 4. En viktig del av denne historien er flyttingen av Apotekergården (bygget i 1924) i 1997, 50 meter lenger mot Torvveien. Denne bevaringen av den historiske trebygningen viser hvordan arkitektur kan integreres i moderne byutvikling.
                     </p>
-                    
+
                     <div className="my-12">
                       <img src="/lovable-uploads/db80c6e7-1807-4d06-a5c2-41a8f782353f.png" alt="Asker jernbanestasjon ca. 1947" className="w-full h-auto rounded-xl shadow-lg" />
                       <p className="text-sm text-muted-foreground text-center mt-4 italic">
@@ -109,7 +109,7 @@ const OmProsjektet = () => {
                     <p>
                       I august 1997 ble den gamle apotekergården flyttet av flere lastebiler til samme nivå som den omkringliggende bebyggelsen og plassert på nyoppsatt grunnmur – en teknisk komplisert oppgave som ble fulgt spent av lokalbefolkningen.
                     </p>
-                    
+
                     <p className="text-sm text-muted-foreground italic mt-12 border-t pt-4">
                       Basert på tekster av Alf "Bassen" Andersen (1998)
                     </p>
@@ -121,12 +121,12 @@ const OmProsjektet = () => {
               <TabsContent value="byutvikling" className="space-y-12 animate-in fade-in duration-500">
                 <section>
                   <h2 className="text-3xl font-bold mb-8 text-center">Fra familietomt til bærekraftig byutvikling</h2>
-                  
+
                   <div className="prose prose-lg dark:prose-invert mx-auto">
                     <p>
                       Utviklingen av Wesselkvartalet startet som et samarbeid mellom to familier: Wessel/Nore og Tandberg. Mandatet fra familien var klart: "Bygg noe vi kan være stolte av."
                     </p>
-                    
+
                     <div className="my-12 p-8 bg-muted/30 rounded-2xl">
                       <h3 className="mt-0">Henrik Nore – Utvikleren</h3>
                       <p>
@@ -177,7 +177,7 @@ const OmProsjektet = () => {
                   </div>
 
                   <ArchitectsSection />
-                  
+
                   <div className="mt-16">
                     <ProjectGallery />
                   </div>
@@ -185,7 +185,7 @@ const OmProsjektet = () => {
                   <div className="mt-20">
                     <h3 className="text-2xl font-bold mb-8 text-center">Anerkjennelse og dokumentasjon</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                       <Card className="bg-muted/10 border-none shadow-sm h-full">
+                      <Card className="bg-muted/10 border-none shadow-sm h-full">
                         <CardContent className="p-8">
                           <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
                             <Book className="w-6 h-6 text-primary" />
@@ -230,9 +230,9 @@ const OmProsjektet = () => {
                   <div className="bg-muted/30 p-8 rounded-2xl mb-12 not-prose border">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                       <div className="flex-shrink-0 w-32 h-44">
-                        <img 
-                          src={bookImage} 
-                          alt="Wesselkvartalet book cover" 
+                        <img
+                          src={bookImage}
+                          alt="Wesselkvartalet book cover"
                           className="w-full h-full object-cover rounded shadow-xl"
                         />
                       </div>
@@ -260,11 +260,11 @@ const OmProsjektet = () => {
                   <p className="lead font-medium text-xl">
                     Wesselkvartalet i Asker har blitt mottatt med nærmest unison begeistring og fremstår som et sjeldent eksempel på høy arkitektonisk kvalitet i norsk kommersiell boligutvikling.
                   </p>
-                  
+
                   <p>
                     Det nylig ferdigstilte Wesselkvartalet i Asker sentrum har blitt mottatt med nærmest unison begeistring fra alle kanter. Ifølge Morgenbladets arkitekturkritiker er prosjektet «…et forbilde for hvordan de vanskelige sentrumsområdene rett utenfor Oslo må utvikles.»
                   </p>
-                  
+
                   <p>
                     Wesselkvartalet har en egenartet og uvanlig arkitektur, som samtidig med den største selvfølgelighet finner sin plass i situasjonen. Formspråket kan minne om det ekspresjonistiske uttrykket til Amsterdamskolen tidlig på 1900-tallet, eller assosiasjoner til Antoni Gaudis arkitektur.
                   </p>
@@ -279,7 +279,7 @@ const OmProsjektet = () => {
                   <p>
                     Suksessen bygger på et unikt samspill mellom tre aktører: En visjonær kommuneplansjef med stayer-evne, lokale utbyggere med hundreårs-perspektiv som bryr seg om omdømme, og arkitekter som har fått betydelig mer ansvar og frihet enn vanlig.
                   </p>
-                  
+
                   <p>
                     Norsk boligarkitektur kan bli mye bedre hvis utviklere gis – eller tar seg – friere tøyler til å prioritere kvalitet over maksimal profitt. Når markedet ikke krever høy kvalitet, må utviklerne selv velge å investere i bedre arkitektur, noe som på lang sikt er lønnsomt både for stedet og for byggherren selv.
                   </p>
@@ -291,7 +291,7 @@ const OmProsjektet = () => {
       </main>
 
       <Footer />
-    </div>
+    </div >
   );
 };
 

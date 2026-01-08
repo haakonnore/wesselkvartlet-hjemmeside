@@ -12,6 +12,9 @@ const subpages = [{
   name: "Om prosjektet",
   href: "/om-prosjektet"
 }, {
+  name: "Leie",
+  href: "/leie"
+}, {
   name: "Parkering",
   href: "/parkering"
 }];
