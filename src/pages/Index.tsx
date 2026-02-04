@@ -15,7 +15,7 @@ import { SEOHead } from "@/components/SEOHead";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead 
+      <SEOHead
         title="Wesselkvartalet - Askers nye hjerte"
         description="Ledige lokaler og fasiliteter i Wesselkvartalet - moderne arkitektur møter bærekraftig innovasjon i Asker sentrum"
         canonicalUrl="https://wesselkvartalet.no/"
@@ -23,13 +23,13 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <PropertyGrid />
         <GhostDigitSection />
         <EssayTeaserSection />
         <ArchitecturePrizeWinnerBanner />
         <EnergyArticleSection />
-        <PropertyGrid />
         <AboutProjectSection />
-        
+
         <EnergySection />
         <AwardsSection />
         <ContactSection />

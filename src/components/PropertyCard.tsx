@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Square, DollarSign } from "lucide-react";
 
 interface PropertyCardProps {
-  icon: string;
+  icon: React.ReactNode | string;
   title: string;
   location: string;
   description: string;
@@ -44,11 +44,13 @@ export function PropertyCard({
           </div>
         </div>
       )}
-      
+
       <CardContent className="p-6">
         {!image && (
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-2xl">{icon}</span>
+            <div className="p-1.5 bg-primary/10 rounded-lg">
+              <span className="text-2xl">{icon}</span>
+            </div>
             <h3 className="text-xl font-semibold">{title}</h3>
           </div>
         )}
