@@ -25,6 +25,42 @@ const Leie = () => {
         {
             icon: <Building2 className="h-6 w-6 text-primary" />,
             title: "Næringslokale",
+            location: "Apotekerhagen 7B, 1383 Asker",
+            description: "Restaurant eller butikk. Ledig fra 1. juni for overtakelse etter Asker Gull-Sølv-Ur.",
+            price: "Avhengig av avtale",
+            size: "104,5 m² BTA",
+            image: "/lovable-uploads/leie-img-1.jpg",
+            features: ["Sentral beliggenhet", "Perfekt for servering/butikk", "Overtakelse fra juni"],
+            externalLink: "https://api.eve-digital.com/images/114/103.pdf?1594307503",
+            externalLinkText: "Se plantegning"
+        },
+        {
+            icon: <Building2 className="h-6 w-6 text-primary" />,
+            title: "Næringslokale",
+            location: "Bankveien 6a, 1383 Asker",
+            description: "Restaurant eller butikk. Ledig fra 1. august 2026 for overtakelse etter Q-Apotek Asker.",
+            price: "Avhengig av avtale",
+            size: "131,7 m² BTA",
+            image: "/lovable-uploads/leie-img-2.jpg",
+            features: ["Høy synlighet", "Gode fasiliteter", "Langsiktig leie"],
+            externalLink: "https://api.eve-digital.com/images/114/106.pdf?1594307506",
+            externalLinkText: "Se plantegning"
+        },
+        {
+            icon: <Building2 className="h-6 w-6 text-primary" />,
+            title: "Næringslokale",
+            location: "Bankveien 6B, 1383 Asker",
+            description: "Restaurant eller butikk. Ledig fra 1. august 2026.",
+            price: "Avhengig av avtale",
+            size: "159,8 m² BTA",
+            image: "/lovable-uploads/leie-img-3.jpg",
+            features: ["Moderne lokaler", "Fleksibel planløsning", "Sentral i Asker"],
+            externalLink: "https://api.eve-digital.com/images/114/A27-105_N%C3%A6ringslokale_105_%283%29.pdf?1678270568",
+            externalLinkText: "Se plantegning"
+        },
+        {
+            icon: <Building2 className="h-6 w-6 text-primary" />,
+            title: "Næringslokale",
             location: "Under Peppes Pizza, Wesselgården Torvveien 9",
             description: "240 m² næringslokale som kan deles opp. Lokalene skal renoveres med nye vinduer og moderne fasiliteter. Perfekt for butikk, showroom eller kontorlandskap.",
             price: "Avhengig av avtale",
@@ -37,7 +73,7 @@ const Leie = () => {
             icon: <Package className="h-6 w-6 text-primary" />,
             title: "Lager / Bod",
             location: "Wessel P-hus",
-            description: "Sikker og sentral lagring midt i sentrum. Vi tilbyr tørre og trygge boder i ulike størrelser. Perfekt for sesongutstyr, innbo eller bedriftsarkiv.",
+            description: "Sikker og sentral lagring midt i sentrum. Vi tilbyr tørre og trygge boder i ulike størrelser. Perfekt for sesongutstyr, innbo or bedriftsarkiv.",
             price: "1100–1500 kr/m²/år",
             size: "2.5 m² - 240 m²",
             image: "/lovable-uploads/3dd8daf6-3570-4b9e-98e0-3b9babf5262a.png",
@@ -158,7 +194,7 @@ const Leie = () => {
                                             {item.externalLink ? (
                                                 <Button asChild className="w-full sm:w-auto">
                                                     <a href={item.externalLink} target="_blank" rel="noopener noreferrer">
-                                                        Se annonse på Finn.no <ExternalLink className="ml-2 h-4 w-4" />
+                                                        {item.externalLinkText || "Se annonse på Finn.no"} <ExternalLink className="ml-2 h-4 w-4" />
                                                     </a>
                                                 </Button>
                                             ) : item.buttonLink ? (
