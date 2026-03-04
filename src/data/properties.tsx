@@ -20,6 +20,18 @@ export interface Property {
 export const properties: Property[] = [
     {
         icon: <Building2 className="h-6 w-6 text-primary" />,
+        title: "Kontor",
+        location: "Bankveien 4C, 1383 Asker",
+        description: "Ledig fra: mai 2026",
+        price: "Avhengig av avtale",
+        size: "207 m² BTA",
+        image: "/lovable-uploads/bankveien-4c-original.jpg",
+        features: ["Moderne kontorlokaler", "Sentral beliggenhet", "Ledig fra mai 2026"],
+        externalLink: "https://api.eve-digital.com/images/114/202.pdf?1594307511",
+        externalLinkText: "Se plantegning"
+    },
+    {
+        icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Næringslokale",
         location: "Apotekerhagen 7B, 1383 Asker",
         description: "Restaurant eller butikk. Ledig fra 1. juni for overtakelse etter Asker Gull-Sølv-Ur.",
