@@ -73,7 +73,7 @@ export function PropertyCard({
             </div>
           )}
 
-          <div className="flex items-center justify-between pt-4 border-t border-border">
+          <div className="flex flex-col gap-4 pt-4 border-t border-border">
             <div className="space-y-1">
               {size && (
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -81,8 +81,8 @@ export function PropertyCard({
                   <span>{size}</span>
                 </div>
               )}
-              <div className="flex items-center gap-2">
-                <DollarSign className="h-4 w-4 text-primary" />
+              <div className="flex items-start gap-2">
+                <DollarSign className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                 <span className="font-semibold text-primary">{price}</span>
               </div>
             </div>
@@ -91,6 +91,7 @@ export function PropertyCard({
               <Button
                 variant="outline"
                 size="sm"
+                className="w-full sm:w-auto"
                 onClick={buttonAction}
               >
                 {buttonText}

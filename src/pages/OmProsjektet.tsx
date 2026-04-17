@@ -44,9 +44,23 @@ const OmProsjektet = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Om Prosjektet</h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
               Utforsk historien bak, visjonen for og realiseringen av Wesselkvartalet.
             </p>
+
+            <div className="max-w-2xl mx-auto bg-muted/20 p-6 rounded-2xl border border-muted/30 shadow-sm">
+              <h2 className="text-xl font-semibold mb-4">Hør podcasten om prosjektet</h2>
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src="https://open.spotify.com/embed/episode/5CwjKhmhWIUuQplen4HDjZ?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowFullScreen={false}
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+              </iframe>
+            </div>
           </div>
 
           <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
@@ -266,22 +280,95 @@ const OmProsjektet = () => {
                   </p>
 
                   <p>
-                    Wesselkvartalet har en egenartet og uvanlig arkitektur, som samtidig med den største selvfølgelighet finner sin plass i situasjonen. Formspråket kan minne om det ekspresjonistiske uttrykket til Amsterdamskolen tidlig på 1900-tallet, eller assosiasjoner til Antoni Gaudis arkitektur.
-                  </p>
-
-                  <div className="py-8">
-                    <blockquote>
-                      "Wesselkvartalet er ikke profittmaksimert, da hadde vi heller bygget en firkantet kloss. Det ville åpenbart gitt oss bedre økonomi."
-                      <cite className="block text-sm mt-2 font-normal">— Henrik Nore</cite>
-                    </blockquote>
-                  </div>
-
-                  <p>
-                    Suksessen bygger på et unikt samspill mellom tre aktører: En visjonær kommuneplansjef med stayer-evne, lokale utbyggere med hundreårs-perspektiv som bryr seg om omdømme, og arkitekter som har fått betydelig mer ansvar og frihet enn vanlig.
+                    Wesselkvartalet har en egenartet og uvanlig arkitektur, som samtidig med den største selvfølgelighet finner sin plass i situasjonen. Formspråket kan minne om det ekspresjonistiske uttrykket til Amsterdamskolen tidlig på 1900-tallet, eller assosiasjoner til Antoni Gaudis arkitektur. Formspråket er imidlertid ikke importert; prosjektet har vokst ut av sin egen logikk på dette stedet. Buede og uregelmessige avklipte bygningskropper oppstår på grunn av de trange gatene, ikke primært av formale og estetiske grunner, som man kanskje kunne tro.
                   </p>
 
                   <p>
-                    Norsk boligarkitektur kan bli mye bedre hvis utviklere gis – eller tar seg – friere tøyler til å prioritere kvalitet over maksimal profitt. Når markedet ikke krever høy kvalitet, må utviklerne selv velge å investere i bedre arkitektur, noe som på lang sikt er lønnsomt både for stedet og for byggherren selv.
+                    Faglige diskusjoner om arkitektonisk kvalitet som middel til å sikre boliger og tettsteder med høy kvalitet er ikke lenger en sentral del av planapparatets virkeområde. I stedet ser vi at jussen tar stadig mer plass og fortrenger diskursen rundt plan- og arkitekturfaglige hensyn. Gir en slik utvikling opphav til bedre byer og tettsteder?
+                  </p>
+
+                  <p>
+                    Allerede før Wesselkvartalet sto ferdig, var Asker sentrum blitt en kjent referanse for svært vellykket tettstedsutvikling. Når kommuneplansjef Tor Arne Midtbø forteller om Asker sentrum starter han gjerne rundt folkevandringstiden. Der hvor etter hvert Kongeveien fra Kongsberg til Christiania skulle krysse oldtidsveien fra Asker-gårdene utover til Heggedal og Røyken, der ligger Asker sentrum i dag. «Det ble et viktig kryss!»
+                  </p>
+
+                  <blockquote className="border-l-4 border-primary pl-4 italic my-6">
+                    "Jeg har stor tro på at det må være en stabilitet i kommunen for å få en godt styrt stedsbygging, fordi det tar så lang tid. Se på Heggedal sentrum: Planleggingen tok 10 år, og så har det tatt 10 nye år å få bygget det som står der i dag. Og det er en rask utvikling. Både det offentlige og utbyggerne må ha stayer-evne."
+                  </blockquote>
+
+                  <p>
+                    Etter studiene var Midtbø i Stavanger kommune i 2 ½ år, hvor det var et kjempeflott fagmiljø. Så flyttet han til Asker og begynte i planavdelingen i 1984, i en kommune uten urbane tradisjoner. "Så kommer jeg på jobb og møter reguleringssjef Helge Johnsen, og sier 'fy fader, så trist det ser ut her i Asker.' 'Jammen så gjør noe med det da!' var svaret."
+                  </p>
+
+                  <p>
+                    Det er ingen tvil om at Tor Arne Midtbø har spilt en helt sentral rolle i utviklingen av Asker sentrum. Det han forteller, og måten han forteller det på, viser et genuint engasjement for stedet og en usvikelig tro på planfag og arkitektur som nøkkelbrikker i god stedsutvikling. Han har sterke, og noen ganger uventede faglige meninger om hvilke konkrete løsninger han mener er best for stedet.
+                  </p>
+
+                  <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">Eiendomsutvikleren, byggherre eller bare investor?</h2>
+
+                  <p>
+                    Men hva med arkitekturen og den enkelte bygningen? Om kommunale planer og intensjoner er aldri så gode, hjelper det fint lite hvis byggherren, den som betaler, ikke har ambisjoner om arkitektonisk kvalitet. Tandberg Eiendom AS er en familiebedrift som startet med tekstilhandel. De kjøpte sin første eiendom i Asker sentrum i 1992.
+                  </p>
+
+                  <p>
+                    Ifølge sine egne nettsider kontrollerer de i dag 26 av sentrumseiendommene. Ved siden av Trekanten senter, er de den desidert største og mest innflytelsesrike utvikleren i området. Espen Tandberg omtaler seg selv som en kremmer. Forbindelsen til Tor Arne Midtbø går helt tilbake til barndommens Asker («vi møttes i speideren»).
+                  </p>
+
+                  <blockquote className="border-l-4 border-primary pl-4 italic my-6">
+                    "Dette er det ikke billig å bygge, det er dyr arkitektur. Men positiviteten vi får tilbake er enorm. Når vi bygger noe, vil vi at det skal bli noe vi kan være stolte av."
+                  </blockquote>
+
+                  <p>
+                    Espen Tandberg har sin klokkeklare mening om hva som er grunnen til at arkitektonisk kvalitet er så lite til stede i norsk boligutvikling: "Kommersiell profitt-tenking. Utbyggere som OBOS, som Selvaag, alle sammen, tenker kun på å bygge billigst mulig og selge for høyest mulig kvadratmeterpris, og så har de ingen andre større tanker rundt det."
+                  </p>
+
+                  <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">Uten å skjemmes</h2>
+
+                  <p>
+                    "Wesselkvartalet er ikke profittmaksimert, da hadde vi heller bygget en firkantet kloss. Det ville åpenbart gitt oss … bedre økonomi," slår byggherre og prosjektleder Henrik Nore i Wesselkvartalet AS fast. "Det var et premiss i familien fra dag én, Wesselkvartalet skulle bli noe vi kunne være stolte av."
+                  </p>
+
+                  <p>
+                    Henrik Nore er styreleder i Wesselkvartalet AS, og barnebarn av gamle apoteker Thor Wessel. Som eier av en viktig sentrumsgård gjennom nesten 100 år, er Nore-familien opptatt av at når nybygget skal opp, må det skje på en måte som gjør det mulig for familiens medlemmer å passere prosjektet uten å skjemmes.
+                  </p>
+
+                  <p>
+                    I vår tid er det ikke vanlig å begrunne sine handlinger med et ønske om å unngå skam. Men når vi ser hvor bra resultatet har blitt, er det lett å mene at noen av våre boligutviklere kan være litt for skamløse.
+                  </p>
+
+                  <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">Frie tøyler</h2>
+
+                  <p>
+                    Det finnes et utall plausible begrunnelser for middelmådig arkitektur og det står fritt å velge, som trenger å forsvare sin posisjon. Boligutviklernes viktigste argument er at kjøperne ikke vil betale for høyere kvalitet: "Alt koster penger. Det er mange som ikke forstår at Groruddalen ikke kan se ut som Tjuvholmen. Folk må ha penger til å kjøpe det som bygges…"
+                  </p>
+
+                  <p>
+                    Og hva betrakter Selvaag som et lønnsomt prosjekt? I perioden fra 2012 til 2021 hadde Selvaag Bolig ASA ifølge rapportene fra Oslo Børs marginer som varierte mellom 15,9% og 25,2%, eller gjennomsnittlig 20% for hele tiårsperioden. Til sammenligning, hadde hele bygg- og anleggsbransjen fra 2017 til 2021 en gjennomsnittlig margin på 7,9%.
+                  </p>
+
+                  <p>
+                    Det virker betimelig å spørre om medlemmene virkelig er tjent med at arkitekten fortsatt overkjøres, eller om det hadde vært bedre å få noe av denne enorme verdien tilbake i form av høyere kvalitet på bygninger og bygningsmiljø.
+                  </p>
+
+                  <p>
+                    En generell mangel på boliger og diversitet gir utviklerne langt på vei frie tøyler til å fortsette å selge middelmådig kvalitet til høy pris, i et marked uten reell konkurranse. Når det ikke kreves av markedet, er det utviklerne selv som bevisst må velge å gjennomføre med høyere kvalitet.
+                  </p>
+
+                  <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">Er det noe å lære?</h2>
+
+                  <p>
+                    Boligmarkedet er stort og sammensatt og det finnes ikke et enkelt svar på hva som må til for å skape grobunn for en tilstand hvor en større andel av prosjektene får bedre kvalitet. Desto mer interessant er det å undersøke Wesselkvartalet, med sine bakenforliggende aktører og prosesser.
+                  </p>
+
+                  <p>
+                    Dette prosjektet, og flere andre sider ved utviklingen i Asker sentrum, er eksempler på at det finnes muligheter som kan gi andre resultat enn den pregløse og uengasjerte middelmådigheten som dominerer for eksempel Lørenbyen. At utbyggeren er lokal og har flere bygg samme område, kan ha en betydning.
+                  </p>
+
+                  <p>
+                    Det viktigste er kanskje den innsikten som kommer frem: det er vanskelig å skille egen interesse for utvikling av et livskraftig sentrum fra selskapets kommersielle interesse. Det at utbygger fortsetter som eier av næringslokalene i sine egne prosjekter, gir en mye lenger tidshorisont enn om alt skulle selges på prospekt og avhendes ved ferdigstillelse.
+                  </p>
+
+                  <p>
+                    Kanskje er det heller arkitekten som skulle hatt litt friere tøyler, hvis målet er å bidra til høyere kvalitet i våre nye bo- og bymiljøer.
                   </p>
                 </article>
               </TabsContent>
