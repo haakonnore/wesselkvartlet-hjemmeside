@@ -22,12 +22,12 @@ export const properties: Property[] = [
         icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Kontor",
         location: "Bankveien 4C, 1383 Asker",
-        description: "Ledig fra: mai 2026. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
-        price: "2950 kr/m2 + 15% fellesareal",
-        size: "207 m² BTA",
+        description: "Cellekontorer for 1-3 pers ledig i kontorfelleskap med tillgang på fellesarealer og møterom. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
+        price: "3500 kr/m2 + fellesareal",
+        size: "6-15 m2",
         image: "/lovable-uploads/bankveien-4c-original.jpg",
-        features: ["Moderne kontorlokaler", "Sentral beliggenhet", "Ledig fra mai 2026"],
-        externalLink: "https://api.eve-digital.com/images/114/202.pdf?1594307511",
+        features: ["Møterom og fellesarealer", "Cellekontorer for 1-3 pers", "Ledig fra Mai 2026"],
+        externalLink: "/lovable-uploads/A27-202 Næringslokale 202.pdf",
         externalLinkText: "Se plantegning"
     },
     {
