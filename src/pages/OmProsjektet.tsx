@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Book, Building2, History, Palmtree, ShoppingCart, ExternalLink } from "lucide-react";
+import { Book, Building2, History, Palmtree, ShoppingCart, ExternalLink, Trophy, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArchitectsSection } from "@/components/ArchitectsSection";
@@ -20,7 +20,7 @@ const OmProsjektet = () => {
 
   useEffect(() => {
     const hash = location.hash.replace("#", "");
-    if (["historie", "byutvikling", "arkitektur", "essay"].includes(hash)) {
+    if (["historie", "byutvikling", "arkitektur", "essay", "priser"].includes(hash)) {
       setActiveTab(hash);
     }
   }, [location.hash]);
@@ -65,7 +65,7 @@ const OmProsjektet = () => {
 
           <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
             <div className="sticky top-20 z-40 bg-background/95 backdrop-blur-sm py-4 border-b">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto h-auto p-1">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto h-auto p-1">
                 <TabsTrigger value="historie" className="flex items-center gap-2 py-3 px-4">
                   <History className="h-4 w-4" />
                   <span className="hidden sm:inline">Historien</span>
@@ -80,6 +80,11 @@ const OmProsjektet = () => {
                   <Building2 className="h-4 w-4" />
                   <span className="hidden sm:inline">Arkitektur</span>
                   <span className="sm:hidden">Design</span>
+                </TabsTrigger>
+                <TabsTrigger value="priser" className="flex items-center gap-2 py-3 px-4">
+                  <Trophy className="h-4 w-4" />
+                  <span className="hidden sm:inline">Priser & Presse</span>
+                  <span className="sm:hidden">Priser</span>
                 </TabsTrigger>
                 <TabsTrigger value="essay" className="flex items-center gap-2 py-3 px-4">
                   <Book className="h-4 w-4" />
@@ -226,6 +231,186 @@ const OmProsjektet = () => {
                           <Button asChild variant="outline" size="sm">
                             <a href="https://doga.no/aktiviteter/dogas-priser/doga-merket-design-arkitektur/vinnere-av-doga-merket/wesselkvartalet/" target="_blank" rel="noopener noreferrer">Les mer</a>
                           </Button>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+                </section>
+              </TabsContent>
+
+              {/* PRISER & PRESSE */}
+              <TabsContent value="priser" className="space-y-16 animate-in fade-in duration-500">
+                <section>
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold mb-4">Priser & Mediadekning</h2>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                      Wesselkvartalet har mottatt bred anerkjennelse – fra prestisjefulle arkitekturpriser til nasjonal og lokal pressedekning.
+                    </p>
+                  </div>
+
+                  {/* Priser */}
+                  <div className="mb-16">
+                    <div className="flex items-center gap-3 mb-8">
+                      <Trophy className="h-6 w-6 text-primary" />
+                      <h3 className="text-2xl font-bold">Priser og utmerkelser</h3>
+                    </div>
+
+                    <div className="space-y-6">
+                      {/* Statens Arkitekturpris */}
+                      <Card className="border shadow-sm overflow-hidden">
+                        <div className="bg-primary/5 border-b px-8 py-5 flex items-start gap-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Trophy className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <span className="text-xs font-semibold uppercase tracking-wider text-primary">2025</span>
+                            <h4 className="text-xl font-bold">Statens Arkitekturpris 2025</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Kommunal- og distriktsdepartementet</p>
+                          </div>
+                        </div>
+                        <CardContent className="p-8">
+                          <p className="text-muted-foreground mb-6">
+                            Wesselkvartalet i Asker er tildelt Statens arkitekturpris for 2025 – landets fremste statlige utmerkelse innen arkitektur. Prisen er en anerkjennelse av arkitektur som skaper gode steder og bidrar til fellesskapets interesser.
+                          </p>
+                          <Button asChild variant="outline" size="sm">
+                            <a href="https://www.regjeringen.no/no/aktuelt/wesselkvartalet-i-asker-er-vinner-av-statens-arkitekturpris-2025/id3116509/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                              Les kunngjøringen på regjeringen.no <ExternalLink className="h-3.5 w-3.5" />
+                            </a>
+                          </Button>
+                        </CardContent>
+                      </Card>
+
+                      {/* DOGA-merket */}
+                      <Card className="border shadow-sm overflow-hidden">
+                        <div className="bg-muted/30 border-b px-8 py-5 flex items-start gap-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Trophy className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <h4 className="text-xl font-bold">DOGA-merket for design og arkitektur</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Design og arkitektur Norge (DOGA)</p>
+                          </div>
+                        </div>
+                        <CardContent className="p-8">
+                          <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground mb-4">
+                            "Et fortettingsprosjekt med buede, middelhavsinspirerte former har gitt et løft til Asker sentrum. Vi er fascinert av hvordan teglfasadene er tilpasset trehusbebyggelsen og omkringliggende bygårder."
+                          </blockquote>
+                          <p className="text-muted-foreground mb-6">
+                            DOGA-merket anerkjenner prosjekter som bidrar til bedre samfunnsutvikling gjennom designkvalitet, og Wesselkvartalet fremheves som et forbilde for bærekraftig byutvikling.
+                          </p>
+                          <Button asChild variant="outline" size="sm">
+                            <a href="https://doga.no/aktiviteter/dogas-priser/doga-merket-design-arkitektur/vinnere-av-doga-merket/wesselkvartalet/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                              Les mer på DOGA <ExternalLink className="h-3.5 w-3.5" />
+                            </a>
+                          </Button>
+                        </CardContent>
+                      </Card>
+
+                      {/* Murverksprisen */}
+                      <Card className="border shadow-sm overflow-hidden">
+                        <div className="bg-muted/30 border-b px-8 py-5 flex items-start gap-4">
+                          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Trophy className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <span className="text-xs font-semibold uppercase tracking-wider text-primary">2021</span>
+                            <h4 className="text-xl font-bold">Murverksprisen 2021</h4>
+                            <p className="text-muted-foreground text-sm mt-1">Murmesternes Landsforening</p>
+                          </div>
+                        </div>
+                        <CardContent className="p-8">
+                          <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground mb-4">
+                            "Wesselkvartalet viderefører det organiske formspråket. Det nye anlegget har et karakteristisk og originalt uttrykk med en tydelig identitet og knytter seg til eksisterende bebyggelse ved bruk av tegl."
+                          </blockquote>
+                          <p className="text-muted-foreground">
+                            Prisen gis for fremragende arkitektur i tegl der murverket er anvendt på en håndverksmessig og teknisk god måte. Marziale teglstein med unikt mønstermurverk, utført av AK Byggservice.
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Mediadekning */}
+                  <div>
+                    <div className="flex items-center gap-3 mb-8">
+                      <Newspaper className="h-6 w-6 text-primary" />
+                      <h3 className="text-2xl font-bold">Mediadekning</h3>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Card className="bg-muted/10 border shadow-sm h-full">
+                        <CardContent className="p-6 flex flex-col h-full">
+                          <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Budstikka</p>
+                          <h4 className="text-lg font-bold mb-3">"Er dette norges fineste bygg?"</h4>
+                          <p className="text-muted-foreground text-sm mb-6 flex-1">
+                            Budstikka dekket Wesselkvartalets nominasjon til Statens Arkitekturpris og spurte om dette kan være Norges fineste bygg.
+                          </p>
+                          <Button asChild variant="outline" size="sm">
+                            <a href="https://www.budstikka.no/er-dette-norges-fineste-bygg-kan-ga-til-topps-i-karing/s/5-55-2060922" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                              Les artikkelen <ExternalLink className="h-3.5 w-3.5" />
+                            </a>
+                          </Button>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="bg-muted/10 border shadow-sm h-full">
+                        <CardContent className="p-6 flex flex-col h-full">
+                          <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Morgenbladet</p>
+                          <h4 className="text-lg font-bold mb-3">"Et forbilde for sentrumsutvikling"</h4>
+                          <p className="text-muted-foreground text-sm mb-6 flex-1">
+                            Morgenbladets arkitekturkritiker omtaler prosjektet som «et forbilde for hvordan de vanskelige sentrumsområdene rett utenfor Oslo må utvikles».
+                          </p>
+                          <p className="text-xs text-muted-foreground italic">Morgenbladet, arkitekturkritiker</p>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="bg-muted/10 border shadow-sm h-full">
+                        <CardContent className="p-6 flex flex-col h-full">
+                          <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Arkitektur N</p>
+                          <h4 className="text-lg font-bold mb-3">Prosjektpresentasjon på arkitektur.no</h4>
+                          <p className="text-muted-foreground text-sm mb-6 flex-1">
+                            Norges fremste arkitekturtidsskrift presenterer Wesselkvartalet som et eksempel på høy kvalitet i norsk boligutvikling.
+                          </p>
+                          <Button asChild variant="outline" size="sm">
+                            <a href="https://www.arkitektur.no/prosjekter/bolig/wesselkvartalet/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                              Les mer <ExternalLink className="h-3.5 w-3.5" />
+                            </a>
+                          </Button>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="bg-muted/10 border shadow-sm h-full">
+                        <CardContent className="p-6 flex flex-col h-full">
+                          <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Norske Kraft- og Fjernvarmeverk</p>
+                          <h4 className="text-lg font-bold mb-3">"Energi tilsvarende 50.000 elbilbatterier"</h4>
+                          <p className="text-muted-foreground text-sm mb-6 flex-1">
+                            NKF-Norge løfter frem Wessel Energis banebrytende geotermiske energilagring som et nasjonalt forbilde for bærekraftig bygg.
+                          </p>
+                          <Button asChild variant="outline" size="sm">
+                            <a href="https://nkf-norge.no/fagblad/energi-tilsvarende-50-000-elbilbatterier/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                              Les artikkelen <ExternalLink className="h-3.5 w-3.5" />
+                            </a>
+                          </Button>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="bg-muted/10 border shadow-sm h-full md:col-span-2">
+                        <CardContent className="p-6 flex flex-col sm:flex-row gap-6 h-full">
+                          <div className="flex-shrink-0">
+                            <img src={bookImage} alt="Project: Wesselkvartalet" className="w-24 h-32 object-cover rounded shadow-lg" />
+                          </div>
+                          <div className="flex flex-col">
+                            <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">asBUILT-serien</p>
+                            <h4 className="text-lg font-bold mb-3">«Project: Wesselkvartalet» – akademisk bokpublikasjon</h4>
+                            <p className="text-muted-foreground text-sm mb-4 flex-1">
+                              Wesselkvartalet er dokumentert i asBUILT-serien – en prestisjefull norsk publiseringsserie for eksepsjonell arkitektur. Boken presenterer den innovative designprosessen og løfter kvartalet frem som et eksempel på fremragende norsk arkitektur.
+                            </p>
+                            <Button asChild variant="outline" size="sm" className="self-start">
+                              <a href="https://www.akademika.no/dokumentar-og-fakta/kunst-og-kultur/project-wesselkvartalet-architect-vigsnaeskosbergarkitekter/9788253044606" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                Se boken <ExternalLink className="h-3.5 w-3.5" />
+                              </a>
+                            </Button>
+                          </div>
                         </CardContent>
                       </Card>
                     </div>
