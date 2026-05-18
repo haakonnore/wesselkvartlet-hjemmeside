@@ -57,18 +57,6 @@ export const properties: Property[] = [
     {
         icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Næringslokale",
-        location: "Bankveien 6a, 1383 Asker",
-        description: "Restaurant eller butikk. Ledig fra 1. august 2026 for overtakelse etter Q-Apotek Asker. (Bildet  er fra et tilsvarende lokale i Wesselkvartalet)",
-        price: "8% av omsetning, minimum 3000 kr/m2 + (131,7 m² + 18% fellesareal)",
-        size: "131,7 m² BTA",
-        image: "/lovable-uploads/leie-img-2.jpg",
-        features: ["Høy synlighet", "Gode fasiliteter", "Langsiktig leie"],
-        externalLink: "https://api.eve-digital.com/images/114/106.pdf?1594307506",
-        externalLinkText: "Se plantegning"
-    },
-    {
-        icon: <Building2 className="h-6 w-6 text-primary" />,
-        title: "Næringslokale",
         location: "Bankveien 6B, 1383 Asker",
         description: "Restaurant eller butikk. Ledig fra 1. august 2028, overtakelse etter THE CURATED. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
         price: "8% av omsetning, minimum 3000 kr/m2 + (159,8 m² + 18% fellesareal)",
