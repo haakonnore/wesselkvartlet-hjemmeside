@@ -57,18 +57,6 @@ export const properties: Property[] = [
     {
         icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Næringslokale",
-        location: "Bankveien 6B, 1383 Asker",
-        description: "Restaurant eller butikk. Ledig fra 1. august 2028, overtakelse etter THE CURATED. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
-        price: "8% av omsetning, minimum 3000 kr/m2 + (159,8 m² + 18% fellesareal)",
-        size: "159,8 m² BTA",
-        image: "/lovable-uploads/leie-img-3.jpg",
-        features: ["Moderne lokaler", "Fleksibel planløsning", "Sentral i Asker"],
-        externalLink: "https://api.eve-digital.com/images/114/A27-105_N%C3%A6ringslokale_105_%283%29.pdf?1678270568",
-        externalLinkText: "Se plantegning"
-    },
-    {
-        icon: <Building2 className="h-6 w-6 text-primary" />,
-        title: "Næringslokale",
         location: "Under Peppes Pizza, Wesselgården Torvveien 9",
         description: "240 m² næringslokale som kan deles opp. Lokalene skal renoveres med nye vinduer og moderne fasiliteter. Perfekt for butikk, showroom eller kontorlandskap.",
         price: "8% av omsetning, minimum 2200 kr/m2 (240 m² + 18% fellesareal)",
