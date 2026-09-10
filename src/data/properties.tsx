@@ -20,18 +20,6 @@ export interface Property {
 export const properties: Property[] = [
     {
         icon: <Building2 className="h-6 w-6 text-primary" />,
-        title: "Takeaway resturant lokale",
-        location: "Torvveien 9, 1383 Asker i nedkjøring til Wessel P-hus",
-        description: "Effektivt resturant lokale for takeaway, kommer med ferdig kjøkken. Perfekt for de som er gode på foodora og wolt",
-        price: "8% av omsetning, med minimum 2200 kr/m2 (42,9 m2 + 15% fellesareal)",
-        size: "42,9 m2 BTA",
-        image: "/lovable-uploads/Tempura-house.png",
-        features: ["Takeaway resturant", "Kommer med ferdig kjøkken", "Ledig fra Septeber 2026"],
-        externalLink: "/lovable-uploads/A27-U101A Næringslokale U101A.pdf",
-        externalLinkText: "Se plantegning"
-    },
-    {
-        icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Kontor",
         location: "Bankveien 4C, 1383 Asker",
         description: "Cellekontorer for 1-3 pers ledig i kontorfelleskap med tillgang på fellesarealer og møterom. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
