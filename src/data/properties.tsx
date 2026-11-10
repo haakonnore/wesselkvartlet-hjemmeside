@@ -21,6 +21,23 @@ export const properties: Property[] = [
     {
         icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Kontor",
+        location: "Apotekerhagen 13, 1383 Asker",
+        description: "Lokale 205. Er i dag delt inn i to soner (235 + 109 m²), som kan leies ut separat eller samlet. Ledig fra: Mars 2027. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
+        price: "2950 kr/m2 (344 m² BTA + 15% fellesareal)",
+        size: "344 m² BTA",
+        image: "/lovable-uploads/bankveien-4c-original.jpg",
+        features: [
+            "Moderne kontorlokaler (nybygget i 2022)",
+            "Delt i to soner (235 + 109 m²)",
+            "Egen uteplass / balkong",
+            "Ledig fra mars 2027"
+        ],
+        externalLink: "/lovable-uploads/A27-205 Kontorlokale 205.pdf",
+        externalLinkText: "Se plantegning"
+    },
+    {
+        icon: <Building2 className="h-6 w-6 text-primary" />,
+        title: "Kontor",
         location: "Bankveien 4C, 1383 Asker",
         description: "Cellekontorer for 1-3 pers ledig i kontorfelleskap med tillgang på fellesarealer og møterom. (Bildet er fra et tilsvarende lokale i Wesselkvartalet)",
         price: "3500 kr/m2 + fellesareal",
