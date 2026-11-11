@@ -1,4 +1,4 @@
-import { Building2, Package, Palmtree, Car, Server, UserCheck } from "lucide-react";
+import { Building2, Package, Palmtree, Car, Server, UserCheck, Utensils } from "lucide-react";
 import React from "react";
 
 export interface Property {
@@ -19,6 +19,41 @@ export interface Property {
 
 export const properties: Property[] = [
     {
+        icon: <Utensils className="h-6 w-6 text-primary" />,
+        title: "Servering eller Restaurant",
+        location: "Apotekerhagen 1, 1386 Asker",
+        description: "Lokale 110 (Café Humlen). Attraktivt serveringslokale med ca. 100 m² terrasse/uteservering og gode solforhold på dagtid. Ønsker serveringssted som er åpent på dagen og kveld. Overtakelse 01.09.2027.",
+        price: "2950 kr/m2 (237,5 m² BTA + 15% fellesareal)",
+        size: "237,5 m² BTA",
+        image: "/lovable-uploads/cafe-humlen-110.webp",
+        features: [
+            "Lokale 110 (Café Humlen)",
+            "Terrasse ca. 100 m² ute",
+            "Gode solforhold på dagtid",
+            "Ønsker serveringssted åpent på dagen og kveld",
+            "Overtakelse 01.09.2027"
+        ],
+        externalLink: "/lovable-uploads/A27-110 Næringslokale 110.pdf",
+        externalLinkText: "Se plantegning"
+    },
+    {
+        icon: <Utensils className="h-6 w-6 text-primary" />,
+        title: "Servering eller Restaurant",
+        location: "Apotekerhagen 5, 1383 Asker",
+        description: "Lokale 109 (Porfavor tapas & vinbar). Flott serveringslokale med ca. 100 m² terrasse/uteservering. Perfekt for restaurant, tapas- og vinbar eller annet serveringskonsept. Overtakelse 01.02.2027.",
+        price: "2950 kr/m2 (172 m² BTA + 15% fellesareal)",
+        size: "172 m² BTA",
+        image: "/lovable-uploads/porfavor-109.avif",
+        features: [
+            "Lokale 109 (Porfavor tapas & vinbar)",
+            "Terrasse ca. 100 m² ute",
+            "Servering eller Restaurant",
+            "Overtakelse 01.02.2027"
+        ],
+        externalLink: "/lovable-uploads/A27-109 Næringslokale 109.pdf",
+        externalLinkText: "Se plantegning"
+    },
+    {
         icon: <Building2 className="h-6 w-6 text-primary" />,
         title: "Kontor",
         location: "Apotekerhagen 13, 1383 Asker",
@@ -28,7 +63,7 @@ export const properties: Property[] = [
         image: "/lovable-uploads/bankveien-4c-original.jpg",
         features: [
             "Moderne kontorlokaler (nybygget i 2022)",
-            "Delt i to soner (235 + 109 m²)",
+            "Delt i to soner kan leies felles eller separat (235 + 109 m²)",
             "Egen uteplass / balkong",
             "Ledig fra mars 2027"
         ],
